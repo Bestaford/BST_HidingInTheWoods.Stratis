@@ -72,7 +72,7 @@ class CfgIdentities
 		name		= "Kerry";
 		nameSound	= "Kerry";
 		face		= "WhiteHead_07";
-		glasses		= "";
+		glasses		= "G_Tactical_Clear";
 		speaker		= "Male07ENG";
 		pitch		= 1.0;
 	};
