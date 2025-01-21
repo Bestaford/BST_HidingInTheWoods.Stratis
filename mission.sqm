@@ -6,21 +6,226 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=9;
+	};
 	class Camera
 	{
-		pos[]={2812.9431,132.86087,1680.0527};
-		dir[]={0.4733513,-0.17364818,0.86358833};
-		up[]={0.0834646,0.98480767,0.15227392};
-		aside[]={0.87691051,7.4505806e-09,-0.48065346};
+		pos[]={5009.9072,225.05479,5891.9722};
+		dir[]={-0.37594402,-0.72853291,0.57265508};
+		up[]={-0.39981991,0.68500626,0.60902321};
+		aside[]={0.83596742,8.5390639e-08,0.54880607};
 	};
 };
 binarizationWanted=0;
-sourceName="test";
+sourceName="BST_HidingInTheWoods";
+addons[]=
+{
+	"A3_Characters_F"
+};
 class AddonsMetaData
 {
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
 };
 randomSeed=6670733;
 class ScenarioData
 {
 	author="Bestaford";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=1;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=8;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5000.9238,208.32462,5907.3623};
+						angles[]={6.2631893,1.0038816,0.0075011365};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=1;
+					type="B_Soldier_SL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5000.1577,208.22893,5903.9604};
+						angles[]={6.2332273,1.0038816,0.012501417};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+						isPlayable=1;
+					};
+					id=2;
+					type="B_soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4997.4722,208.31065,5908.1782};
+						angles[]={6.248199,1.0038816,0.010000871};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=3;
+					type="B_Soldier_GL_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4996.7061,208.18271,5904.7271};
+						angles[]={6.2457047,1.0038816,0.022495884};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="SERGEANT";
+						isPlayable=1;
+					};
+					id=4;
+					type="B_soldier_M_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4995.9399,208.05731,5901.2754};
+						angles[]={6.2531958,1.0038816,0.014998405};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=5;
+					type="B_soldier_AT_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4993.2544,208.15437,5905.4932};
+						angles[]={6.2457047,1.0038816,0.01499443};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+						isPlayable=1;
+					};
+					id=6;
+					type="B_soldier_AAT_F";
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4992.4883,208.01334,5902.042};
+						angles[]={6.2432065,1.0038816,0.024996169};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+						isPlayable=1;
+					};
+					id=7;
+					type="B_Soldier_A_F";
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4991.7222,207.85367,5898.5903};
+						angles[]={6.2382188,1.0038816,0.0074931863};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+						isPlayable=1;
+					};
+					id=8;
+					type="B_medic_F";
+				};
+			};
+			class Attributes
+			{
+				formation="DIAMOND";
+			};
+			id=0;
+		};
+	};
 };
