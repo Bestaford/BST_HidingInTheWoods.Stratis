@@ -1,0 +1,26 @@
+version=54;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class Camera
+	{
+		pos[]={2672.4368,316.69293,3601.4121};
+		dir[]={0.84447527,-0.17504479,-0.50627774};
+		up[]={0.15015328,0.98455161,-0.090020344};
+		aside[]={-0.51421112,-1.1401135e-06,-0.85771656};
+	};
+};
+binarizationWanted=0;
+sourceName="BST_HidingInTheWoods";
+class AddonsMetaData
+{
+};
+randomSeed=5153331;
+class ScenarioData
+{
+	author="Bestaford";
+};
