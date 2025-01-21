@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5009.9072,225.05479,5891.9722};
-		dir[]={-0.37594402,-0.72853291,0.57265508};
-		up[]={-0.39981991,0.68500626,0.60902321};
-		aside[]={0.83596742,8.5390639e-08,0.54880607};
+		pos[]={5009.7729,225.05479,5888.4214};
+		dir[]={-0.42537725,-0.51278925,0.74575013};
+		up[]={-0.25407666,0.85850644,0.44543359};
+		aside[]={0.86864513,-3.6647543e-07,0.49547648};
 	};
 };
 binarizationWanted=0;
@@ -78,45 +78,110 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5000.9238,208.32462,5907.3623};
-						angles[]={6.2631893,1.0038816,0.0075011365};
+						position[]={5000.9238,208.3246,5907.3628};
+						angles[]={6.2631841,1.0038785,0.0075049158};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="this setIdentity ""Armstrong"";";
+						name="Armstrong";
 						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1;
 					type="B_Soldier_SL_F";
+					atlOffset=-1.5258789e-05;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5000.1577,208.22893,5903.9604};
-						angles[]={6.2332273,1.0038816,0.012501417};
+						position[]={5000.1582,208.22897,5903.9609};
+						angles[]={6.2332339,1.0038785,0.012496558};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
+						init="this setIdentity ""Frost"";";
+						name="Frost";
 						isPlayable=1;
 					};
 					id=2;
 					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4997.4722,208.31065,5908.1782};
-						angles[]={6.248199,1.0038816,0.010000871};
+						position[]={4997.4722,208.31062,5908.1777};
+						angles[]={6.2481914,1.0038785,0.010000736};
 					};
 					side="West";
 					flags=5;
@@ -124,36 +189,100 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
+						init="this setIdentity ""Larkin"";";
+						name="Larkin";
 						isPlayable=1;
 					};
 					id=3;
 					type="B_Soldier_GL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4996.7061,208.18271,5904.7271};
-						angles[]={6.2457047,1.0038816,0.022495884};
+						position[]={4996.7061,208.18269,5904.7266};
+						angles[]={6.2457128,1.0038785,0.022497294};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="this setIdentity ""Kerry"";";
+						name="Kerry";
 						isPlayable=1;
 					};
 					id=4;
 					type="B_soldier_M_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4995.9399,208.05731,5901.2754};
-						angles[]={6.2531958,1.0038816,0.014998405};
+						position[]={4995.9399,208.05731,5901.2759};
+						angles[]={6.2532005,1.0038785,0.014992379};
 					};
 					side="West";
 					flags=5;
@@ -161,64 +290,192 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
+						init="this setIdentity ""Jackson"";";
+						name="Jackson";
 						isPlayable=1;
 					};
 					id=5;
 					type="B_soldier_AT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4993.2544,208.15437,5905.4932};
-						angles[]={6.2457047,1.0038816,0.01499443};
+						position[]={4993.2539,208.15436,5905.4927};
+						angles[]={6.2457128,1.0038785,0.014992379};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
+						init="this setIdentity ""Tanny"";";
+						name="Tanny";
 						isPlayable=1;
 					};
 					id=6;
 					type="B_soldier_AAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4992.4883,208.01334,5902.042};
-						angles[]={6.2432065,1.0038816,0.024996169};
+						position[]={4992.4878,208.01332,5902.042};
+						angles[]={6.2431998,1.0038785,0.024993116};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
+						init="this setIdentity ""Nichols"";";
+						name="Nichols";
 						isPlayable=1;
 					};
 					id=7;
 					type="B_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4991.7222,207.85367,5898.5903};
-						angles[]={6.2382188,1.0038816,0.0074931863};
+						position[]={4991.7222,207.85368,5898.5908};
+						angles[]={6.2382259,1.0038785,0.0074874624};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
+						init="this setIdentity ""Lacey"";";
+						name="Lacey";
 						isPlayable=1;
 					};
 					id=8;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -226,6 +483,7 @@ class Mission
 				formation="DIAMOND";
 			};
 			id=0;
+			atlOffset=-1.5258789e-05;
 		};
 	};
 };
