@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5009.7729,225.05479,5888.4214};
-		dir[]={-0.42537725,-0.51278925,0.74575013};
-		up[]={-0.25407666,0.85850644,0.44543359};
-		aside[]={0.86864513,-3.6647543e-07,0.49547648};
+		pos[]={5014.7202,211.23276,5894.2046};
+		dir[]={-0.56380188,-0.3760041,0.73535603};
+		up[]={-0.22878017,0.92661792,0.29839361};
+		aside[]={0.79359132,-1.4901161e-08,0.60845119};
 	};
 };
 binarizationWanted=0;
@@ -138,6 +138,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						rank="CORPORAL";
 						init="this setIdentity ""Frost"";";
 						name="Frost";
 						isPlayable=1;
@@ -238,7 +239,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						rank="SERGEANT";
+						rank="CORPORAL";
 						init="this setIdentity ""Kerry"";";
 						name="Kerry";
 						isPlayable=1;
@@ -289,7 +290,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.44999999;
-						rank="CORPORAL";
 						init="this setIdentity ""Jackson"";";
 						name="Jackson";
 						isPlayable=1;
