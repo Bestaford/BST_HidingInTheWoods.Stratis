@@ -8,10 +8,10 @@ class EditorData
 	toggles=1;
 	class Camera
 	{
-		pos[]={2672.4368,316.69293,3601.4121};
-		dir[]={0.84447527,-0.17504479,-0.50627774};
-		up[]={0.15015328,0.98455161,-0.090020344};
-		aside[]={-0.51421112,-1.1401135e-06,-0.85771656};
+		pos[]={2654.6646,316.69293,3632.5676};
+		dir[]={0.4464494,-0.43388611,-0.78263843};
+		up[]={0.21499139,0.90095842,-0.37688738};
+		aside[]={-0.8686499,-2.3175962e-06,-0.49551836};
 	};
 };
 binarizationWanted=0;
@@ -23,4 +23,26 @@ randomSeed=5153331;
 class ScenarioData
 {
 	author="Bestaford";
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="Hiding in the woods";
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
 };
