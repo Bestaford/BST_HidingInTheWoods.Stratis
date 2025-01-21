@@ -1,3 +1,15 @@
+author			= "Bestaford";
+onLoadName		= "Hiding in the woods";
+onLoadMission	= "";
+loadScreen		= "";
+
+class Header
+{
+	gameType = "Coop";
+	minPlayers = 1;
+	maxPlayers = 8;
+};
+
 class CfgIdentities
 {
 	class Armstrong // Squad Leader
