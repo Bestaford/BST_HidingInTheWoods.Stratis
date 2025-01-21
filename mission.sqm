@@ -5,34 +5,42 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=9;
+		nextID=12;
 	};
 	class Camera
 	{
-		pos[]={5014.7202,211.23276,5894.2046};
-		dir[]={-0.56380188,-0.3760041,0.73535603};
-		up[]={-0.22878017,0.92661792,0.29839361};
-		aside[]={0.79359132,-1.4901161e-08,0.60845119};
+		pos[]={5010.3042,211.48721,5910.0571};
+		dir[]={-0.40572801,-0.27174091,0.87266749};
+		up[]={-0.11456504,0.96236944,0.24641365};
+		aside[]={0.90679026,-6.7520887e-09,0.42159304};
 	};
 };
 binarizationWanted=0;
 sourceName="BST_HidingInTheWoods";
 addons[]=
 {
-	"A3_Characters_F"
+	"A3_Characters_F",
+	"A3_Structures_F_Civ_InfoBoards"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -65,7 +73,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1;
+		items=3;
 		class Item0
 		{
 			dataType="Group";
@@ -78,7 +86,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5000.9238,208.3246,5907.3628};
+						position[]={5002,208.34644,5908.0498};
 						angles[]={6.2631841,1.0038785,0.0075049158};
 					};
 					side="West";
@@ -93,7 +101,6 @@ class Mission
 					};
 					id=1;
 					type="B_Soldier_SL_F";
-					atlOffset=-1.5258789e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -130,7 +137,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5000.1582,208.22897,5903.9609};
+						position[]={5001.2344,208.26183,5904.6479};
 						angles[]={6.2332339,1.0038785,0.012496558};
 					};
 					side="West";
@@ -145,6 +152,7 @@ class Mission
 					};
 					id=2;
 					type="B_soldier_AR_F";
+					atlOffset=1.5258789e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -181,7 +189,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4997.4722,208.31062,5908.1777};
+						position[]={4998.5483,208.34544,5908.8647};
 						angles[]={6.2481914,1.0038785,0.010000736};
 					};
 					side="West";
@@ -196,6 +204,7 @@ class Mission
 					};
 					id=3;
 					type="B_Soldier_GL_F";
+					atlOffset=1.5258789e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -232,7 +241,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4996.7061,208.18269,5904.7266};
+						position[]={4997.7822,208.23268,5905.4136};
 						angles[]={6.2457128,1.0038785,0.022497294};
 					};
 					side="West";
@@ -246,6 +255,7 @@ class Mission
 					};
 					id=4;
 					type="B_soldier_M_F";
+					atlOffset=1.5258789e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -282,7 +292,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4995.9399,208.05731,5901.2759};
+						position[]={4997.0161,208.08392,5901.9629};
 						angles[]={6.2532005,1.0038785,0.014992379};
 					};
 					side="West";
@@ -296,6 +306,7 @@ class Mission
 					};
 					id=5;
 					type="B_soldier_AT_F";
+					atlOffset=1.5258789e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -332,7 +343,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4993.2539,208.15436,5905.4927};
+						position[]={4994.3301,208.19626,5906.1797};
 						angles[]={6.2457128,1.0038785,0.014992379};
 					};
 					side="West";
@@ -346,6 +357,7 @@ class Mission
 					};
 					id=6;
 					type="B_soldier_AAT_F";
+					atlOffset=1.5258789e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -382,7 +394,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4992.4878,208.01332,5902.042};
+						position[]={4993.564,208.06528,5902.729};
 						angles[]={6.2431998,1.0038785,0.024993116};
 					};
 					side="West";
@@ -396,6 +408,7 @@ class Mission
 					};
 					id=7;
 					type="B_Soldier_A_F";
+					atlOffset=1.5258789e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -432,7 +445,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4991.7222,207.85368,5898.5908};
+						position[]={4992.7983,207.89702,5899.2778};
 						angles[]={6.2382259,1.0038785,0.0074874624};
 					};
 					side="West";
@@ -446,6 +459,7 @@ class Mission
 					};
 					id=8;
 					type="B_medic_F";
+					atlOffset=1.5258789e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -483,7 +497,115 @@ class Mission
 				formation="DIAMOND";
 			};
 			id=0;
-			atlOffset=-1.5258789e-05;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5008,208.50394,5917.0498};
+						angles[]={0,2.6179938,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="LIEUTENANT";
+						init="[this, ""BRIEFING_POINT_LEFT"", ""ASIS""] call BIS_fnc_ambientAnim;";
+					};
+					id=10;
+					type="B_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=9;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5008.9878,209.49632,5917.9946};
+				angles[]={6.2706885,5.7596741,0.012496558};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction " \n "[ " \n " ""Open map"", " \n " { " \n "  openMap [true, false]; " \n " }, " \n " nil, " \n " 1.5, " \n " true, " \n " true, " \n " """", " \n " ""true"", " \n " 5, " \n " false, " \n " """", " \n " """" " \n "];";
+				disableSimulation=1;
+			};
+			id=11;
+			type="MapBoard_stratis_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
