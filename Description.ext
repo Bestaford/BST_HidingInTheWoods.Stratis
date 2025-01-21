@@ -1,0 +1,75 @@
+class CfgIdentities
+{
+	class Armstrong // Squad Leader
+	{
+		name		= "Armstrong";
+		nameSound	= "Armstrong";
+		face		= "WhiteHead_01";
+		glasses		= "G_Combat";
+		speaker		= "Male01ENG";
+		pitch		= 1.0;
+	};
+	class Nichols // Ammo Bearer
+	{
+		name		= "Nichols";
+		nameSound	= "Nichols";
+		face		= "AfricanHead_01";
+		glasses		= "G_Aviator";
+		speaker		= "Male12ENG";
+		pitch		= 1.0;
+	};
+	class Tanny // Asst. Missile Specialist (AT)
+	{
+		name		= "Tanny";
+		nameSound	= "Tanny";
+		face		= "WhiteHead_03";
+		glasses		= "G_Tactical_Clear";
+		speaker		= "Male03ENG";
+		pitch		= 1.0;
+	};
+	class Frost // Autorifleman
+	{
+		name		= "Frost";
+		nameSound	= "Frost";
+		face		= "AfricanHead_02";
+		glasses		= "G_Combat";
+		speaker		= "Male11ENG";
+		pitch		= 1.0;
+	};
+	class Lacey // Combat Life Saver
+	{
+		name		= "Lacey";
+		nameSound	= "Lacey";
+		face		= "WhiteHead_05";
+		glasses		= "G_Tactical_Clear";
+		speaker		= "Male05ENG";
+		pitch		= 1.0;
+	};
+	class Larkin // Grenadier
+	{
+		name		= "Larkin";
+		nameSound	= "Larkin";
+		face		= "AfricanHead_03";
+		glasses		= "G_Tactical_Black";
+		speaker		= "Male10ENG";
+		pitch		= 1.0;
+	};
+	class Kerry // Marksman
+	{
+		name		= "Kerry";
+		nameSound	= "Kerry";
+		face		= "WhiteHead_07";
+		glasses		= "";
+		speaker		= "Male07ENG";
+		pitch		= 1.0;
+	};
+	class Jackson // Missile Specialist (AT)
+	{
+		name		= "Jackson";
+		nameSound	= "Jackson";
+		face		= "WhiteHead_08";
+		glasses		= "G_Combat";
+		speaker		= "Male08ENG";
+		pitch		= 1.0;
+	};
+};
