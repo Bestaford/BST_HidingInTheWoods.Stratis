@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=7;
 	};
 	class Camera
 	{
-		pos[]={5009.5957,210.78059,5913.4272};
-		dir[]={-0.4624972,-0.42800459,0.77647179};
-		up[]={-0.2190264,0.90377653,0.36771646};
-		aside[]={0.85914129,-1.4901161e-08,0.51173842};
+		pos[]={5012.4072,210.78059,5913.0928};
+		dir[]={-0.5001964,-0.19370282,0.84398019};
+		up[]={-0.098760799,0.98105836,0.16663924};
+		aside[]={0.8602767,-2.1796586e-07,0.50985193};
 	};
 };
 binarizationWanted=0;
@@ -800,7 +800,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[""AmmoboxInit"", [this, true]] spawn BIS_fnc_arsenal;";
+						init="[""AmmoboxInit"", [this, true]] call BIS_fnc_arsenal;";
 					};
 					id=12;
 					type="B_supplyCrate_F";
