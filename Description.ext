@@ -13,6 +13,15 @@ class Header
 
 class CfgIdentities
 {
+	class Reynolds // Officer
+	{
+		name		= "Reynolds";
+		nameSound	= "Reynolds";
+		face		= "WhiteHead_13";
+		glasses		= "";
+		speaker		= "Male09ENG";
+		pitch		= 1.0;
+	};
 	class Armstrong // Squad Leader
 	{
 		name		= "Armstrong";

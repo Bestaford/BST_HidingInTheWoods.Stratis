@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4;
+		nextID=5;
 	};
 	class Camera
 	{
-		pos[]={5023.2524,214.56186,5905.2705};
-		dir[]={-0.63240284,-0.3403782,0.69591147};
-		up[]={-0.22892547,0.94027722,0.2519159};
-		aside[]={0.74009967,-4.0605664e-07,0.67255908};
+		pos[]={5012.5815,211.62503,5908.9536};
+		dir[]={-0.55637139,-0.21214955,0.80346692};
+		up[]={-0.12079135,0.97722214,0.17443866};
+		aside[]={0.82217699,-3.0055526e-07,0.56932765};
 	};
 };
 binarizationWanted=0;
@@ -892,7 +892,9 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="[this, ""BRIEFING_POINT_LEFT"", ""ASIS""] call BIS_fnc_ambientAnim;";
+						rank="LIEUTENANT";
+						init="this setIdentity ""Reynolds"";" \n "[this, ""BRIEFING_POINT_LEFT"", ""ASIS""] call BIS_fnc_ambientAnim;";
+						name="Reynolds";
 					};
 					id=24;
 					type="B_officer_F";
