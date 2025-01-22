@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=101;
+	toggles=229;
 	class ItemIDProvider
 	{
-		nextID=25;
+		nextID=27;
 	};
 	class LayerIndexProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={5012.5815,211.62503,5908.9536};
-		dir[]={-0.55637139,-0.21214955,0.80346692};
-		up[]={-0.12079135,0.97722214,0.17443866};
-		aside[]={0.82217699,-3.0055526e-07,0.56932765};
+		pos[]={5009.5957,210.78059,5913.4272};
+		dir[]={-0.4624972,-0.42800459,0.77647179};
+		up[]={-0.2190264,0.90377653,0.36771646};
+		aside[]={0.85914129,-1.4901161e-08,0.51173842};
 	};
 };
 binarizationWanted=0;
@@ -87,7 +87,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			dataType="Group";
@@ -934,6 +934,21 @@ class Mission
 			{
 			};
 			id=23;
+		};
+		class Item3
+		{
+			dataType="Trigger";
+			position[]={5007,208.4975,5917};
+			class Attributes
+			{
+				condition="!alive Reynolds";
+				onActivation="[""END1"", false] remoteExec [""BIS_fnc_endMission"", 0, true];";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=26;
+			type="EmptyDetector";
 		};
 	};
 };
