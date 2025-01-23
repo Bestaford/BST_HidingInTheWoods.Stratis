@@ -8,18 +8,18 @@ class EditorData
 	toggles=229;
 	class ItemIDProvider
 	{
-		nextID=27;
+		nextID=28;
 	};
 	class LayerIndexProvider
 	{
-		nextID=9;
+		nextID=12;
 	};
 	class Camera
 	{
-		pos[]={5014.9102,217.37773,5889.939};
-		dir[]={-0.55861473,-0.46953201,0.68373185};
-		up[]={-0.29706979,0.88291544,0.36360672};
-		aside[]={0.77440238,0,0.63269335};
+		pos[]={5023.394,216.33012,5901.8071};
+		dir[]={-0.88709491,-0.3000561,0.35081404};
+		up[]={-0.27903938,0.95391738,0.11034887};
+		aside[]={0.36775795,4.2375177e-07,0.92994124};
 	};
 };
 binarizationWanted=0;
@@ -30,13 +30,14 @@ addons[]=
 	"A3_Weapons_F_Ammoboxes",
 	"A3_Structures_F_Civ_Camping",
 	"A3_Structures_F_Civ_Constructions",
-	"A3_Structures_F_Civ_InfoBoards"
+	"A3_Structures_F_Civ_InfoBoards",
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -55,6 +56,13 @@ class AddonsMetaData
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -87,7 +95,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			dataType="Group";
@@ -894,8 +902,10 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="this setIdentity ""Reynolds"";" \n "[this, ""BRIEFING_POINT_LEFT"", ""ASIS""] call BIS_fnc_ambientAnim;";
+						init="this setIdentity ""Reynolds""; " \n "if (!isPlayer this) then " \n "{ " \n " [this, ""BRIEFING_POINT_LEFT"", ""ASIS""] call BIS_fnc_ambientAnim; " \n "};";
 						name="Reynolds";
+						description="HQ: Lt. Reynolds - Zeus Game Master";
+						isPlayable=1;
 					};
 					id=24;
 					type="B_officer_F";
@@ -950,6 +960,73 @@ class Mission
 			};
 			id=26;
 			type="EmptyDetector";
+		};
+		class Item4
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5006,208.4875,5917};
+				angles[]={6.2656798,0,0.010000736};
+			};
+			id=27;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Reynolds";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=3;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 };
