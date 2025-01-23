@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=15;
+		nextID=16;
 	};
 	class Camera
 	{
-		pos[]={5007.0361,214.14946,5911.2139};
-		dir[]={-0.30621886,-0.79291719,0.52679461};
-		up[]={-0.39848092,0.60932928,0.68551493};
-		aside[]={0.86454797,0,0.50255048};
+		pos[]={5006.0742,214.14946,5912.4458};
+		dir[]={-0.10205675,-0.73401171,0.67142981};
+		up[]={-0.11030234,0.67913318,0.72567987};
+		aside[]={0.98865032,-5.3900294e-08,0.15027253};
 	};
 };
 binarizationWanted=0;
@@ -970,6 +970,7 @@ class Mission
 				angles[]={6.2656798,0,0.010000736};
 			};
 			name="Zeus";
+			presenceCondition="isMultiplayer";
 			id=27;
 			type="ModuleCurator_F";
 			class CustomAttributes
@@ -1037,6 +1038,7 @@ class Mission
 				position[]={5005,208.47751,5917};
 				angles[]={6.2656798,0,0.010000736};
 			};
+			presenceCondition="isMultiplayer";
 			id=28;
 			type="ModuleCuratorAddEditableObjects";
 			class CustomAttributes
