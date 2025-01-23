@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=101;
+	toggles=229;
 	class ItemIDProvider
 	{
-		nextID=28;
+		nextID=29;
 	};
 	class LayerIndexProvider
 	{
-		nextID=14;
+		nextID=15;
 	};
 	class Camera
 	{
-		pos[]={5023.394,216.33012,5901.8071};
-		dir[]={-0.88709491,-0.3000561,0.35081404};
-		up[]={-0.27903938,0.95391738,0.11034887};
-		aside[]={0.36775795,4.2375177e-07,0.92994124};
+		pos[]={5007.0361,214.14946,5911.2139};
+		dir[]={-0.30621886,-0.79291719,0.52679461};
+		up[]={-0.39848092,0.60932928,0.68551493};
+		aside[]={0.86454797,0,0.50255048};
 	};
 };
 binarizationWanted=0;
@@ -95,7 +95,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			dataType="Group";
@@ -969,6 +969,7 @@ class Mission
 				position[]={5006,208.4875,5917};
 				angles[]={6.2656798,0,0.010000736};
 			};
+			name="Zeus";
 			id=27;
 			type="ModuleCurator_F";
 			class CustomAttributes
@@ -1026,6 +1027,138 @@ class Mission
 					};
 				};
 				nAttributes=4;
+			};
+		};
+		class Item5
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5005,208.47751,5917};
+				angles[]={6.2656798,0,0.010000736};
+			};
+			id=28;
+			type="ModuleCuratorAddEditableObjects";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCuratorAddEditableObjects_Curator";
+					expression="_this setVariable ['Curator',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Zeus";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCuratorAddEditableObjects_AddCrew";
+					expression="_this setVariable ['AddCrew',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=8;
+		};
+		class Links
+		{
+			items=8;
+			class Item0
+			{
+				linkID=0;
+				item0=1;
+				item1=28;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=2;
+				item1=28;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=3;
+				item1=28;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item3
+			{
+				linkID=3;
+				item0=4;
+				item1=28;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item4
+			{
+				linkID=4;
+				item0=5;
+				item1=28;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item5
+			{
+				linkID=5;
+				item0=6;
+				item1=28;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item6
+			{
+				linkID=6;
+				item0=7;
+				item1=28;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item7
+			{
+				linkID=7;
+				item0=8;
+				item1=28;
+				class CustomData
+				{
+					type="Sync";
+				};
 			};
 		};
 	};
