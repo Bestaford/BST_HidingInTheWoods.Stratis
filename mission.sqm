@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=229;
+	toggles=101;
 	class ItemIDProvider
 	{
 		nextID=28;
 	};
 	class LayerIndexProvider
 	{
-		nextID=12;
+		nextID=13;
 	};
 	class Camera
 	{
@@ -118,7 +118,7 @@ class Mission
 						rank="SERGEANT";
 						init="this setIdentity ""Armstrong"";";
 						name="Armstrong";
-						description="1: Sgt. Armstrong - Squad Leader";
+						description="Sgt. Armstrong - Squad Leader";
 						isPlayer=1;
 						isPlayable=1;
 					};
@@ -171,7 +171,7 @@ class Mission
 						rank="CORPORAL";
 						init="this setIdentity ""Frost"";";
 						name="Frost";
-						description="2: Cpl. Frost - Autorifleman";
+						description="Cpl. Frost - Autorifleman";
 						isPlayable=1;
 					};
 					id=2;
@@ -223,7 +223,7 @@ class Mission
 						rank="CORPORAL";
 						init="this setIdentity ""Larkin"";";
 						name="Larkin";
-						description="3: Cpl. Larkin - Grenadier";
+						description="Cpl. Larkin - Grenadier";
 						isPlayable=1;
 					};
 					id=3;
@@ -274,7 +274,7 @@ class Mission
 						rank="CORPORAL";
 						init="this setIdentity ""Kerry"";";
 						name="Kerry";
-						description="4: Cpl. Kerry - Marksman";
+						description="Cpl. Kerry - Marksman";
 						isPlayable=1;
 					};
 					id=4;
@@ -325,7 +325,7 @@ class Mission
 						skill=0.44999999;
 						init="this setIdentity ""Jackson"";";
 						name="Jackson";
-						description="5: Pvt. Jackson - Missile Specialist (AT)";
+						description="Pvt. Jackson - Missile Specialist (AT)";
 						isPlayable=1;
 					};
 					id=5;
@@ -376,7 +376,7 @@ class Mission
 						skill=0.40000001;
 						init="this setIdentity ""Tanny"";";
 						name="Tanny";
-						description="6: Pvt. Tanny - Asst. Missile Specialist (AT)";
+						description="Pvt. Tanny - Asst. Missile Specialist (AT)";
 						isPlayable=1;
 					};
 					id=6;
@@ -427,7 +427,7 @@ class Mission
 						skill=0.40000001;
 						init="this setIdentity ""Nichols"";";
 						name="Nichols";
-						description="7: Pvt. Nichols - Ammo Bearer";
+						description="Pvt. Nichols - Ammo Bearer";
 						isPlayable=1;
 					};
 					id=7;
@@ -478,7 +478,7 @@ class Mission
 						skill=0.40000001;
 						init="this setIdentity ""Lacey"";";
 						name="Lacey";
-						description="8: Pvt. Lacey - Combat Life Saver";
+						description="Pvt. Lacey - Combat Life Saver";
 						isPlayable=1;
 					};
 					id=8;
@@ -904,7 +904,7 @@ class Mission
 						rank="LIEUTENANT";
 						init="this setIdentity ""Reynolds""; " \n "if (!isPlayer this) then " \n "{ " \n " [this, ""BRIEFING_POINT_LEFT"", ""ASIS""] call BIS_fnc_ambientAnim; " \n "};";
 						name="Reynolds";
-						description="HQ: Lt. Reynolds - Zeus Game Master";
+						description="Lt. Reynolds - Zeus Game Master";
 						isPlayable=1;
 					};
 					id=24;
