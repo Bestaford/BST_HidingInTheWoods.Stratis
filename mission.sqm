@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=13;
+		nextID=14;
 	};
 	class Camera
 	{
@@ -902,7 +902,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="this setIdentity ""Reynolds""; " \n "if (!isPlayer this) then " \n "{ " \n " [this, ""BRIEFING_POINT_LEFT"", ""ASIS""] call BIS_fnc_ambientAnim; " \n "};";
+						init="this setIdentity ""Reynolds"";" \n "removeSwitchableUnit this;" \n "if (!isPlayer this) then " \n "{ " \n " [this, ""BRIEFING_POINT_LEFT"", ""ASIS""] call BIS_fnc_ambientAnim; " \n "};";
 						name="Reynolds";
 						description="Lt. Reynolds - Zeus Game Master";
 						isPlayable=1;
