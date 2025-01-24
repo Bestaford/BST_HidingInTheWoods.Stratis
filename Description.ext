@@ -1,3 +1,16 @@
+author			= "Bestaford";
+briefingName	= "Hiding in the woods";
+onLoadName		= "Hiding in the woods";
+onLoadMission	= "";
+loadScreen		= "";
+
+class Header
+{
+	gameType = "Coop";
+	minPlayers = 1;
+	maxPlayers = 9;
+};
+
 class CfgDebriefing
 {
 	class END1
