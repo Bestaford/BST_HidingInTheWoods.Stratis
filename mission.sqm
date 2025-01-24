@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=22;
+		nextID=24;
 	};
 	class Camera
 	{
-		pos[]={4994.7173,234.73509,5833.8418};
-		dir[]={-0.35606638,-0.43260533,0.8284325};
-		up[]={-0.17092052,0.90145379,0.39766434};
-		aside[]={0.91884881,-1.7981802e-06,0.39493009};
+		pos[]={5014.5991,213.23518,5889.7725};
+		dir[]={-0.59046334,-0.30061331,0.74914634};
+		up[]={-0.18625604,0.95363498,0.23630987};
+		aside[]={0.78547591,-1.2510427e-06,0.61910421};
 	};
 };
 binarizationWanted=0;
@@ -31,10 +31,10 @@ addons[]=
 	"A3_Structures_F_Civ_Camping",
 	"A3_Structures_F_Civ_Constructions",
 	"A3_Structures_F_Civ_InfoBoards",
+	"A3_Soft_F_Gamma_Truck_01",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Air_F_Beta_Heli_Transport_01",
 	"A3_Modules_F_Supports",
-	"A3_Soft_F_Gamma_Truck_01",
 	"A3_Modules_F"
 };
 class AddonsMetaData
@@ -65,29 +65,29 @@ class AddonsMetaData
 		};
 		class Item3
 		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item5
 		{
 			className="A3_Air_F_Beta";
 			name="Arma 3 Beta - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item6
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item6
-		{
-			className="A3_Soft_F_Gamma";
-			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -159,7 +159,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=13;
+		items=11;
 		class Item0
 		{
 			dataType="Group";
@@ -581,6 +581,7 @@ class Mission
 			};
 			class Attributes
 			{
+				name="nato_assault";
 				formation="DIAMOND";
 			};
 			id=0;
@@ -591,7 +592,7 @@ class Mission
 			name="NATO Base";
 			class Entities
 			{
-				items=10;
+				items=12;
 				class Item0
 				{
 					dataType="Object";
@@ -942,9 +943,42 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item10
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4974.9619,210.22226,5912.9424};
+						angles[]={6.2357211,2.6185598,0.019996032};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=39;
+					type="B_Truck_01_fuel_F";
+					atlOffset=0.00096130371;
+				};
+				class Item11
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4969,210.43335,5908.9771};
+						angles[]={6.2731905,2.3562284,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=38;
+					type="B_Truck_01_Repair_F";
+				};
 			};
 			id=22;
-			atlOffset=0.028915405;
+			atlOffset=-0.033554077;
 		};
 		class Item2
 		{
@@ -1007,6 +1041,7 @@ class Mission
 			};
 			class Attributes
 			{
+				name="nato_hq";
 			};
 			id=23;
 		};
@@ -1016,6 +1051,7 @@ class Mission
 			position[]={5007,208.4975,5917};
 			class Attributes
 			{
+				name="trigger_officer_dead";
 				condition="!alive Reynolds";
 				onActivation="[""END1"", false] remoteExec [""BIS_fnc_endMission"", 0, true];";
 				sizeA=0;
@@ -1149,7 +1185,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5027.249,208.6946,5906.3848};
-						angles[]={6.2606897,3.1415925,0.017500184};
+						angles[]={6.2606878,3.1415927,0.017505653};
 					};
 					side="West";
 					flags=6;
@@ -1158,7 +1194,6 @@ class Mission
 					};
 					id=31;
 					type="B_Helipilot_F";
-					atlOffset=1.5258789e-05;
 				};
 				class Item1
 				{
@@ -1166,15 +1201,15 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5027.1797,210.83124,5906.3052};
-						angles[]={6.2606897,3.1415925,0.017500184};
+						angles[]={6.2606878,3.1415927,0.017505653};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 					};
 					id=32;
 					type="B_Helipilot_F";
-					atlOffset=2.1418762;
 				};
 				class Item2
 				{
@@ -1182,15 +1217,15 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5027.1797,210.83124,5906.3052};
-						angles[]={6.2606897,3.1415925,0.017500184};
+						angles[]={6.2606878,3.1415927,0.017505653};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 					};
 					id=33;
 					type="B_helicrew_F";
-					atlOffset=2.1418762;
 				};
 				class Item3
 				{
@@ -1198,19 +1233,20 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5027.1797,210.83124,5906.3052};
-						angles[]={6.2606897,3.1415925,0.017500184};
+						angles[]={6.2606878,3.1415927,0.017505653};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 					};
 					id=34;
 					type="B_helicrew_F";
-					atlOffset=2.1418762;
 				};
 			};
 			class Attributes
 			{
+				name="nato_transport";
 			};
 			class CrewLinks
 			{
@@ -1267,15 +1303,14 @@ class Mission
 				};
 			};
 			id=29;
-			atlOffset=-0.00050354004;
 		};
 		class Item7
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5026.9307,210.77164,5904.9204};
-				angles[]={6.2606897,3.1415925,0.017500184};
+				position[]={5026.9302,210.77211,5904.9199};
+				angles[]={6.2606878,3.1415927,0.017505653};
 			};
 			side="West";
 			flags=6;
@@ -1284,7 +1319,6 @@ class Mission
 			};
 			id=30;
 			type="B_Heli_Transport_01_F";
-			atlOffset=-0.00050354004;
 		};
 		class Item8
 		{
@@ -1404,39 +1438,6 @@ class Mission
 			};
 		};
 		class Item10
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4969,210.43335,5908.9771};
-				angles[]={6.2731905,2.3562284,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=38;
-			type="B_Truck_01_Repair_F";
-		};
-		class Item11
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4974.9619,210.22226,5912.9424};
-				angles[]={6.2357211,2.6185598,0.019996032};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=39;
-			type="B_Truck_01_fuel_F";
-			atlOffset=0.00096130371;
-		};
-		class Item12
 		{
 			dataType="Layer";
 			name="Hidden";
