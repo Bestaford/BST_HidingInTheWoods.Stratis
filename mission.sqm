@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=24;
+		nextID=28;
 	};
 	class Camera
 	{
-		pos[]={5014.5991,213.23518,5889.7725};
-		dir[]={-0.59046334,-0.30061331,0.74914634};
-		up[]={-0.18625604,0.95363498,0.23630987};
-		aside[]={0.78547591,-1.2510427e-06,0.61910421};
+		pos[]={5012.2588,213.23518,5897.3359};
+		dir[]={-0.40971759,-0.3913337,0.82415098};
+		up[]={-0.17431994,0.92011654,0.35064393};
+		aside[]={0.89556539,-1.6166596e-06,0.44522643};
 	};
 };
 binarizationWanted=0;
@@ -1044,6 +1044,23 @@ class Mission
 				name="nato_hq";
 			};
 			id=23;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupIdGlobal [_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="HQ";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item3
 		{
@@ -1303,6 +1320,23 @@ class Mission
 				};
 			};
 			id=29;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupIdGlobal [_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Alpha 1-2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item7
 		{
@@ -1337,7 +1371,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5003,208.35249,5908};
-				angles[]={6.2631893,0,0.0075011365};
+				angles[]={6.2631841,0,0.0075049158};
 			};
 			id=36;
 			type="SupportRequester";
@@ -1365,7 +1399,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="";
+							value="Reynolds";
 						};
 					};
 				};
