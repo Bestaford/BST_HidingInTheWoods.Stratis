@@ -8,18 +8,18 @@ class EditorData
 	toggles=613;
 	class ItemIDProvider
 	{
-		nextID=40;
+		nextID=41;
 	};
 	class LayerIndexProvider
 	{
-		nextID=20;
+		nextID=22;
 	};
 	class Camera
 	{
-		pos[]={5009.8384,227.45509,5860.2988};
-		dir[]={-0.13740066,-0.46636492,0.87398845};
-		up[]={-0.072464518,0.8844555,0.46092945};
-		aside[]={0.98799175,-1.7594139e-06,0.1553265};
+		pos[]={4994.7173,234.73509,5833.8418};
+		dir[]={-0.35606638,-0.43260533,0.8284325};
+		up[]={-0.17092052,0.90145379,0.39766434};
+		aside[]={0.91884881,-1.7981802e-06,0.39493009};
 	};
 };
 binarizationWanted=0;
@@ -34,8 +34,8 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"A3_Air_F_Beta_Heli_Transport_01",
 	"A3_Modules_F_Supports",
-	"A3_Modules_F",
-	"A3_Soft_F_Gamma_Truck_01"
+	"A3_Soft_F_Gamma_Truck_01",
+	"A3_Modules_F"
 };
 class AddonsMetaData
 {
@@ -1405,48 +1405,6 @@ class Mission
 		};
 		class Item10
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={4972.6021,208.04118,5902.4512};
-			};
-			areaSize[]={15,0,15};
-			flags=1;
-			id=37;
-			type="ModuleHideTerrainObjects_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="#filter";
-					expression="_this setVariable [""#filter"",_value]";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=4;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="#hideLocally";
-					expression="_this setVariable [""#hideLocally"",_value]";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item11
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -1461,7 +1419,7 @@ class Mission
 			id=38;
 			type="B_Truck_01_Repair_F";
 		};
-		class Item12
+		class Item11
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1476,6 +1434,60 @@ class Mission
 			};
 			id=39;
 			type="B_Truck_01_fuel_F";
+			atlOffset=0.00096130371;
+		};
+		class Item12
+		{
+			dataType="Layer";
+			name="Hidden";
+			state=2;
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={4972.6021,208.04118,5902.4512};
+					};
+					areaSize[]={15,0,15};
+					flags=1;
+					id=37;
+					type="ModuleHideTerrainObjects_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="#filter";
+							expression="_this setVariable [""#filter"",_value]";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=4;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="#hideLocally";
+							expression="_this setVariable [""#hideLocally"",_value]";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			id=40;
 		};
 	};
 	class Connections
