@@ -5,21 +5,25 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=613;
+	toggles=741;
 	class ItemIDProvider
 	{
-		nextID=41;
+		nextID=42;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
 	};
 	class LayerIndexProvider
 	{
-		nextID=28;
+		nextID=30;
 	};
 	class Camera
 	{
-		pos[]={5012.2588,213.23518,5897.3359};
-		dir[]={-0.40971759,-0.3913337,0.82415098};
-		up[]={-0.17431994,0.92011654,0.35064393};
-		aside[]={0.89556539,-1.6166596e-06,0.44522643};
+		pos[]={5012.4683,223.83459,5911.1851};
+		dir[]={-0.1611,-0.94914931,0.27092233};
+		up[]={-0.4851059,0.31478992,0.81580311};
+		aside[]={0.85963571,-4.8530346e-06,0.51117003};
 	};
 };
 binarizationWanted=0;
@@ -35,13 +39,14 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"A3_Air_F_Beta_Heli_Transport_01",
 	"A3_Modules_F_Supports",
-	"A3_Modules_F"
+	"A3_Modules_F",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -88,6 +93,13 @@ class AddonsMetaData
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -159,7 +171,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=11;
+		items=12;
 		class Item0
 		{
 			dataType="Group";
@@ -1211,6 +1223,7 @@ class Mission
 					};
 					id=31;
 					type="B_Helipilot_F";
+					atlOffset=1.5258789e-05;
 				};
 				class Item1
 				{
@@ -1221,12 +1234,12 @@ class Mission
 						angles[]={6.2606878,3.1415927,0.017505653};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=32;
 					type="B_Helipilot_F";
+					atlOffset=2.1418762;
 				};
 				class Item2
 				{
@@ -1237,12 +1250,12 @@ class Mission
 						angles[]={6.2606878,3.1415927,0.017505653};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=33;
 					type="B_helicrew_F";
+					atlOffset=2.1418762;
 				};
 				class Item3
 				{
@@ -1253,12 +1266,12 @@ class Mission
 						angles[]={6.2606878,3.1415927,0.017505653};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=34;
 					type="B_helicrew_F";
+					atlOffset=2.1418762;
 				};
 			};
 			class Attributes
@@ -1523,6 +1536,16 @@ class Mission
 				};
 			};
 			id=40;
+		};
+		class Item11
+		{
+			dataType="Marker";
+			position[]={5010,208.455,5909};
+			name="marker_nato_base";
+			text="FOB Camp Rogain";
+			type="hd_flag";
+			colorName="ColorWEST";
+			id=41;
 		};
 	};
 	class Connections
