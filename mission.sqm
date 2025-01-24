@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=17;
+		nextID=18;
 	};
 	class Camera
 	{
 		pos[]={5024.1924,214.14946,5920.4395};
-		dir[]={0.38362136,0.047666583,-0.92226738};
-		up[]={-0.018302936,0.99886382,0.044001505};
-		aside[]={-0.92331934,-8.8248635e-07,-0.38405856};
+		dir[]={0.66560823,-0.054821264,-0.74429584};
+		up[]={0.036550168,0.99849546,-0.040871553};
+		aside[]={-0.74541914,-8.5798092e-07,-0.66661251};
 	};
 };
 binarizationWanted=0;
@@ -72,6 +72,44 @@ randomSeed=6670733;
 class ScenarioData
 {
 	author="Bestaford";
+	class Header
+	{
+		gameType="Coop";
+		minPlayers=1;
+		maxPlayers=9;
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="None";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
