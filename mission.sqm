@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=101;
+	toggles=613;
 	class ItemIDProvider
 	{
-		nextID=37;
+		nextID=40;
 	};
 	class LayerIndexProvider
 	{
-		nextID=19;
+		nextID=20;
 	};
 	class Camera
 	{
-		pos[]={5019.9688,215.76883,5891.6021};
-		dir[]={0.079563819,-0.30106696,0.95036304};
-		up[]={0.025132762,0.95352906,0.30021715};
-		aside[]={0.99659818,-6.5444328e-07,-0.083437152};
+		pos[]={5009.8384,227.45509,5860.2988};
+		dir[]={-0.13740066,-0.46636492,0.87398845};
+		up[]={-0.072464518,0.8844555,0.46092945};
+		aside[]={0.98799175,-1.7594139e-06,0.1553265};
 	};
 };
 binarizationWanted=0;
@@ -33,13 +33,15 @@ addons[]=
 	"A3_Structures_F_Civ_InfoBoards",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Air_F_Beta_Heli_Transport_01",
-	"A3_Modules_F_Supports"
+	"A3_Modules_F_Supports",
+	"A3_Modules_F",
+	"A3_Soft_F_Gamma_Truck_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=6;
+		items=7;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -79,6 +81,13 @@ class AddonsMetaData
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -150,7 +159,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=13;
 		class Item0
 		{
 			dataType="Group";
@@ -1149,6 +1158,7 @@ class Mission
 					};
 					id=31;
 					type="B_Helipilot_F";
+					atlOffset=1.5258789e-05;
 				};
 				class Item1
 				{
@@ -1159,12 +1169,12 @@ class Mission
 						angles[]={6.2606897,3.1415925,0.017500184};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=32;
 					type="B_Helipilot_F";
+					atlOffset=2.1418762;
 				};
 				class Item2
 				{
@@ -1175,12 +1185,12 @@ class Mission
 						angles[]={6.2606897,3.1415925,0.017500184};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=33;
 					type="B_helicrew_F";
+					atlOffset=2.1418762;
 				};
 				class Item3
 				{
@@ -1191,12 +1201,12 @@ class Mission
 						angles[]={6.2606897,3.1415925,0.017500184};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=34;
 					type="B_helicrew_F";
+					atlOffset=2.1418762;
 				};
 			};
 			class Attributes
@@ -1257,6 +1267,7 @@ class Mission
 				};
 			};
 			id=29;
+			atlOffset=-0.00050354004;
 		};
 		class Item7
 		{
@@ -1273,6 +1284,7 @@ class Mission
 			};
 			id=30;
 			type="B_Heli_Transport_01_F";
+			atlOffset=-0.00050354004;
 		};
 		class Item8
 		{
@@ -1390,6 +1402,80 @@ class Mission
 				};
 				nAttributes=7;
 			};
+		};
+		class Item10
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4972.6021,208.04118,5902.4512};
+			};
+			areaSize[]={15,0,15};
+			flags=1;
+			id=37;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=4;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4969,210.43335,5908.9771};
+				angles[]={6.2731905,2.3562284,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=38;
+			type="B_Truck_01_Repair_F";
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4974.9619,210.22226,5912.9424};
+				angles[]={6.2357211,2.6185598,0.019996032};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=39;
+			type="B_Truck_01_fuel_F";
 		};
 	};
 	class Connections
