@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=741;
+	toggles=613;
 	class ItemIDProvider
 	{
-		nextID=44;
+		nextID=51;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=34;
+		nextID=38;
 	};
 	class Camera
 	{
-		pos[]={5022.7524,217.29706,5890.1367};
-		dir[]={-0.548383,-0.38822535,0.74080306};
-		up[]={-0.23116586,0.92140919,0.31227857};
-		aside[]={0.80385143,-2.867775e-06,0.59505755};
+		pos[]={4889.8032,193.63336,5889.2354};
+		dir[]={0.072746821,-0.5153203,0.85390449};
+		up[]={0.043743305,0.85699761,0.51346034};
+		aside[]={0.99639064,3.7252903e-09,-0.084885664};
 	};
 };
 binarizationWanted=0;
@@ -40,13 +40,15 @@ addons[]=
 	"A3_Modules_F",
 	"A3_Ui_F",
 	"A3_Modules_F_Curator_Curator",
-	"A3_Modules_F_Supports"
+	"A3_Modules_F_Supports",
+	"A3_Structures_F_Mil_BagFence",
+	"A3_Static_F_Mortar_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=10;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -100,6 +102,20 @@ class AddonsMetaData
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Static_F";
+			name="Arma 3 Alpha - Turrets";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -171,7 +187,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=14;
 		class Item0
 		{
 			dataType="Group";
@@ -1322,7 +1338,7 @@ class Mission
 		class Item8
 		{
 			dataType="Layer";
-			name="Zeus";
+			name="Zeus modules";
 			state=2;
 			class Entities
 			{
@@ -1445,7 +1461,7 @@ class Mission
 		class Item9
 		{
 			dataType="Layer";
-			name="Support";
+			name="Support modules";
 			state=2;
 			class Entities
 			{
@@ -1570,6 +1586,160 @@ class Mission
 			};
 			id=43;
 			atlOffset=0.0012359619;
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4889.625,188.64868,5897.75};
+				angles[]={6.2606897,1.0508343,0.07983166};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44;
+			type="Land_BagFence_Round_F";
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4891.75,188.78712,5897.125};
+				angles[]={6.2806959,5.7587643,0.059929453};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=45;
+			type="Land_BagFence_Round_F";
+		};
+		class Item12
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4892,188.35893,5901.0498};
+						angles[]={0,3.4033928,-0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=47;
+					type="B_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4891,188.32645,5898.0498};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+					};
+					id=48;
+					type="B_support_Mort_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4890,188.26894,5899.0498};
+						angles[]={0,2.8797932,-0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=49;
+					type="B_support_AMort_F";
+				};
+			};
+			class Attributes
+			{
+				name="nato_mortar";
+				init="doStop (units this);";
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=48;
+						item1=50;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=46;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupIdGlobal [_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Alpha 1-3";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4890.957,189.04164,5898.0732};
+				angles[]={6.2806959,3.4021282,0.059929453};
+			};
+			side="West";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=50;
+			type="B_Mortar_01_F";
+			atlOffset=-0.00390625;
 		};
 	};
 	class Connections
