@@ -8,7 +8,7 @@ class EditorData
 	toggles=613;
 	class ItemIDProvider
 	{
-		nextID=51;
+		nextID=57;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=38;
+		nextID=46;
 	};
 	class Camera
 	{
-		pos[]={4889.8032,193.63336,5889.2354};
-		dir[]={0.072746821,-0.5153203,0.85390449};
-		up[]={0.043743305,0.85699761,0.51346034};
-		aside[]={0.99639064,3.7252903e-09,-0.084885664};
+		pos[]={4884.6265,193.63336,5888.2964};
+		dir[]={0.25453278,-0.42844343,0.86698234};
+		up[]={0.12069155,0.90356606,0.41109574};
+		aside[]={0.95950621,-9.4471034e-08,-0.28169662};
 	};
 };
 binarizationWanted=0;
@@ -187,7 +187,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=14;
+		items=20;
 		class Item0
 		{
 			dataType="Group";
@@ -1632,7 +1632,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4892,188.35893,5901.0498};
-						angles[]={0,3.4033928,-0};
+						angles[]={0,3.4033928,0};
 					};
 					side="West";
 					flags=7;
@@ -1666,7 +1666,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4890,188.26894,5899.0498};
-						angles[]={0,2.8797932,-0};
+						angles[]={0,2.8797932,0};
 					};
 					side="West";
 					flags=5;
@@ -1740,6 +1740,72 @@ class Mission
 			id=50;
 			type="B_Mortar_01_F";
 			atlOffset=-0.00390625;
+		};
+		class Item14
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={4889.0151,187.88499,5903.6021};
+			};
+			title="Add marker";
+			id=51;
+			atlOffset=9.1552734e-05;
+		};
+		class Item15
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={4890.0132,188.21001,5900.5908};
+			};
+			title="Add support module";
+			id=52;
+			atlOffset=-0.00021362305;
+		};
+		class Item16
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={4890.8262,188.125,5903.4648};
+			};
+			title="Add ambient animations";
+			id=53;
+			atlOffset=0.00019836426;
+		};
+		class Item17
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={4887.2881,187.71001,5902.7129};
+			};
+			title="Rename squads with nato phonetic alphabet";
+			id=54;
+			atlOffset=3.0517578e-05;
+		};
+		class Item18
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={4886.8062,187.69299,5896.4019};
+			};
+			title="Optimise objects";
+			id=55;
+			atlOffset=-1.5258789e-05;
+		};
+		class Item19
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={4885.624,187.411,5899.8862};
+			};
+			title="Remove arsenal, add supplies";
+			id=56;
+			atlOffset=0.00010681152;
 		};
 	};
 	class Connections
