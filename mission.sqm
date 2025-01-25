@@ -5,25 +5,25 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=741;
+	toggles=613;
 	class ItemIDProvider
 	{
-		nextID=63;
+		nextID=68;
 	};
 	class MarkerIDProvider
 	{
-		nextID=1;
+		nextID=6;
 	};
 	class LayerIndexProvider
 	{
-		nextID=96;
+		nextID=123;
 	};
 	class Camera
 	{
-		pos[]={4886.4487,193.63336,5889.7334};
-		dir[]={0.31763738,-0.40700373,0.85641956};
-		up[]={0.14153256,0.91342646,0.38160262};
-		aside[]={0.93758994,7.4505806e-09,-0.34774268};
+		pos[]={4894.9546,204.71225,5879.2139};
+		dir[]={-0.54440135,-0.4646565,0.69837791};
+		up[]={-0.28567415,0.88548797,0.36647332};
+		aside[]={0.78868979,-4.6714558e-07,0.6148001};
 	};
 };
 binarizationWanted=0;
@@ -187,7 +187,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=13;
+		items=17;
 		class Item0
 		{
 			dataType="Group";
@@ -1371,7 +1371,7 @@ class Mission
 		class Item6
 		{
 			dataType="Marker";
-			position[]={5010,208.455,5909};
+			position[]={4915,189.33249,5873};
 			name="marker_nato_base";
 			text="FOB Camp Rogain";
 			type="loc_Bunker";
@@ -1505,24 +1505,13 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={4889.0151,187.88499,5903.6021};
-			};
-			title="Add marker";
-			id=51;
-			atlOffset=9.1552734e-05;
-		};
-		class Item10
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
 				position[]={4890.8262,188.125,5903.4648};
 			};
 			title="Add ambient animations";
 			id=53;
 			atlOffset=0.00019836426;
 		};
-		class Item11
+		class Item10
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1533,7 +1522,7 @@ class Mission
 			id=56;
 			atlOffset=0.00010681152;
 		};
-		class Item12
+		class Item11
 		{
 			dataType="Layer";
 			name="Modules";
@@ -1856,6 +1845,50 @@ class Mission
 			};
 			id=60;
 			atlOffset=-4.7649384;
+		};
+		class Item12
+		{
+			dataType="Marker";
+			position[]={4891,188.325,5898};
+			name="marker_nato_mortar";
+			type="b_mortar";
+			id=63;
+			atlOffset=-1.5258789e-05;
+		};
+		class Item13
+		{
+			dataType="Marker";
+			position[]={5008,208.50301,5917};
+			name="marker_nato_hq";
+			type="b_hq";
+			id=64;
+			atlOffset=0.00050354004;
+		};
+		class Item14
+		{
+			dataType="Marker";
+			position[]={5027,208.63499,5905};
+			name="marker_nato_transport";
+			type="b_air";
+			id=65;
+		};
+		class Item15
+		{
+			dataType="Marker";
+			position[]={7250,0.29100001,1000};
+			name="marker_fia";
+			type="flag_FIA";
+			id=66;
+			atlOffset=125.961;
+		};
+		class Item16
+		{
+			dataType="Marker";
+			position[]={1000,0,7250};
+			name="marker_nato";
+			type="flag_NATO";
+			id=67;
+			atlOffset=99.130005;
 		};
 	};
 	class Connections
