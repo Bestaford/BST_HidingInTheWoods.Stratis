@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=613;
+	toggles=741;
 	class ItemIDProvider
 	{
-		nextID=62;
+		nextID=63;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=69;
+		nextID=78;
 	};
 	class Camera
 	{
 		pos[]={4886.4487,193.63336,5889.7334};
-		dir[]={0.32697847,-0.36866909,0.87016368};
-		up[]={0.12968192,0.92955714,0.34511259};
-		aside[]={0.93609905,7.4360287e-09,-0.35175556};
+		dir[]={0.31763738,-0.40700373,0.85641956};
+		up[]={0.14153256,0.91342646,0.38160262};
+		aside[]={0.93758994,7.4505806e-09,-0.34774268};
 	};
 };
 binarizationWanted=0;
@@ -187,7 +187,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=16;
+		items=15;
 		class Item0
 		{
 			dataType="Group";
@@ -642,7 +642,7 @@ class Mission
 							};
 							id=13;
 							type="Box_NATO_Ammo_F";
-							atlOffset=0.81411743;
+							atlOffset=0.81413269;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -1499,24 +1499,13 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={4890.0132,188.21001,5900.5908};
-			};
-			title="Add support module";
-			id=52;
-			atlOffset=-0.00021362305;
-		};
-		class Item11
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
 				position[]={4890.8262,188.125,5903.4648};
 			};
 			title="Add ambient animations";
 			id=53;
 			atlOffset=0.00019836426;
 		};
-		class Item12
+		class Item11
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1527,7 +1516,7 @@ class Mission
 			id=54;
 			atlOffset=3.0517578e-05;
 		};
-		class Item13
+		class Item12
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1538,7 +1527,7 @@ class Mission
 			id=55;
 			atlOffset=-1.5258789e-05;
 		};
-		class Item14
+		class Item13
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1549,7 +1538,7 @@ class Mission
 			id=56;
 			atlOffset=0.00010681152;
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Layer";
 			name="Modules";
@@ -1620,8 +1609,8 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={5005,208.47751,5917};
-								angles[]={6.2656798,0,0.010000736};
+								position[]={4996,208.14,5904};
+								angles[]={6.2457047,0,0.01499443};
 							};
 							presenceCondition="isMultiplayer";
 							id=28;
@@ -1728,15 +1717,15 @@ class Mission
 						};
 					};
 					id=42;
-					atlOffset=1.5258789e-05;
+					atlOffset=-0.092498779;
 				};
 				class Item2
 				{
 					dataType="Layer";
-					name="Support";
+					name="Supports";
 					class Entities
 					{
-						items=2;
+						items=3;
 						class Item0
 						{
 							dataType="Logic";
@@ -1753,8 +1742,8 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={5003,208.35249,5908};
-								angles[]={6.2631841,0,0.0075049158};
+								position[]={5002,208.325,5907};
+								angles[]={6.2631893,0,0.0075011365};
 							};
 							id=36;
 							type="SupportRequester";
@@ -1854,24 +1843,35 @@ class Mission
 								nAttributes=7;
 							};
 						};
+						class Item2
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={4892,188.38501,5898};
+								angles[]={6.2806959,0,0.059929453};
+							};
+							id=62;
+							type="SupportProvider_Artillery";
+						};
 					};
 					id=43;
-					atlOffset=0.0012359619;
+					atlOffset=-8.4868774;
 				};
 			};
 			id=60;
-			atlOffset=0.026992798;
+			atlOffset=-4.7649384;
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=11;
+			nextID=13;
 		};
 		class Links
 		{
-			items=11;
+			items=13;
 			class Item0
 			{
 				linkID=0;
@@ -1977,6 +1977,26 @@ class Mission
 				linkID=10;
 				item0=36;
 				item1=1;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item11
+			{
+				linkID=11;
+				item0=36;
+				item1=62;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item12
+			{
+				linkID=12;
+				item0=62;
+				item1=50;
 				class CustomData
 				{
 					type="Sync";
