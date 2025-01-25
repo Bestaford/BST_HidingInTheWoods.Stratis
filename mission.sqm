@@ -8,7 +8,7 @@ class EditorData
 	toggles=741;
 	class ItemIDProvider
 	{
-		nextID=42;
+		nextID=44;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=30;
+		nextID=34;
 	};
 	class Camera
 	{
-		pos[]={5012.4683,223.83459,5911.1851};
-		dir[]={-0.1611,-0.94914931,0.27092233};
-		up[]={-0.4851059,0.31478992,0.81580311};
-		aside[]={0.85963571,-4.8530346e-06,0.51117003};
+		pos[]={5022.7524,217.29706,5890.1367};
+		dir[]={-0.548383,-0.38822535,0.74080306};
+		up[]={-0.23116586,0.92140919,0.31227857};
+		aside[]={0.80385143,-2.867775e-06,0.59505755};
 	};
 };
 binarizationWanted=0;
@@ -36,11 +36,11 @@ addons[]=
 	"A3_Structures_F_Civ_Constructions",
 	"A3_Structures_F_Civ_InfoBoards",
 	"A3_Soft_F_Gamma_Truck_01",
-	"A3_Modules_F_Curator_Curator",
 	"A3_Air_F_Beta_Heli_Transport_01",
-	"A3_Modules_F_Supports",
 	"A3_Modules_F",
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"A3_Modules_F_Curator_Curator",
+	"A3_Modules_F_Supports"
 };
 class AddonsMetaData
 {
@@ -77,29 +77,29 @@ class AddonsMetaData
 		};
 		class Item4
 		{
-			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item5
-		{
 			className="A3_Air_F_Beta";
 			name="Arma 3 Beta - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item5
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -171,7 +171,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=12;
+		items=10;
 		class Item0
 		{
 			dataType="Group";
@@ -1092,117 +1092,6 @@ class Mission
 		};
 		class Item4
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={5006,208.4875,5917};
-				angles[]={6.2656798,0,0.010000736};
-			};
-			name="Zeus";
-			presenceCondition="isMultiplayer";
-			id=27;
-			type="ModuleCurator_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCurator_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Reynolds";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCurator_F_Forced";
-					expression="_this setVariable ['Forced',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCurator_F_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleCurator_F_Addons";
-					expression="_this setVariable ['Addons',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=3;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item5
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={5005,208.47751,5917};
-				angles[]={6.2656798,0,0.010000736};
-			};
-			presenceCondition="isMultiplayer";
-			id=28;
-			type="ModuleCuratorAddEditableObjects";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCuratorAddEditableObjects_Curator";
-					expression="_this setVariable ['Curator',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Zeus";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCuratorAddEditableObjects_AddCrew";
-					expression="_this setVariable ['AddCrew',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=1;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item6
-		{
 			dataType="Group";
 			side="West";
 			class Entities
@@ -1351,7 +1240,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item7
+		class Item5
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1367,127 +1256,10 @@ class Mission
 			id=30;
 			type="B_Heli_Transport_01_F";
 		};
-		class Item8
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={5026,208.61749,5905};
-				angles[]={6.2606897,0,0.017500184};
-			};
-			id=35;
-			type="SupportProvider_Transport";
-		};
-		class Item9
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={5003,208.35249,5908};
-				angles[]={6.2631841,0,0.0075049158};
-			};
-			id=36;
-			type="SupportRequester";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="SupportRequester_BIS_SUPP_limit_UAV";
-					expression="_this setVariable ['BIS_SUPP_limit_UAV',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="-1";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="SupportRequester_BIS_SUPP_custom_HQ";
-					expression="_this setVariable ['BIS_SUPP_custom_HQ',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Reynolds";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="SupportRequester_BIS_SUPP_limit_Transport";
-					expression="_this setVariable ['BIS_SUPP_limit_Transport',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="-1";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="SupportRequester_BIS_SUPP_limit_Drop";
-					expression="_this setVariable ['BIS_SUPP_limit_Drop',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="-1";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="SupportRequester_BIS_SUPP_limit_CAS_Heli";
-					expression="_this setVariable ['BIS_SUPP_limit_CAS_Heli',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="-1";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="SupportRequester_BIS_SUPP_limit_Artillery";
-					expression="_this setVariable ['BIS_SUPP_limit_Artillery',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="-1";
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="SupportRequester_BIS_SUPP_limit_CAS_Bombing";
-					expression="_this setVariable ['BIS_SUPP_limit_CAS_Bombing',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="-1";
-						};
-					};
-				};
-				nAttributes=7;
-			};
-		};
-		class Item10
+		class Item6
 		{
 			dataType="Layer";
-			name="Hidden";
+			name="Misc";
 			state=2;
 			class Entities
 			{
@@ -1537,7 +1309,7 @@ class Mission
 			};
 			id=40;
 		};
-		class Item11
+		class Item7
 		{
 			dataType="Marker";
 			position[]={5010,208.455,5909};
@@ -1546,6 +1318,258 @@ class Mission
 			type="hd_flag";
 			colorName="ColorWEST";
 			id=41;
+		};
+		class Item8
+		{
+			dataType="Layer";
+			name="Zeus";
+			state=2;
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={5005,208.47751,5917};
+						angles[]={6.2656798,0,0.010000736};
+					};
+					presenceCondition="isMultiplayer";
+					id=28;
+					type="ModuleCuratorAddEditableObjects";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleCuratorAddEditableObjects_Curator";
+							expression="_this setVariable ['Curator',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Zeus";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleCuratorAddEditableObjects_AddCrew";
+							expression="_this setVariable ['AddCrew',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={5006,208.4875,5917};
+						angles[]={6.2656798,0,0.010000736};
+					};
+					name="Zeus";
+					presenceCondition="isMultiplayer";
+					id=27;
+					type="ModuleCurator_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleCurator_F_Owner";
+							expression="_this setVariable ['Owner',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Reynolds";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleCurator_F_Forced";
+							expression="_this setVariable ['Forced',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ModuleCurator_F_Name";
+							expression="_this setVariable ['Name',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ModuleCurator_F_Addons";
+							expression="_this setVariable ['Addons',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=3;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			id=42;
+			atlOffset=1.5258789e-05;
+		};
+		class Item9
+		{
+			dataType="Layer";
+			name="Support";
+			state=2;
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={5026,208.61749,5905};
+						angles[]={6.2606897,0,0.017500184};
+					};
+					id=35;
+					type="SupportProvider_Transport";
+				};
+				class Item1
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={5003,208.35249,5908};
+						angles[]={6.2631841,0,0.0075049158};
+					};
+					id=36;
+					type="SupportRequester";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="SupportRequester_BIS_SUPP_limit_UAV";
+							expression="_this setVariable ['BIS_SUPP_limit_UAV',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="-1";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="SupportRequester_BIS_SUPP_custom_HQ";
+							expression="_this setVariable ['BIS_SUPP_custom_HQ',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Reynolds";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="SupportRequester_BIS_SUPP_limit_Transport";
+							expression="_this setVariable ['BIS_SUPP_limit_Transport',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="-1";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="SupportRequester_BIS_SUPP_limit_Drop";
+							expression="_this setVariable ['BIS_SUPP_limit_Drop',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="-1";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="SupportRequester_BIS_SUPP_limit_CAS_Heli";
+							expression="_this setVariable ['BIS_SUPP_limit_CAS_Heli',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="-1";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="SupportRequester_BIS_SUPP_limit_Artillery";
+							expression="_this setVariable ['BIS_SUPP_limit_Artillery',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="-1";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="SupportRequester_BIS_SUPP_limit_CAS_Bombing";
+							expression="_this setVariable ['BIS_SUPP_limit_CAS_Bombing',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="-1";
+								};
+							};
+						};
+						nAttributes=7;
+					};
+				};
+			};
+			id=43;
+			atlOffset=0.0012359619;
 		};
 	};
 	class Connections
