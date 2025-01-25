@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=741;
+	toggles=613;
 	class ItemIDProvider
 	{
 		nextID=63;
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=78;
+		nextID=87;
 	};
 	class Camera
 	{
@@ -1357,7 +1357,7 @@ class Mission
 			position[]={5010,208.455,5909};
 			name="marker_nato_base";
 			text="FOB Camp Rogain";
-			type="hd_flag";
+			type="loc_Bunker";
 			colorName="ColorWEST";
 			id=41;
 		};
