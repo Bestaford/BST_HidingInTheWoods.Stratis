@@ -8,7 +8,7 @@ class EditorData
 	toggles=613;
 	class ItemIDProvider
 	{
-		nextID=87;
+		nextID=98;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=268;
+		nextID=286;
 	};
 	class Camera
 	{
-		pos[]={5009.374,213.66937,5925.1187};
-		dir[]={-0.92104423,-0.28489262,-0.2658608};
-		up[]={-0.27378643,0.95853025,-0.079027303};
-		aside[]={-0.27735239,-2.5473128e-07,0.96086037};
+		pos[]={4887.146,194.70345,5901.3232};
+		dir[]={-0.82100224,-0.53634238,0.19574308};
+		up[]={-0.52177382,0.84396338,0.12440118};
+		aside[]={0.2319216,-1.3224781e-07,0.97274435};
 	};
 };
 binarizationWanted=0;
@@ -189,7 +189,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=20;
+		items=26;
 		class Item0
 		{
 			dataType="Group";
@@ -2220,7 +2220,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=2;
+				items=1;
 				class Item0
 				{
 					dataType="Object";
@@ -2267,22 +2267,6 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5021,212.34003,5944.0498};
-						angles[]={0,3.141593,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-					};
-					id=86;
-					type="B_soldier_M_F";
-				};
 			};
 			class Attributes
 			{
@@ -2301,6 +2285,474 @@ class Mission
 						{
 							singleType="STRING";
 							value="Echo";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item20
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4989,211.56203,5926.0498};
+						angles[]={0,0.26179904,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="nato_garrison_1";
+					};
+					id=86;
+					type="B_soldier_M_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=87;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupIdGlobal [_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Garrison 1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item21
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4983,211.56993,5919.0498};
+						angles[]={0,4.1887903,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="nato_garrison_2";
+					};
+					id=89;
+					type="B_soldier_M_F";
+					atlOffset=0.00016784668;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=88;
+			atlOffset=0.00016784668;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupIdGlobal [_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Garrison 2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item22
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4989,211.50043,5915.0498};
+						angles[]={0,2.6179938,0};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						name="nato_garrison_3";
+					};
+					id=91;
+					type="B_soldier_M_F";
+					atlOffset=2.3428497;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=90;
+			atlOffset=2.3428497;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupIdGlobal [_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Garrison 3";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item23
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4993,211.55695,5920.0498};
+						angles[]={0,1.8325957,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="nato_garrison_4";
+					};
+					id=93;
+					type="B_soldier_M_F";
+					atlOffset=0.00010681152;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=92;
+			atlOffset=0.00010681152;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupIdGlobal [_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Garrison 4";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item24
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5021,212.34003,5944.0498};
+						angles[]={0,3.1415932,-0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="nato_garrison_5";
+					};
+					id=95;
+					type="B_soldier_M_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=94;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupIdGlobal [_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Garrison 5";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item25
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4881,190.64957,5903.0498};
+						angles[]={0,1.5707965,-0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="nato_garrison_6";
+					};
+					id=97;
+					type="B_soldier_M_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=96;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupIdGlobal [_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Garrison 6";
 						};
 					};
 				};
