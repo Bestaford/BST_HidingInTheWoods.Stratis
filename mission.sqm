@@ -210,7 +210,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="this setIdentity ""Armstrong"";";
 						name="Armstrong";
 						description="Sgt. Armstrong - Squad Leader";
 						isPlayer=1;
@@ -263,7 +262,6 @@ class Mission
 					{
 						skill=0.40000001;
 						rank="CORPORAL";
-						init="this setIdentity ""Frost"";";
 						name="Frost";
 						description="Cpl. Frost - Autorifleman";
 						isPlayable=1;
@@ -315,7 +313,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="this setIdentity ""Larkin"";";
 						name="Larkin";
 						description="Cpl. Larkin - Grenadier";
 						isPlayable=1;
@@ -366,7 +363,6 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="this setIdentity ""Kerry"";";
 						name="Kerry";
 						description="Cpl. Kerry - Marksman";
 						isPlayable=1;
@@ -417,7 +413,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.44999999;
-						init="this setIdentity ""Jackson"";";
 						name="Jackson";
 						description="Pvt. Jackson - Missile Specialist (AT)";
 						isPlayable=1;
@@ -468,7 +463,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="this setIdentity ""Tanny"";";
 						name="Tanny";
 						description="Pvt. Tanny - Asst. Missile Specialist (AT)";
 						isPlayable=1;
@@ -519,7 +513,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="this setIdentity ""Nichols"";";
 						name="Nichols";
 						description="Pvt. Nichols - Ammo Bearer";
 						isPlayable=1;
@@ -570,7 +563,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="this setIdentity ""Lacey"";";
 						name="Lacey";
 						description="Pvt. Lacey - Combat Life Saver";
 						isPlayable=1;
@@ -1124,7 +1116,6 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="this setIdentity ""Reynolds"";" \n "removeSwitchableUnit this;" \n "if (!isPlayer this) then " \n "{ " \n " [this, ""STAND"", ""ASIS""] call BIS_fnc_ambientAnimCombat; " \n "};";
 						name="Reynolds";
 						description="Lt. Reynolds - Zeus Game Master";
 						isPlayable=1;
@@ -1443,7 +1434,6 @@ class Mission
 			class Attributes
 			{
 				name="nato_mortar";
-				init="doStop (units this);";
 			};
 			class CrewLinks
 			{
@@ -2243,7 +2233,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="[this, ""STAND_IA"", ""ASIS""] call BIS_fnc_ambientAnimCombat;";
 					};
 					id=82;
 					type="B_Soldier_SL_F";
@@ -2298,7 +2287,6 @@ class Mission
 			class Attributes
 			{
 				name="nato_base";
-				init="doStop (units this);";
 			};
 			id=83;
 			class CustomAttributes
