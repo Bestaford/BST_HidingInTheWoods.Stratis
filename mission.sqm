@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=192;
+		nextID=202;
 	};
 	class Camera
 	{
-		pos[]={4996.6816,226.22377,5915.376};
-		dir[]={0.19704103,-0.58468419,-0.78709239};
-		up[]={0.14200838,0.81117946,-0.56725937};
-		aside[]={-0.97014499,6.990158e-07,-0.24286582};
+		pos[]={4999.457,210.60513,5924.627};
+		dir[]={-0.60635781,-0.21199131,0.76654971};
+		up[]={-0.13161823,0.9772107,0.16638978};
+		aside[]={0.78436142,4.4566696e-07,0.62044787};
 	};
 };
 binarizationWanted=0;
@@ -941,7 +941,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5008.9878,209.49632,5917.9946};
+								position[]={4994.9878,209.61623,5933.9878};
 								angles[]={6.2706885,5.7596741,0.012496558};
 							};
 							side="Empty";
@@ -1126,7 +1126,7 @@ class Mission
 				};
 			};
 			id=22;
-			atlOffset=-1.8006439;
+			atlOffset=-1.7763519;
 		};
 		class Item2
 		{
@@ -1140,7 +1140,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5008,208.50394,5917.0498};
+						position[]={4994,208.62384,5933.043};
 						angles[]={0,2.6179938,0};
 					};
 					side="West";
@@ -1155,6 +1155,7 @@ class Mission
 					};
 					id=24;
 					type="B_officer_F";
+					atlOffset=0.0075683594;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1192,6 +1193,7 @@ class Mission
 				name="nato_hq";
 			};
 			id=23;
+			atlOffset=0.0075683594;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1213,7 +1215,7 @@ class Mission
 		class Item3
 		{
 			dataType="Trigger";
-			position[]={5007,208.4975,5917};
+			position[]={4993,208.61,5933};
 			class Attributes
 			{
 				name="trigger_officer_dead";
@@ -1726,8 +1728,8 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={5006,208.4875,5917};
-								angles[]={6.2656798,0,0.010000736};
+								position[]={4992,208.605,5933};
+								angles[]={6.258194,0,0.0050033992};
 							};
 							name="Zeus";
 							presenceCondition="isMultiplayer";
@@ -1792,7 +1794,7 @@ class Mission
 						};
 					};
 					id=42;
-					atlOffset=-0.092498779;
+					atlOffset=-0.071258545;
 				};
 				class Item2
 				{
@@ -2103,7 +2105,7 @@ class Mission
 				};
 			};
 			id=60;
-			atlOffset=-1.8533936;
+			atlOffset=-1.8463593;
 		};
 		class Item10
 		{
@@ -2116,11 +2118,11 @@ class Mission
 		class Item11
 		{
 			dataType="Marker";
-			position[]={5008,208.50301,5917};
+			position[]={4994,208.62291,5932.9932};
 			name="marker_nato_hq";
 			type="b_hq";
 			id=64;
-			atlOffset=0.00050354004;
+			atlOffset=0.0080718994;
 		};
 		class Item12
 		{
