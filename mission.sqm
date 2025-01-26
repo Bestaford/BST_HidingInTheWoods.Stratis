@@ -8,7 +8,7 @@ class EditorData
 	toggles=741;
 	class ItemIDProvider
 	{
-		nextID=75;
+		nextID=79;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=162;
+		nextID=172;
 	};
 	class Camera
 	{
-		pos[]={4885.877,190.90994,5897.0571};
-		dir[]={0.90343934,-0.30564764,0.30068305};
-		up[]={0.29002649,0.95213592,0.096526168};
-		aside[]={0.31579307,-4.9910159e-07,-0.94884491};
+		pos[]={5064.4473,243.08025,5862.3105};
+		dir[]={-0.50223309,-0.60075796,0.62201244};
+		up[]={-0.37741154,0.79941875,0.46742237};
+		aside[]={0.77805799,1.6123522e-08,0.62822747};
 	};
 };
 binarizationWanted=0;
@@ -188,7 +188,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=15;
+		items=19;
 		class Item0
 		{
 			dataType="Group";
@@ -1443,7 +1443,6 @@ class Mission
 					};
 					id=48;
 					type="B_support_Mort_F";
-					atlOffset=-0.00390625;
 				};
 				class Item2
 				{
@@ -2060,6 +2059,50 @@ class Mission
 			type="flag_NATO";
 			id=67;
 			atlOffset=99.130005;
+		};
+		class Item15
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={5025,208.815,5921};
+				angles[]={6.278182,0,0.0099949092};
+			};
+			title="Setup tasks";
+			id=75;
+		};
+		class Item16
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={5021,208.785,5923};
+				angles[]={6.2631893,0,0.024996169};
+			};
+			title="Add guards";
+			id=76;
+		};
+		class Item17
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={5025,208.83502,5925};
+				angles[]={6.2756844,0,0.0075011365};
+			};
+			title="Add patrol";
+			id=77;
+		};
+		class Item18
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={5022,208.75,5920};
+				angles[]={6.2631893,0,0.024996169};
+			};
+			title="Add ambient units";
+			id=78;
 		};
 	};
 	class Connections
