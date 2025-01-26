@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=286;
+		nextID=295;
 	};
 	class Camera
 	{
-		pos[]={4887.146,194.70345,5901.3232};
+		pos[]={4893.5503,194.70345,5887.8516};
 		dir[]={-0.82100224,-0.53634238,0.19574308};
 		up[]={-0.52177382,0.84396338,0.12440118};
 		aside[]={0.2319216,-1.3224781e-07,0.97274435};
@@ -2233,6 +2233,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="nato_garrison_leader";
 					};
 					id=82;
 					type="B_Soldier_SL_F";
@@ -2270,7 +2271,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="nato_base";
+				name="nato_garrison";
 			};
 			id=83;
 			class CustomAttributes
@@ -2618,7 +2619,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5021,212.34003,5944.0498};
-						angles[]={0,3.1415932,-0};
+						angles[]={0,3.1415932,0};
 					};
 					side="West";
 					flags=7;
@@ -2695,7 +2696,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4881,190.64957,5903.0498};
-						angles[]={0,1.5707965,-0};
+						angles[]={0,1.5707965,0};
 					};
 					side="West";
 					flags=7;

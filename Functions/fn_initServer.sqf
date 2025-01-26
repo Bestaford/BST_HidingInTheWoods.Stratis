@@ -1,3 +1,7 @@
+/*
+ * Server-side logic for AI initialization
+ */
+
 // Prevent units from returning to formation
 doStop (units nato_mortar);
 

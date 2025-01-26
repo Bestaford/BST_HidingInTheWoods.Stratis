@@ -1,3 +1,7 @@
+/*
+ * Client-side logic for animations and other local effects
+ */
+
 // Set the identities of all playable units
 Reynolds	setIdentity "Reynolds";
 Armstrong	setIdentity "Armstrong";
@@ -9,14 +13,12 @@ Larkin		setIdentity "Larkin";
 Kerry		setIdentity "Kerry";
 Jackson		setIdentity "Jackson";
 
-// Set up HQ for both SP and MP
-removeSwitchableUnit Reynolds;
+// Play ambient animations
 if (!isPlayer Reynolds) then
 {
 	[Reynolds, "STAND", "ASIS"] call BIS_fnc_ambientAnimCombat;
 };
+[nato_garrison_leader, "STAND_IA", "ASIS"] call BIS_fnc_ambientAnimCombat;
 
-// Set up squad leader animations
-{
-	[leader _x, "STAND_IA", "ASIS"] call BIS_fnc_ambientAnimCombat;
-} forEach [nato_mortar, nato_base];
+// Remove HQ from switchable units in singleplayer
+removeSwitchableUnit Reynolds;
