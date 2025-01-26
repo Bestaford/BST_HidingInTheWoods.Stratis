@@ -8,7 +8,7 @@ class EditorData
 	toggles=613;
 	class ItemIDProvider
 	{
-		nextID=81;
+		nextID=87;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=202;
+		nextID=268;
 	};
 	class Camera
 	{
-		pos[]={4999.457,210.60513,5924.627};
-		dir[]={-0.60635781,-0.21199131,0.76654971};
-		up[]={-0.13161823,0.9772107,0.16638978};
-		aside[]={0.78436142,4.4566696e-07,0.62044787};
+		pos[]={5009.374,213.66937,5925.1187};
+		dir[]={-0.92104423,-0.28489262,-0.2658608};
+		up[]={-0.27378643,0.95853025,-0.079027303};
+		aside[]={-0.27735239,-2.5473128e-07,0.96086037};
 	};
 };
 binarizationWanted=0;
@@ -33,14 +33,15 @@ addons[]=
 	"A3_Characters_F",
 	"A3_Weapons_F_Ammoboxes",
 	"A3_Soft_F_Gamma_Truck_01",
-	"A3_Structures_F_Civ_InfoBoards",
 	"A3_Structures_F_Civ_Camping",
 	"A3_Structures_F_Civ_Constructions",
 	"A3_Structures_F_Mil_BagFence",
+	"A3_Structures_F_Civ_InfoBoards",
 	"A3_Air_F_Beta_Heli_Transport_01",
 	"A3_Ui_F",
 	"A3_Static_F_Mortar_01",
 	"A3_Modules_F",
+	"A3_Modules_F_ObjectModifiers",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Modules_F_Supports",
 	"A3_Modules_F_Intel"
@@ -188,7 +189,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			dataType="Group";
@@ -638,7 +639,7 @@ class Mission
 			name="NATO base";
 			class Entities
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					dataType="Layer";
@@ -932,54 +933,10 @@ class Mission
 				class Item2
 				{
 					dataType="Layer";
-					name="Interactive";
+					name="Props";
 					class Entities
 					{
-						items=1;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={4994.9878,209.61623,5933.9878};
-								angles[]={6.2706885,5.7596741,0.012496558};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								init="this addAction " \n "[ " \n " ""Open map"", " \n " { " \n "  openMap [true, false]; " \n " }, " \n " nil, " \n " 1.5, " \n " true, " \n " true, " \n " """", " \n " ""true"", " \n " 5, " \n " false, " \n " """", " \n " """" " \n "];";
-							};
-							id=11;
-							type="MapBoard_stratis_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="allowDamage";
-									expression="_this allowdamage _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=1;
-										};
-									};
-								};
-								nAttributes=1;
-							};
-						};
-					};
-					id=59;
-				};
-				class Item3
-				{
-					dataType="Layer";
-					name="Decorative";
-					class Entities
-					{
-						items=6;
+						items=7;
 						class Item0
 						{
 							dataType="Object";
@@ -1120,13 +1077,32 @@ class Mission
 							id=70;
 							type="Land_Pallet_F";
 						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4994.9902,209.61595,5933.9731};
+								angles[]={6.255693,5.7597971,0.0075011365};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=84;
+							type="MapBoard_stratis_F";
+							atlOffset=-3.0517578e-05;
+						};
 					};
 					id=61;
-					atlOffset=-3.6328888;
+					atlOffset=-1.7842712;
 				};
 			};
 			id=22;
-			atlOffset=-1.7763519;
+			atlOffset=-0.86540222;
 		};
 		class Item2
 		{
@@ -1397,7 +1373,7 @@ class Mission
 		class Item6
 		{
 			dataType="Marker";
-			position[]={4915,189.33249,5873};
+			position[]={5008,206.52,5856};
 			name="marker_nato_base";
 			text="FOB Camp Rogain";
 			type="loc_Bunker";
@@ -1540,7 +1516,7 @@ class Mission
 					name="Misc";
 					class Entities
 					{
-						items=3;
+						items=4;
 						class Item0
 						{
 							dataType="Logic";
@@ -1670,9 +1646,63 @@ class Mission
 								nAttributes=2;
 							};
 						};
+						class Item3
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={4992,208.505,5926};
+								angles[]={6.2756805,0,0.0075049158};
+							};
+							id=81;
+							type="ModuleDoorOpen_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ModuleDoorOpen_F_Hatch";
+									expression="_this setVariable ['Hatch',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="-1";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ModuleDoorOpen_F_Door";
+									expression="_this setVariable ['Door',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="1";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ModuleDoorOpen_F_Radius";
+									expression="_this setVariable ['Radius',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=10;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
 					};
 					id=40;
-					atlOffset=-0.15446472;
+					atlOffset=-0.081420898;
 				};
 				class Item1
 				{
@@ -2105,7 +2135,7 @@ class Mission
 				};
 			};
 			id=60;
-			atlOffset=-1.8463593;
+			atlOffset=-1.8299255;
 		};
 		class Item10
 		{
@@ -2193,6 +2223,101 @@ class Mission
 			};
 			title="Add ambient units";
 			id=78;
+		};
+		class Item19
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4992,208.52144,5928.0498};
+						angles[]={0,1.0471976,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="[this, ""STAND_IA"", ""ASIS""] call BIS_fnc_ambientAnimCombat;";
+					};
+					id=82;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5021,212.34003,5944.0498};
+						angles[]={0,3.141593,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=86;
+					type="B_soldier_M_F";
+				};
+			};
+			class Attributes
+			{
+				name="nato_base";
+				init="doStop (units this);";
+			};
+			id=83;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupIdGlobal [_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Echo";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
