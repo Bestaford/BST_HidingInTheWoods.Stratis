@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=613;
+	toggles=741;
 	class ItemIDProvider
 	{
 		nextID=99;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=353;
+		nextID=363;
 	};
 	class Camera
 	{
-		pos[]={4999.1221,211.84363,5924.6323};
-		dir[]={-0.79474688,-0.36222142,0.48716542};
-		up[]={-0.30891675,0.93203396,0.189362};
-		aside[]={0.52265108,-2.3251778e-07,0.85263389};
+		pos[]={5014.8652,230.09706,5896.7891};
+		dir[]={-0.29127231,-0.77423733,0.56188697};
+		up[]={-0.35632101,0.63289541,0.68737096};
+		aside[]={0.88780391,1.4901161e-08,0.46022195};
 	};
 };
 binarizationWanted=0;
@@ -1780,11 +1780,12 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={5002,208.325,5907};
-								angles[]={6.2631893,0,0.0075011365};
+								position[]={5003,208.44751,5915};
+								angles[]={-0,0,0.0024897563};
 							};
 							id=36;
 							type="SupportRequester";
+							atlOffset=1.5258789e-05;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -1894,7 +1895,7 @@ class Mission
 						};
 					};
 					id=43;
-					atlOffset=-8.5643616;
+					atlOffset=-8.6806335;
 				};
 				class Item3
 				{
@@ -2130,7 +2131,7 @@ class Mission
 				};
 			};
 			id=60;
-			atlOffset=-0.91290283;
+			atlOffset=-0.91242981;
 		};
 		class Item10
 		{
@@ -2143,11 +2144,10 @@ class Mission
 		class Item11
 		{
 			dataType="Marker";
-			position[]={4994,208.62291,5932.9932};
+			position[]={4994,208.61499,5933};
 			name="marker_nato_hq";
 			type="b_hq";
 			id=64;
-			atlOffset=0.0080718994;
 		};
 		class Item12
 		{
@@ -2257,11 +2257,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=13;
+			nextID=14;
 		};
 		class Links
 		{
-			items=13;
+			items=14;
 			class Item0
 			{
 				linkID=0;
@@ -2355,8 +2355,8 @@ class Mission
 			class Item9
 			{
 				linkID=9;
-				item0=35;
-				item1=36;
+				item0=62;
+				item1=50;
 				class CustomData
 				{
 					type="Sync";
@@ -2366,7 +2366,7 @@ class Mission
 			{
 				linkID=10;
 				item0=36;
-				item1=1;
+				item1=35;
 				class CustomData
 				{
 					type="Sync";
@@ -2385,8 +2385,18 @@ class Mission
 			class Item12
 			{
 				linkID=12;
-				item0=62;
-				item1=50;
+				item0=36;
+				item1=1;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item13
+			{
+				linkID=13;
+				item0=36;
+				item1=24;
 				class CustomData
 				{
 					type="Sync";
