@@ -8,7 +8,7 @@ class EditorData
 	toggles=741;
 	class ItemIDProvider
 	{
-		nextID=99;
+		nextID=107;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=373;
+		nextID=383;
 	};
 	class Camera
 	{
-		pos[]={5014.8652,230.09706,5896.7891};
-		dir[]={-0.57241619,-0.6351133,0.51862496};
-		up[]={-0.47066307,0.77241886,0.42643347};
-		aside[]={0.67142922,1.1478551e-07,0.74106956};
+		pos[]={4942.02,210.72906,5878.292};
+		dir[]={0.59782946,-0.31444615,0.73751628};
+		up[]={0.19811445,0.94922185,0.24440633};
+		aside[]={0.77692854,8.6566433e-07,-0.62977302};
 	};
 };
 binarizationWanted=0;
@@ -189,7 +189,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=16;
+		items=19;
 		class Item0
 		{
 			dataType="Group";
@@ -2252,6 +2252,96 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item16
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4993,211.55684,5920.0498};
+						angles[]={0,1.8325959,-0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="this setVariable [""BST_garrison"", true]";
+					};
+					id=100;
+					type="B_soldier_M_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=104;
+		};
+		class Item17
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5021,212.34003,5944.0498};
+						angles[]={0,3.1415925,-0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="this setVariable [""BST_garrison"", true]";
+					};
+					id=102;
+					type="B_soldier_M_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=105;
+		};
+		class Item18
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4880.77,190.64983,5902.939};
+						angles[]={0,2.3561947,-0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="this setVariable [""BST_garrison"", true]";
+					};
+					id=103;
+					type="B_soldier_M_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=106;
 		};
 	};
 	class Connections
