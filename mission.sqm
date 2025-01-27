@@ -8,7 +8,7 @@ class EditorData
 	toggles=613;
 	class ItemIDProvider
 	{
-		nextID=98;
+		nextID=99;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=295;
+		nextID=323;
 	};
 	class Camera
 	{
-		pos[]={4893.5503,194.70345,5887.8516};
-		dir[]={-0.82100224,-0.53634238,0.19574308};
-		up[]={-0.52177382,0.84396338,0.12440118};
-		aside[]={0.2319216,-1.3224781e-07,0.97274435};
+		pos[]={5013.3076,216.69363,5904.646};
+		dir[]={-0.58132362,-0.31801987,0.74904656};
+		up[]={-0.19504397,0.94803751,0.25131986};
+		aside[]={0.79005212,1.7551065e-07,0.61314601};
 	};
 };
 binarizationWanted=0;
@@ -41,10 +41,10 @@ addons[]=
 	"A3_Ui_F",
 	"A3_Static_F_Mortar_01",
 	"A3_Modules_F",
-	"A3_Modules_F_ObjectModifiers",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Modules_F_Supports",
-	"A3_Modules_F_Intel"
+	"A3_Modules_F_Intel",
+	"A3_Modules_F_ObjectModifiers"
 };
 class AddonsMetaData
 {
@@ -189,7 +189,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=26;
+		items=16;
 		class Item0
 		{
 			dataType="Group";
@@ -210,7 +210,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						name="Armstrong";
 						description="Sgt. Armstrong - Squad Leader";
 						isPlayer=1;
 						isPlayable=1;
@@ -262,7 +261,6 @@ class Mission
 					{
 						skill=0.40000001;
 						rank="CORPORAL";
-						name="Frost";
 						description="Cpl. Frost - Autorifleman";
 						isPlayable=1;
 					};
@@ -313,7 +311,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						name="Larkin";
 						description="Cpl. Larkin - Grenadier";
 						isPlayable=1;
 					};
@@ -363,7 +360,6 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						name="Kerry";
 						description="Cpl. Kerry - Marksman";
 						isPlayable=1;
 					};
@@ -413,7 +409,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.44999999;
-						name="Jackson";
 						description="Pvt. Jackson - Missile Specialist (AT)";
 						isPlayable=1;
 					};
@@ -463,7 +458,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						name="Tanny";
 						description="Pvt. Tanny - Asst. Missile Specialist (AT)";
 						isPlayable=1;
 					};
@@ -513,7 +507,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						name="Nichols";
 						description="Pvt. Nichols - Ammo Bearer";
 						isPlayable=1;
 					};
@@ -563,7 +556,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						name="Lacey";
 						description="Pvt. Lacey - Combat Life Saver";
 						isPlayable=1;
 					};
@@ -603,7 +595,6 @@ class Mission
 			};
 			class Attributes
 			{
-				name="nato_assault";
 				formation="DIAMOND";
 			};
 			id=0;
@@ -1108,7 +1099,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4994,208.62384,5933.043};
+						position[]={4994,208.62427,5933.043};
 						angles[]={0,2.6179938,0};
 					};
 					side="West";
@@ -1116,13 +1107,12 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						name="Reynolds";
 						description="Lt. Reynolds - Zeus Game Master";
 						isPlayable=1;
 					};
 					id=24;
 					type="B_officer_F";
-					atlOffset=0.0075683594;
+					atlOffset=0.0079956055;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1157,10 +1147,9 @@ class Mission
 			};
 			class Attributes
 			{
-				name="nato_hq";
 			};
 			id=23;
-			atlOffset=0.0075683594;
+			atlOffset=0.0079956055;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1185,7 +1174,6 @@ class Mission
 			position[]={4993,208.61,5933};
 			class Attributes
 			{
-				name="trigger_officer_dead";
 				condition="!alive Reynolds";
 				onActivation="[""END1"", false] remoteExec [""BIS_fnc_endMission"", 0, true];";
 				sizeA=0;
@@ -1270,7 +1258,6 @@ class Mission
 			};
 			class Attributes
 			{
-				name="nato_transport";
 			};
 			class CrewLinks
 			{
@@ -1433,7 +1420,6 @@ class Mission
 			};
 			class Attributes
 			{
-				name="nato_mortar";
 			};
 			class CrewLinks
 			{
@@ -1499,14 +1485,14 @@ class Mission
 			name="Modules";
 			class Entities
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					dataType="Layer";
-					name="Misc";
+					name="Environment";
 					class Entities
 					{
-						items=4;
+						items=3;
 						class Item0
 						{
 							dataType="Logic";
@@ -1636,63 +1622,9 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item3
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4992,208.505,5926};
-								angles[]={6.2756805,0,0.0075049158};
-							};
-							id=81;
-							type="ModuleDoorOpen_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ModuleDoorOpen_F_Hatch";
-									expression="_this setVariable ['Hatch',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="-1";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ModuleDoorOpen_F_Door";
-									expression="_this setVariable ['Door',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="1";
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ModuleDoorOpen_F_Radius";
-									expression="_this setVariable ['Radius',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=10;
-										};
-									};
-								};
-								nAttributes=3;
-							};
-						};
 					};
 					id=40;
-					atlOffset=-0.081420898;
+					atlOffset=-0.15446472;
 				};
 				class Item1
 				{
@@ -1749,9 +1681,8 @@ class Mission
 							class PositionInfo
 							{
 								position[]={4992,208.605,5933};
-								angles[]={6.258194,0,0.0050033992};
+								angles[]={6.2581921,0,0.0050090947};
 							};
-							name="Zeus";
 							presenceCondition="isMultiplayer";
 							id=27;
 							type="ModuleCurator_F";
@@ -1958,7 +1889,7 @@ class Mission
 				class Item3
 				{
 					dataType="Layer";
-					name="Tasks";
+					name="Intel";
 					class Entities
 					{
 						items=1;
@@ -2123,9 +2054,73 @@ class Mission
 					};
 					id=74;
 				};
+				class Item4
+				{
+					dataType="Layer";
+					name="Object Modifiers";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={4992,208.505,5926};
+								angles[]={6.2756805,0,0.0075049158};
+							};
+							id=81;
+							type="ModuleDoorOpen_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ModuleDoorOpen_F_Hatch";
+									expression="_this setVariable ['Hatch',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="-1";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ModuleDoorOpen_F_Door";
+									expression="_this setVariable ['Door',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="1";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ModuleDoorOpen_F_Radius";
+									expression="_this setVariable ['Radius',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=10;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+					};
+					id=98;
+				};
 			};
 			id=60;
-			atlOffset=-1.8299255;
+			atlOffset=-0.91290283;
 		};
 		class Item10
 		{
@@ -2148,7 +2143,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5027,208.63499,5905};
-			name="marker_nato_transport";
+			name="marker_nato_helicopter";
 			type="b_air";
 			id=65;
 		};
@@ -2172,50 +2167,6 @@ class Mission
 		};
 		class Item15
 		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={5025,208.815,5921};
-				angles[]={6.278182,0,0.0099949092};
-			};
-			title="Setup tasks";
-			id=75;
-		};
-		class Item16
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={5021,208.785,5923};
-				angles[]={6.2631893,0,0.024996169};
-			};
-			title="Add guards";
-			id=76;
-		};
-		class Item17
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={5025,208.83502,5925};
-				angles[]={6.2756844,0,0.0075011365};
-			};
-			title="Add patrol";
-			id=77;
-		};
-		class Item18
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={5022,208.75,5920};
-				angles[]={6.2631893,0,0.024996169};
-			};
-			title="Add ambient units";
-			id=78;
-		};
-		class Item19
-		{
 			dataType="Group";
 			side="West";
 			class Entities
@@ -2233,7 +2184,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						name="nato_garrison_leader";
 					};
 					id=82;
 					type="B_Soldier_SL_F";
@@ -2271,7 +2221,6 @@ class Mission
 			};
 			class Attributes
 			{
-				name="nato_garrison";
 			};
 			id=83;
 			class CustomAttributes
@@ -2286,474 +2235,6 @@ class Mission
 						{
 							singleType="STRING";
 							value="Echo";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item20
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4989,211.56203,5926.0498};
-						angles[]={0,0.26179904,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						name="nato_garrison_1";
-					};
-					id=86;
-					type="B_soldier_M_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male11ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=87;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Garrison 1";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item21
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4983,211.56993,5919.0498};
-						angles[]={0,4.1887903,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						name="nato_garrison_2";
-					};
-					id=89;
-					type="B_soldier_M_F";
-					atlOffset=0.00016784668;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male11ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=88;
-			atlOffset=0.00016784668;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Garrison 2";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item22
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4989,211.50043,5915.0498};
-						angles[]={0,2.6179938,0};
-					};
-					side="West";
-					flags=3;
-					class Attributes
-					{
-						name="nato_garrison_3";
-					};
-					id=91;
-					type="B_soldier_M_F";
-					atlOffset=2.3428497;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male11ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=90;
-			atlOffset=2.3428497;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Garrison 3";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item23
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4993,211.55695,5920.0498};
-						angles[]={0,1.8325957,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						name="nato_garrison_4";
-					};
-					id=93;
-					type="B_soldier_M_F";
-					atlOffset=0.00010681152;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male11ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=92;
-			atlOffset=0.00010681152;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Garrison 4";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item24
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5021,212.34003,5944.0498};
-						angles[]={0,3.1415932,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						name="nato_garrison_5";
-					};
-					id=95;
-					type="B_soldier_M_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male11ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=94;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Garrison 5";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item25
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4881,190.64957,5903.0498};
-						angles[]={0,1.5707965,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						name="nato_garrison_6";
-					};
-					id=97;
-					type="B_soldier_M_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male11ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=96;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Garrison 6";
 						};
 					};
 				};
