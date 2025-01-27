@@ -108,9 +108,9 @@ class CfgFunctions
 {
 	class BST
 	{
-		class Functions
+		class Scripts
 		{
-			file = "Functions";
+			file = "scripts";
 			class initServer {};
 			class initClient {};
 		}
