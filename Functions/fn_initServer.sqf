@@ -2,13 +2,20 @@
  * Server-side logic for AI initialization
  */
 
-// Prevent units from returning to formation
-doStop (units nato_mortar);
+// Prevent groups from returning to formation
+_groups = allGroups select { _x getVariable "BST_stop" };
+{
+	_group = _x;
+	_units = units _group;
+	doStop _units;
+} forEach _groups;
 
-// Set up garrison positions for the NATO base
-[nato_garrison_1, 7] call BST_fnc_setbuildingPos;
-[nato_garrison_2, 4] call BST_fnc_setbuildingPos;
-[nato_garrison_3, 5] call BST_fnc_setbuildingPos;
-[nato_garrison_4, 6] call BST_fnc_setbuildingPos;
-[nato_garrison_5, 1] call BST_fnc_setbuildingPos;
-[nato_garrison_6, 1] call BST_fnc_setbuildingPos;
+// Move units to the nearest position in the building
+_units = allUnits select { _x getVariable "BST_garrison" };
+{
+	_unit = _x;
+	_building = nearestBuilding _unit;
+	_allPositions = _building buildingPos -1;
+	_nearestPosition = [_allPositions, _unit] call BIS_fnc_nearestPosition;
+	_unit setPosATL _nearestPosition;
+} forEach _units;

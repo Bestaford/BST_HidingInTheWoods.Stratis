@@ -113,7 +113,6 @@ class CfgFunctions
 			file = "Functions";
 			class initServer {};
 			class initClient {};
-			class setbuildingPos {};
 		}
 	};
 };
