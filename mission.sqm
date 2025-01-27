@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=363;
+		nextID=373;
 	};
 	class Camera
 	{
 		pos[]={5014.8652,230.09706,5896.7891};
-		dir[]={-0.29127231,-0.77423733,0.56188697};
-		up[]={-0.35632101,0.63289541,0.68737096};
-		aside[]={0.88780391,1.4901161e-08,0.46022195};
+		dir[]={-0.57241619,-0.6351133,0.51862496};
+		up[]={-0.47066307,0.77241886,0.42643347};
+		aside[]={0.67142922,1.1478551e-07,0.74106956};
 	};
 };
 binarizationWanted=0;
@@ -1429,6 +1429,7 @@ class Mission
 			};
 			class Attributes
 			{
+				init="this setVariable [""BST_stop"", true]";
 			};
 			class CrewLinks
 			{
@@ -1781,7 +1782,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5003,208.44751,5915};
-								angles[]={-0,0,0.0024897563};
+								angles[]={0,0,0.0024897563};
 							};
 							id=36;
 							type="SupportRequester";
