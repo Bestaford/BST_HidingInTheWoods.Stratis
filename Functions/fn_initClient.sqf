@@ -3,22 +3,22 @@
  */
 
 // Set the identities of all playable units
-Reynolds	setIdentity "Reynolds";
-Armstrong	setIdentity "Armstrong";
-Nichols		setIdentity "Nichols";
-Tanny		setIdentity "Tanny";
-Frost		setIdentity "Frost";
-Lacey		setIdentity "Lacey";
-Larkin		setIdentity "Larkin";
-Kerry		setIdentity "Kerry";
-Jackson		setIdentity "Jackson";
+reynolds	setIdentity "Reynolds";
+armstrong	setIdentity "Armstrong";
+nichols		setIdentity "Nichols";
+tanny		setIdentity "Tanny";
+frost		setIdentity "Frost";
+lacey		setIdentity "Lacey";
+larkin		setIdentity "Larkin";
+kerry		setIdentity "Kerry";
+jackson		setIdentity "Jackson";
 
 // Play ambient animations
-if (!isPlayer Reynolds) then
+if (!isPlayer reynolds) then
 {
-	[Reynolds, "STAND", "ASIS"] call BIS_fnc_ambientAnimCombat;
+	[reynolds, "STAND", "ASIS"] call BIS_fnc_ambientAnimCombat;
 };
-[nato_garrison_leader, "STAND_IA", "ASIS"] call BIS_fnc_ambientAnimCombat;
+[nato_squad_leader, "STAND_IA", "ASIS"] call BIS_fnc_ambientAnimCombat;
 
 // Remove HQ from switchable units in singleplayer
-removeSwitchableUnit Reynolds;
+removeSwitchableUnit reynolds;
