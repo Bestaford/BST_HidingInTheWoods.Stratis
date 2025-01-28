@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=609;
+	toggles=613;
 	class ItemIDProvider
 	{
-		nextID=353;
+		nextID=357;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=489;
+		nextID=503;
 	};
 	class Camera
 	{
-		pos[]={5813.3755,23.708107,4528.6997};
-		dir[]={-0.45227557,-0.096957795,0.88673115};
-		up[]={-0.044134531,0.99518919,0.086529136};
-		aside[]={0.89091867,1.8419232e-06,0.45440942};
+		pos[]={5812.7402,26.053303,4533.1577};
+		dir[]={0.14904574,-0.77044249,0.62004143};
+		up[]={0.18006185,0.63742077,0.74907237};
+		aside[]={0.97241324,2.1868036e-06,-0.2337486};
 	};
 };
 binarizationWanted=0;
@@ -254,7 +254,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=21;
+		items=25;
 		class Item0
 		{
 			dataType="Group";
@@ -3445,7 +3445,7 @@ class Mission
 						};
 					};
 					id=316;
-					atlOffset=0.21889305;
+					atlOffset=0.19807434;
 				};
 				class Item1
 				{
@@ -3852,7 +3852,51 @@ class Mission
 				};
 			};
 			id=315;
-			atlOffset=0.11522675;
+			atlOffset=0.15076256;
+		};
+		class Item21
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={5813.1162,21.427,4537.832};
+			};
+			title="Kill all";
+			id=353;
+			atlOffset=0.00047302246;
+		};
+		class Item22
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={5814.7432,21.294001,4537.3818};
+			};
+			title="Destroy ammo cache";
+			id=354;
+			atlOffset=0.00029754639;
+		};
+		class Item23
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={5812.2949,21.325001,4535.459};
+			};
+			title="Take intel";
+			id=355;
+			atlOffset=0.00044059753;
+		};
+		class Item24
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={5812,21.509998,4538};
+				angles[]={6.2182775,0,0};
+			};
+			title="Defend or flee";
+			id=356;
 		};
 	};
 	class Connections
