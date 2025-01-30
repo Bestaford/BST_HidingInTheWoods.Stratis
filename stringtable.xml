@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project name="BST_HidingInTheWoods">
-  <Package name="tasks">
-    <Container name="task_1">
-      <Key ID="STR_BST_task_1_title">
-        <Original>title</Original>
-      </Key>
-      <Key ID="STR_BST_task_1_description">
-        <Original>description</Original>
-      </Key>
-    </Container>
-  </Package>
-  <Package name="briefing">
-    <Key ID="STR_BST_briefing_situation">
-      <Original>situation</Original>
-    </Key>
-    <Key ID="STR_BST_briefing_mission">
-      <Original>mission</Original>
-    </Key>
-    <Key ID="STR_BST_briefing_execution">
-      <Original>execution</Original>
-    </Key>
-    <Key ID="STR_BST_briefing_signal">
-      <Original>signal</Original>
-    </Key>
-  </Package>
+	<Package name="tasks">
+		<Container name="task_1">
+			<Key ID="STR_BST_task_1_title">
+				<Original>title</Original>
+			</Key>
+			<Key ID="STR_BST_task_1_description">
+				<Original>description</Original>
+			</Key>
+		</Container>
+	</Package>
+	<Package name="briefing">
+		<Key ID="STR_BST_briefing_situation">
+			<Original>situation</Original>
+		</Key>
+		<Key ID="STR_BST_briefing_mission">
+			<Original>mission</Original>
+		</Key>
+		<Key ID="STR_BST_briefing_execution">
+			<Original>execution</Original>
+		</Key>
+		<Key ID="STR_BST_briefing_signal">
+			<Original>signal</Original>
+		</Key>
+	</Package>
 </Project>
