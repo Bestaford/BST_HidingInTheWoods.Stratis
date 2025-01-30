@@ -1,7 +1,3 @@
-/*
- * Client-side logic for animations and other local effects
- */
-
 // Set the identities of all playable units
 reynolds	setIdentity "Reynolds";
 armstrong	setIdentity "Armstrong";

@@ -1,7 +1,3 @@
-/*
- * Server-side logic for AI initialization
- */
-
 // Prevent groups from returning to formation
 _groups = allGroups select { _x getVariable "BST_stop" };
 {

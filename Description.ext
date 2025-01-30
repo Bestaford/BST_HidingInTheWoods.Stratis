@@ -103,16 +103,3 @@ class CfgIdentities
 		pitch		= 0.98;
 	};
 };
-
-class CfgFunctions
-{
-	class BST
-	{
-		class Scripts
-		{
-			file = "scripts";
-			class initServer {};
-			class initClient {};
-		}
-	};
-};
