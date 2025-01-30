@@ -10,4 +10,18 @@
       </Key>
     </Container>
   </Package>
+  <Package name="briefing">
+    <Key ID="STR_BST_briefing_situation">
+      <Original>situation</Original>
+    </Key>
+    <Key ID="STR_BST_briefing_mission">
+      <Original>mission</Original>
+    </Key>
+    <Key ID="STR_BST_briefing_execution">
+      <Original>execution</Original>
+    </Key>
+    <Key ID="STR_BST_briefing_signal">
+      <Original>signal</Original>
+    </Key>
+  </Package>
 </Project>

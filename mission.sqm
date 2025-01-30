@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=613;
+	toggles=741;
 	class ItemIDProvider
 	{
-		nextID=357;
+		nextID=363;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=503;
+		nextID=547;
 	};
 	class Camera
 	{
@@ -2240,7 +2240,7 @@ class Mission
 				};
 			};
 			id=60;
-			atlOffset=-6.4190216;
+			atlOffset=-3.277771;
 		};
 		class Item10
 		{
