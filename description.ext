@@ -1,12 +1,12 @@
-author			= "Bestaford";
-briefingName	= "Hiding in the woods";
-onLoadName		= "Hiding in the woods";
-onLoadMission	= "";
-loadScreen		= "";
+author        = "Bestaford";
+briefingName  = "Hiding in the woods";
+onLoadName    = "Hiding in the woods";
+onLoadMission = "";
+loadScreen    = "";
 
 class Header
 {
-	gameType = "Coop";
+	gameType   = "Coop";
 	minPlayers = 1;
 	maxPlayers = 9;
 };
@@ -23,83 +23,83 @@ class CfgIdentities
 {
 	class Reynolds // Officer
 	{
-		name		= "Reynolds";
-		nameSound	= "Reynolds";
-		face		= "WhiteHead_13";
-		glasses		= "";
-		speaker		= "Male09ENG";
-		pitch		= 0.91;
+		name      = "Reynolds";
+		nameSound = "Reynolds";
+		face      = "WhiteHead_13";
+		glasses   = "";
+		speaker   = "Male09ENG";
+		pitch     = 0.91;
 	};
 	class Armstrong // Squad Leader
 	{
-		name		= "Armstrong";
-		nameSound	= "Armstrong";
-		face		= "WhiteHead_01";
-		glasses		= "G_Combat";
-		speaker		= "Male01ENG";
-		pitch		= 0.92;
+		name      = "Armstrong";
+		nameSound = "Armstrong";
+		face      = "WhiteHead_01";
+		glasses   = "G_Combat";
+		speaker   = "Male01ENG";
+		pitch     = 0.92;
 	};
 	class Nichols // Ammo Bearer
 	{
-		name		= "Nichols";
-		nameSound	= "Nichols";
-		face		= "AfricanHead_01";
-		glasses		= "G_Aviator";
-		speaker		= "Male12ENG";
-		pitch		= 1.03;
+		name      = "Nichols";
+		nameSound = "Nichols";
+		face      = "AfricanHead_01";
+		glasses   = "G_Aviator";
+		speaker   = "Male12ENG";
+		pitch     = 1.03;
 	};
 	class Tanny // Asst. Missile Specialist (AT)
 	{
-		name		= "Tanny";
-		nameSound	= "Tanny";
-		face		= "WhiteHead_03";
-		glasses		= "G_Tactical_Clear";
-		speaker		= "Male03ENG";
-		pitch		= 0.94;
+		name      = "Tanny";
+		nameSound = "Tanny";
+		face      = "WhiteHead_03";
+		glasses   = "G_Tactical_Clear";
+		speaker   = "Male03ENG";
+		pitch     = 0.94;
 	};
 	class Frost // Autorifleman
 	{
-		name		= "Frost";
-		nameSound	= "Frost";
-		face		= "AfricanHead_02";
-		glasses		= "G_Combat";
-		speaker		= "Male11ENG";
-		pitch		= 1.03;
+		name      = "Frost";
+		nameSound = "Frost";
+		face      = "AfricanHead_02";
+		glasses   = "G_Combat";
+		speaker   = "Male11ENG";
+		pitch     = 1.03;
 	};
 	class Lacey // Combat Life Saver
 	{
-		name		= "Lacey";
-		nameSound	= "Lacey";
-		face		= "WhiteHead_05";
-		glasses		= "G_Tactical_Clear";
-		speaker		= "Male05ENG";
-		pitch		= 1.01;
+		name      = "Lacey";
+		nameSound = "Lacey";
+		face      = "WhiteHead_05";
+		glasses   = "G_Tactical_Clear";
+		speaker   = "Male05ENG";
+		pitch     = 1.01;
 	};
 	class Larkin // Grenadier
 	{
-		name		= "Larkin";
-		nameSound	= "Larkin";
-		face		= "AfricanHead_03";
-		glasses		= "G_Tactical_Black";
-		speaker		= "Male10ENG";
-		pitch		= 0.95;
+		name      = "Larkin";
+		nameSound = "Larkin";
+		face      = "AfricanHead_03";
+		glasses   = "G_Tactical_Black";
+		speaker   = "Male10ENG";
+		pitch     = 0.95;
 	};
 	class Kerry // Marksman
 	{
-		name		= "Kerry";
-		nameSound	= "Kerry";
-		face		= "WhiteHead_07";
-		glasses		= "G_Tactical_Clear";
-		speaker		= "Male07ENG";
-		pitch		= 1.06;
+		name      = "Kerry";
+		nameSound = "Kerry";
+		face      = "WhiteHead_07";
+		glasses   = "G_Tactical_Clear";
+		speaker   = "Male07ENG";
+		pitch     = 1.06;
 	};
 	class Jackson // Missile Specialist (AT)
 	{
-		name		= "Jackson";
-		nameSound	= "Jackson";
-		face		= "WhiteHead_08";
-		glasses		= "G_Combat";
-		speaker		= "Male08ENG";
-		pitch		= 0.98;
+		name      = "Jackson";
+		nameSound = "Jackson";
+		face      = "WhiteHead_08";
+		glasses   = "G_Combat";
+		speaker   = "Male08ENG";
+		pitch     = 0.98;
 	};
 };

@@ -7,15 +7,15 @@ _player createDiaryRecord ["Diary", ["Mission", localize "STR_BST_briefing_missi
 _player createDiaryRecord ["Diary", ["Situation", localize "STR_BST_briefing_situation"]];
 
 // Set the identities of all playable units
-reynolds	setIdentity "Reynolds";
-armstrong	setIdentity "Armstrong";
-nichols		setIdentity "Nichols";
-tanny		setIdentity "Tanny";
-frost		setIdentity "Frost";
-lacey		setIdentity "Lacey";
-larkin		setIdentity "Larkin";
-kerry		setIdentity "Kerry";
-jackson		setIdentity "Jackson";
+reynolds  setIdentity "Reynolds";
+armstrong setIdentity "Armstrong";
+nichols   setIdentity "Nichols";
+tanny     setIdentity "Tanny";
+frost     setIdentity "Frost";
+lacey     setIdentity "Lacey";
+larkin    setIdentity "Larkin";
+kerry     setIdentity "Kerry";
+jackson   setIdentity "Jackson";
 
 // Play ambient animations
 if (!isPlayer reynolds) then
