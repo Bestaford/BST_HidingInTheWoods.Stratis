@@ -3,6 +3,7 @@
 		"armitxes.sqf",
 		"skacekachna.sqflint",
 		"dotjoshjohnson.xml",
-		"chouzz.vscode-better-align"
+		"chouzz.vscode-better-align",
+		"editorconfig.editorconfig"
 	]
 }
