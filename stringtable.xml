@@ -3,18 +3,26 @@
 	<Package name="tasks">
 		<Container name="task_1">
 			<Key ID="STR_BST_task_1_title">
-				<Original>title</Original>
+				<Original>Rearm title</Original>
 			</Key>
 			<Key ID="STR_BST_task_1_description">
-				<Original>description</Original>
+				<Original>Rearm description</Original>
 			</Key>
 		</Container>
 		<Container name="task_2">
 			<Key ID="STR_BST_task_2_title">
-				<Original>title</Original>
+				<Original>Kill patrol title</Original>
 			</Key>
 			<Key ID="STR_BST_task_2_description">
-				<Original>description</Original>
+				<Original>Kill patrol description</Original>
+			</Key>
+		</Container>
+		<Container name="task_3">
+			<Key ID="STR_BST_task_3_title">
+				<Original>Search intel title</Original>
+			</Key>
+			<Key ID="STR_BST_task_3_description">
+				<Original>Search intel description</Original>
 			</Key>
 		</Container>
 	</Package>
