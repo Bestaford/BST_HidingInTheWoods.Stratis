@@ -9,6 +9,14 @@
 				<Original>description</Original>
 			</Key>
 		</Container>
+		<Container name="task_2">
+			<Key ID="STR_BST_task_2_title">
+				<Original>title</Original>
+			</Key>
+			<Key ID="STR_BST_task_2_description">
+				<Original>description</Original>
+			</Key>
+		</Container>
 	</Package>
 	<Package name="briefing">
 		<Key ID="STR_BST_briefing_situation">
