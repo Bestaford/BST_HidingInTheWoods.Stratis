@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=101;
+	toggles=97;
 	class ItemIDProvider
 	{
 		nextID=483;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=743;
+		nextID=827;
 	};
 	class Camera
 	{
-		pos[]={5563.9937,66.556717,4445.2261};
-		dir[]={0.0022554896,-0.33777344,0.94123656};
-		up[]={0.00080940238,0.94122678,0.33777615};
-		aside[]={1.000008,6.2591425e-09,-0.0023971517};
+		pos[]={4996.7344,212.18663,5926.4277};
+		dir[]={-0.57850772,-0.44787702,0.68172073};
+		up[]={-0.28979036,0.89409423,0.34149233};
+		aside[]={0.76246864,-4.0163286e-09,0.64703155};
 	};
 };
 binarizationWanted=0;
@@ -284,6 +284,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="this setIdentity ""Armstrong"";";
 						name="armstrong";
 						description="Sgt. Armstrong - Squad Leader";
 						isPlayer=1;
@@ -336,6 +337,7 @@ class Mission
 					{
 						skill=0.40000001;
 						rank="CORPORAL";
+						init="this setIdentity ""Frost"";";
 						name="frost";
 						description="Cpl. Frost - Autorifleman";
 						isPlayable=1;
@@ -387,6 +389,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
+						init="this setIdentity ""Larkin"";";
 						name="larkin";
 						description="Cpl. Larkin - Grenadier";
 						isPlayable=1;
@@ -437,6 +440,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="this setIdentity ""Kerry"";";
 						name="kerry";
 						description="Cpl. Kerry - Marksman";
 						isPlayable=1;
@@ -487,6 +491,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.44999999;
+						init="this setIdentity ""Jackson"";";
 						name="jackson";
 						description="Pvt. Jackson - Missile Specialist (AT)";
 						isPlayable=1;
@@ -537,6 +542,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="this setIdentity ""Tanny"";";
 						name="tanny";
 						description="Pvt. Tanny - Asst. Missile Specialist (AT)";
 						isPlayable=1;
@@ -587,6 +593,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="this setIdentity ""Nichols"";";
 						name="nichols";
 						description="Pvt. Nichols - Ammo Bearer";
 						isPlayable=1;
@@ -637,6 +644,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="this setIdentity ""Lacey"";";
 						name="lacey";
 						description="Pvt. Lacey - Combat Life Saver";
 						isPlayable=1;
@@ -691,7 +699,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Delta";
+							value="Bravo";
 						};
 					};
 				};
@@ -1189,6 +1197,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
+						init="this setIdentity ""Reynolds"";" \n "if (!isPlayer this) then { [this, ""STAND"", ""ASIS""] call BIS_fnc_ambientAnimCombat; };" \n "removeSwitchableUnit this;";
 						name="reynolds";
 						description="Lt. Reynolds - Zeus";
 						isPlayable=1;
@@ -1290,7 +1299,6 @@ class Mission
 					};
 					id=31;
 					type="B_Helipilot_F";
-					atlOffset=1.5258789e-05;
 				};
 				class Item1
 				{
@@ -1301,12 +1309,12 @@ class Mission
 						angles[]={6.2606878,3.1415927,0.017505653};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 					};
 					id=32;
 					type="B_Helipilot_F";
-					atlOffset=2.1418762;
 				};
 				class Item2
 				{
@@ -1317,12 +1325,12 @@ class Mission
 						angles[]={6.2606878,3.1415927,0.017505653};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 					};
 					id=33;
 					type="B_helicrew_F";
-					atlOffset=2.1418762;
 				};
 				class Item3
 				{
@@ -1333,12 +1341,12 @@ class Mission
 						angles[]={6.2606878,3.1415927,0.017505653};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 					};
 					id=34;
 					type="B_helicrew_F";
-					atlOffset=2.1418762;
 				};
 			};
 			class Attributes
@@ -1411,7 +1419,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Bravo";
+							value="Charlie";
 						};
 					};
 				};
@@ -1473,8 +1481,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4892,188.35893,5901.0498};
-						angles[]={0,3.4033928,0};
+						position[]={4893.1279,188.44408,5900.8594};
+						angles[]={0,3.6651924,0};
 					};
 					side="West";
 					flags=7;
@@ -1491,7 +1499,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4891,188.32645,5898.0498};
-						angles[]={6.2806959,3.4021282,0.059929453};
+						angles[]={6.2806959,3.4022796,0.059929453};
 					};
 					side="West";
 					flags=5;
@@ -1508,7 +1516,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4890,188.27144,5900.0498};
+						position[]={4889.6279,188.18349,5900.6899};
 						angles[]={0,2.8797932,0};
 					};
 					side="West";
@@ -1523,7 +1531,7 @@ class Mission
 			};
 			class Attributes
 			{
-				init="this setVariable [""BST_stop"", true]";
+				init="if (isServer) then { doStop (units this) };";
 				behaviour="SAFE";
 			};
 			class CrewLinks
@@ -1560,7 +1568,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Charlie";
+							value="Delta";
 						};
 					};
 				};
@@ -1572,8 +1580,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4890.957,189.04414,5899.0732};
-				angles[]={6.2806959,3.4021282,0.059929453};
+				position[]={4891.1753,189.061,5899.0229};
+				angles[]={6.2806959,3.4022796,0.059929453};
 			};
 			side="West";
 			flags=4;
@@ -1582,7 +1590,6 @@ class Mission
 			};
 			id=50;
 			type="B_Mortar_01_F";
-			atlOffset=-0.00390625;
 		};
 		class Item9
 		{
@@ -2695,7 +2702,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						name="nato_squad_leader";
+						init="[this, ""STAND_IA"", ""ASIS""] call BIS_fnc_ambientAnimCombat;";
 					};
 					id=82;
 					type="B_Soldier_SL_F";
@@ -2747,7 +2754,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Alpha 1";
+							value="Foxtrot";
 						};
 					};
 				};
@@ -2766,18 +2773,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4993,211.55695,5920.0498};
+						position[]={4993.7642,211.55545,5920.1118};
 						angles[]={0,1.8325957,0};
 					};
 					side="West";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
-						init="this setVariable [""BST_garrison"", true]";
 					};
 					id=100;
 					type="B_soldier_M_F";
-					atlOffset=0.00010681152;
+					atlOffset=2.5244446;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2815,7 +2821,7 @@ class Mission
 				behaviour="SAFE";
 			};
 			id=104;
-			atlOffset=0.00010681152;
+			atlOffset=2.5244446;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2827,7 +2833,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Alpha 2";
+							value="Golf";
 						};
 					};
 				};
@@ -2846,18 +2852,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5021,212.33994,5944.0498};
+						position[]={5021.1621,212.33987,5943.752};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
-						init="this setVariable [""BST_garrison"", true]";
 					};
 					id=102;
 					type="B_soldier_M_F";
-					atlOffset=3.8860016;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2895,7 +2899,6 @@ class Mission
 				behaviour="SAFE";
 			};
 			id=105;
-			atlOffset=3.8860016;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2907,7 +2910,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Alpha 3";
+							value="Hotel";
 						};
 					};
 				};
@@ -2926,18 +2929,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4880.77,190.64972,5902.939};
+						position[]={4881.4019,190.64894,5903.1558};
 						angles[]={0,2.3561947,0};
 					};
 					side="West";
 					flags=3;
 					class Attributes
 					{
-						init="this setVariable [""BST_garrison"", true]";
 					};
 					id=103;
 					type="B_soldier_M_F";
-					atlOffset=3.9920044;
+					atlOffset=3.9490051;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2975,7 +2977,7 @@ class Mission
 				behaviour="SAFE";
 			};
 			id=106;
-			atlOffset=3.9920044;
+			atlOffset=3.9490051;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2987,7 +2989,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Alpha 4";
+							value="India";
 						};
 					};
 				};
@@ -4593,7 +4595,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="this addAction " \n "[ " \n " ""Search for intel"", " \n " { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""]; " \n " }, " \n " nil, " \n " 1.5, " \n " true, " \n " true, " \n " """", " \n " ""!alive _target"", " \n " 10, " \n " false, " \n " """", " \n " """" " \n "];";
 					};
 					id=381;
 					type="I_G_Soldier_TL_F";
