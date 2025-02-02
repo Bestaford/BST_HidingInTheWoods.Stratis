@@ -28,6 +28,14 @@
 				<Original>Search intel hold action title</Original>
 			</Key>
 		</Container>
+		<Container name="task_4">
+			<Key ID="STR_BST_task_4_title">
+				<Original>Move to camp title</Original>
+			</Key>
+			<Key ID="STR_BST_task_4_description">
+				<Original>Move to camp description</Original>
+			</Key>
+		</Container>
 	</Package>
 	<Package name="briefing">
 		<Key ID="STR_BST_briefing_situation">
