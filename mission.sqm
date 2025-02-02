@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=229;
+	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=526;
+		nextID=533;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=939;
+		nextID=1037;
 	};
 	class Camera
 	{
-		pos[]={5813.1113,50.429604,4525.4668};
-		dir[]={-0.34778342,-0.75029325,0.56223392};
-		up[]={-0.39470196,0.6611051,0.6380834};
-		aside[]={0.85044539,0,0.52606362};
+		pos[]={5806.0396,46.486626,4504.8345};
+		dir[]={-1.2363449e-07,-0.70710683,0.70710683};
+		up[]={-1.2363449e-07,0.70710671,0.70710683};
+		aside[]={1,0,1.7484557e-07};
 	};
 };
 binarizationWanted=0;
@@ -255,7 +255,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=47;
+		items=49;
 		class Item0
 		{
 			dataType="Group";
@@ -1576,7 +1576,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4891.1753,189.061,5899.0229};
+				position[]={4890.9565,189.04782,5898.998};
 				angles[]={6.2806959,3.4022796,0.059929453};
 			};
 			side="West";
@@ -2045,7 +2045,7 @@ class Mission
 					name="Intel";
 					class Entities
 					{
-						items=6;
+						items=7;
 						class Item0
 						{
 							dataType="Logic";
@@ -2613,7 +2613,7 @@ class Mission
 								position[]={5811,21.295002,4534};
 								angles[]={6.2257466,0,6.2532005};
 							};
-							id=525;
+							id=528;
 							type="ModuleTaskCreate_F";
 							atlOffset=1.9073486e-06;
 							class CustomAttributes
@@ -2640,7 +2640,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="move";
+											value="attack";
 										};
 									};
 								};
@@ -2764,9 +2764,167 @@ class Mission
 								nAttributes=11;
 							};
 						};
+						class Item6
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={5811,21.0075,4525};
+								angles[]={0.012496558,0,6.1539087};
+							};
+							id=529;
+							type="ModuleTaskCreate_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ModuleTaskCreate_F_Destination";
+									expression="_this setVariable ['Destination',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ModuleTaskCreate_F_Type";
+									expression="_this setVariable ['Type',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="destroy";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ModuleTaskCreate_F_ShowNotification";
+									expression="_this setVariable ['ShowNotification',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="ModuleTaskCreate_F_Marker";
+									expression="_this setVariable ['Marker',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ModuleTaskCreate_F_Title";
+									expression="_this setVariable ['Title',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="@STR_BST_task_5_title";
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="ModuleTaskCreate_F_Description";
+									expression="_this setVariable ['Description',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="@STR_BST_task_5_description";
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="ModuleTaskCreate_F_ID";
+									expression="_this setVariable ['ID',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="task_5";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="ModuleTaskCreate_F_AlwaysVisible";
+									expression="_this setVariable ['AlwaysVisible',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=0;
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="ModuleTaskCreate_F_Owner";
+									expression="_this setVariable ['Owner',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=4;
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="ModuleTaskCreate_F_State";
+									expression="_this setVariable ['State',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="ASSIGNED";
+										};
+									};
+								};
+								class Attribute10
+								{
+									property="ModuleTaskCreate_F_IDParent";
+									expression="_this setVariable ['IDParent',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								nAttributes=11;
+							};
+						};
 					};
 					id=74;
-					atlOffset=-14.261169;
+					atlOffset=-7.5323448;
 				};
 				class Item4
 				{
@@ -2834,16 +2992,15 @@ class Mission
 				};
 			};
 			id=60;
-			atlOffset=37.523499;
+			atlOffset=26.730377;
 		};
 		class Item10
 		{
 			dataType="Marker";
-			position[]={4891,188.327,5899};
+			position[]={4891,188.3275,5899};
 			name="marker_nato_mortar";
 			type="b_mortar";
 			id=63;
-			atlOffset=-0.00050354004;
 		};
 		class Item11
 		{
@@ -4639,17 +4796,18 @@ class Mission
 		class Item23
 		{
 			dataType="Marker";
-			position[]={5811,82.980011,4534};
+			position[]={5811,82.980003,4534};
 			name="marker_fia_camp";
 			markerType="ELLIPSE";
 			type="";
 			colorName="ColorRed";
+			alpha=0;
 			fillName="FDiagonal";
 			a=150;
 			b=150;
-			angle=329.99985;
+			angle=329.99997;
 			id=379;
-			atlOffset=61.685013;
+			atlOffset=61.685005;
 		};
 		class Item24
 		{
@@ -6390,13 +6548,13 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5808.2354,21.346962,4526.7603};
+						position[]={5808,21.37394,4527.0498};
 					};
 					side="Independent";
 					flags=7;
@@ -6435,6 +6593,18 @@ class Mission
 						};
 						nAttributes=2;
 					};
+				};
+				class Item1
+				{
+					dataType="Waypoint";
+					loiterAltitude=-3.4028235e+38;
+					position[]={5808,21.360001,4528};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=526;
+					type="Hold";
 				};
 			};
 			class Attributes
@@ -6796,7 +6966,7 @@ class Mission
 			position[]={4833,124.99999,4721};
 			class Attributes
 			{
-				text="FIA patrol intel is found";
+				text="Intel is found";
 				condition="BST_intelFound";
 				sizeA=0;
 				sizeB=0;
@@ -6805,16 +6975,49 @@ class Mission
 			id=523;
 			type="EmptyDetector";
 		};
+		class Item47
+		{
+			dataType="Trigger";
+			position[]={5811,21.237499,4533};
+			class Attributes
+			{
+				text="FIA camp is found";
+				onActivation="BST_campFound = true;";
+				sizeA=15;
+				sizeB=15;
+				activationType="WEST D";
+				activationBy="GUER";
+				isServerOnly=1;
+			};
+			id=527;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item48
+		{
+			dataType="Trigger";
+			position[]={5806,21.497501,4531};
+			class Attributes
+			{
+				text="FIA camp OR intel is found";
+				condition="_intelFound = missionNamespace getVariable [""BST_intelFound"", false];" \n "_campFound = missionNamespace getVariable [""BST_campFound"", false];" \n "_intelFound || _campFound";
+				onActivation="""marker_fia_camp"" setMarkerAlpha 1;";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=532;
+			type="EmptyDetector";
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=21;
+			nextID=22;
 		};
 		class Links
 		{
-			items=21;
+			items=22;
 			class Item0
 			{
 				linkID=0;
@@ -7018,8 +7221,18 @@ class Mission
 			class Item20
 			{
 				linkID=20;
-				item0=523;
-				item1=525;
+				item0=532;
+				item1=528;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item21
+			{
+				linkID=21;
+				item0=532;
+				item1=529;
 				class CustomData
 				{
 					type="Sync";

@@ -30,10 +30,18 @@
 		</Container>
 		<Container name="task_4">
 			<Key ID="STR_BST_task_4_title">
-				<Original>Move to camp title</Original>
+				<Original>Clear camp title</Original>
 			</Key>
 			<Key ID="STR_BST_task_4_description">
-				<Original>Move to camp description</Original>
+				<Original>Clear camp description</Original>
+			</Key>
+		</Container>
+		<Container name="task_5">
+			<Key ID="STR_BST_task_5_title">
+				<Original>Destroy caches title</Original>
+			</Key>
+			<Key ID="STR_BST_task_5_description">
+				<Original>Destroy caches description</Original>
 			</Key>
 		</Container>
 	</Package>
