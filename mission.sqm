@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=869;
+		nextID=883;
 	};
 	class Camera
 	{
-		pos[]={5066.4897,198.59355,4298.5454};
-		dir[]={-0.090389252,-0.60077018,0.79429644};
-		up[]={-0.067927971,0.79942101,0.59691757};
-		aside[]={0.99358767,5.5715645e-09,0.1130683};
+		pos[]={5004.1729,233.35437,5882.6099};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -1232,6 +1232,7 @@ class Mission
 			class Attributes
 			{
 				behaviour="SAFE";
+				formation="DIAMOND";
 			};
 			id=23;
 			atlOffset=0.0079956055;
@@ -1345,6 +1346,7 @@ class Mission
 			class Attributes
 			{
 				behaviour="SAFE";
+				formation="DIAMOND";
 			};
 			class CrewLinks
 			{
@@ -1526,6 +1528,7 @@ class Mission
 			{
 				init="if (isServer) then { doStop (units this) };";
 				behaviour="SAFE";
+				formation="DIAMOND";
 			};
 			class CrewLinks
 			{
@@ -2734,6 +2737,7 @@ class Mission
 			class Attributes
 			{
 				behaviour="SAFE";
+				formation="DIAMOND";
 			};
 			id=83;
 			class CustomAttributes
@@ -2812,6 +2816,7 @@ class Mission
 			class Attributes
 			{
 				behaviour="SAFE";
+				formation="DIAMOND";
 			};
 			id=104;
 			atlOffset=2.5244446;
@@ -2890,6 +2895,7 @@ class Mission
 			class Attributes
 			{
 				behaviour="SAFE";
+				formation="DIAMOND";
 			};
 			id=105;
 			class CustomAttributes
@@ -2968,6 +2974,7 @@ class Mission
 			class Attributes
 			{
 				behaviour="SAFE";
+				formation="DIAMOND";
 			};
 			id=106;
 			atlOffset=3.9490051;
@@ -4439,7 +4446,7 @@ class Mission
 			fillName="FDiagonal";
 			a=150;
 			b=150;
-			angle=329.99991;
+			angle=329.99988;
 			id=379;
 			atlOffset=61.685013;
 		};
