@@ -5,25 +5,25 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=101;
+	toggles=229;
 	class ItemIDProvider
 	{
-		nextID=533;
+		nextID=537;
 	};
 	class MarkerIDProvider
 	{
-		nextID=14;
+		nextID=18;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1037;
+		nextID=1051;
 	};
 	class Camera
 	{
-		pos[]={5806.0396,46.486626,4504.8345};
-		dir[]={-1.2363449e-07,-0.70710683,0.70710683};
-		up[]={-1.2363449e-07,0.70710671,0.70710683};
-		aside[]={1,0,1.7484557e-07};
+		pos[]={4805.9736,166.23283,4551.5146};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -255,7 +255,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=49;
+		items=53;
 		class Item0
 		{
 			dataType="Group";
@@ -4805,7 +4805,7 @@ class Mission
 			fillName="FDiagonal";
 			a=150;
 			b=150;
-			angle=329.99997;
+			angle=329.99994;
 			id=379;
 			atlOffset=61.685005;
 		};
@@ -7000,13 +7000,47 @@ class Mission
 			{
 				text="FIA camp OR intel is found";
 				condition="_intelFound = missionNamespace getVariable [""BST_intelFound"", false];" \n "_campFound = missionNamespace getVariable [""BST_campFound"", false];" \n "_intelFound || _campFound";
-				onActivation="""marker_fia_camp"" setMarkerAlpha 1;";
+				onActivation="""marker_fia_camp"" setMarkerAlpha 1;" \n """marker_fia_camp_unit"" setMarkerAlpha 1;" \n """marker_fia_camp_unit_size"" setMarkerAlpha 1;";
 				sizeA=0;
 				sizeB=0;
 				isServerOnly=1;
 			};
 			id=532;
 			type="EmptyDetector";
+		};
+		class Item49
+		{
+			dataType="Marker";
+			position[]={4805,138.53,4582};
+			name="marker_fia_patrol_unit";
+			type="n_inf";
+			id=533;
+		};
+		class Item50
+		{
+			dataType="Marker";
+			position[]={4805,138.53,4582};
+			name="marker_fia_patrol_unit_size";
+			type="group_1";
+			id=534;
+		};
+		class Item51
+		{
+			dataType="Marker";
+			position[]={5811,21.295,4534};
+			name="marker_fia_camp_unit";
+			type="n_hq";
+			alpha=0;
+			id=535;
+		};
+		class Item52
+		{
+			dataType="Marker";
+			position[]={5811,21.295,4534};
+			name="marker_fia_camp_unit_size";
+			type="group_2";
+			alpha=0;
+			id=536;
 		};
 	};
 	class Connections
