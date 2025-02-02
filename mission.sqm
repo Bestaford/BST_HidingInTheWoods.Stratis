@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=613;
+	toggles=609;
 	class ItemIDProvider
 	{
 		nextID=551;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1096;
+		nextID=1111;
 	};
 	class Camera
 	{
-		pos[]={5066.5532,227.76111,5862.8203};
-		dir[]={-0.8542707,-0.34592208,0.38830104};
-		up[]={-0.3149938,0.93822682,0.14317842};
-		aside[]={0.4138478,3.8089638e-08,0.91047508};
+		pos[]={5026.4326,213.32753,5908.5342};
+		dir[]={-0.92875975,-0.33289647,0.16380577};
+		up[]={-0.32793933,0.94291401,0.057840541};
+		aside[]={0.17371142,-8.9744572e-07,0.98492372};
 	};
 };
 binarizationWanted=0;
@@ -1016,6 +1016,7 @@ class Mission
 							};
 							id=550;
 							type="B_Truck_01_medical_F";
+							atlOffset=-0.00039672852;
 						};
 						class Item3
 						{
@@ -1032,6 +1033,7 @@ class Mission
 							};
 							id=547;
 							type="B_Truck_01_transport_F";
+							atlOffset=-0.0052490234;
 						};
 						class Item4
 						{
@@ -1048,7 +1050,7 @@ class Mission
 							};
 							id=548;
 							type="B_MRAP_01_F";
-							atlOffset=3.0517578e-05;
+							atlOffset=-0.0054626465;
 						};
 						class Item5
 						{
@@ -1068,7 +1070,7 @@ class Mission
 						};
 					};
 					id=58;
-					atlOffset=-0.0083770752;
+					atlOffset=-0.0071563721;
 				};
 				class Item2
 				{
@@ -1186,7 +1188,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5009.9927,209.35272,5924.9873};
+								position[]={5009.6611,209.34976,5925.0073};
 								angles[]={6.2656889,5.7596302,0.0099949092};
 							};
 							side="Empty";
@@ -1238,11 +1240,11 @@ class Mission
 						};
 					};
 					id=61;
-					atlOffset=-1.7842712;
+					atlOffset=-1.7844543;
 				};
 			};
 			id=22;
-			atlOffset=-0.9367218;
+			atlOffset=-0.93757629;
 		};
 		class Item2
 		{
