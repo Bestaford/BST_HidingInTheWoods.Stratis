@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1066;
+		nextID=1081;
 	};
 	class Camera
 	{
-		pos[]={6300.3296,49.908871,5121.9619};
-		dir[]={0.65988272,-0.31157276,0.68372929};
-		up[]={0.21637635,0.95022088,0.22419506};
-		aside[]={0.7195465,-2.7084025e-07,-0.69445139};
+		pos[]={6423.7656,92.739059,5043.3052};
+		dir[]={-0.85174501,-0.34189358,-0.39706668};
+		up[]={-0.30988371,0.93973505,-0.14446092};
+		aside[]={-0.42252564,-1.8579885e-07,0.90636379};
 	};
 };
 binarizationWanted=0;
@@ -4806,7 +4806,7 @@ class Mission
 			fillName="FDiagonal";
 			a=150;
 			b=150;
-			angle=329.99991;
+			angle=329.99988;
 			id=379;
 			atlOffset=61.685005;
 		};
@@ -5119,14 +5119,14 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4808,193.36644,4398.0498};
-						angles[]={0.064906895,4.712389,6.278194};
+						position[]={4808,193.36333,4398.0996};
+						angles[]={0.062418513,4.712389,6.255693};
 					};
 					side="Independent";
 					flags=7;
@@ -5142,45 +5142,25 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4810.5,193.15321,4400.5996};
-						angles[]={0.044972077,4.712389,6.2731848};
+						position[]={4809.5,193.41272,4396.6494};
+						angles[]={0.062418513,4.712389,6.255693};
 					};
 					side="Independent";
 					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-					};
-					id=408;
-					type="I_G_Soldier_AR_F";
-					atlOffset=1.5258789e-05;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4810.5,193.89819,4395.5996};
-						angles[]={0.35703766,4.712389,0.19165647};
-					};
-					side="Independent";
-					flags=1;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=409;
 					type="I_G_Soldier_F";
-					atlOffset=0.32632446;
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4813,193.4417,4398.0996};
-						angles[]={0.044970755,4.712389,0.15133385};
+						position[]={4812,193.24194,4399.1494};
+						angles[]={0.044972081,4.712389,6.2731848};
 					};
 					side="Independent";
 					flags=4;
@@ -5221,7 +5201,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -5263,13 +5243,13 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5566,131.09644,4246.0498};
+						position[]={5566,131.08746,4246.0996};
 						angles[]={0.17809334,6.273613,0.087279201};
 					};
 					side="Independent";
@@ -5286,27 +5266,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5568.5239,131.76247,4243.6235};
-						angles[]={0.18534794,6.273613,0.09719272};
-					};
-					side="Independent";
-					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-					};
-					id=426;
-					type="I_G_Soldier_AR_F";
-					atlOffset=1.5258789e-05;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5563.5239,131.45432,4243.5757};
-						angles[]={0.21655147,6.273613,0.044966776};
+						position[]={5564.5142,131.2863,4244.6353};
+						angles[]={0.19979759,6.273613,0.064910568};
 					};
 					side="Independent";
 					flags=5;
@@ -5317,13 +5278,13 @@ class Mission
 					id=427;
 					type="I_G_Soldier_F";
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5566.0479,132.12799,4241.0996};
-						angles[]={0.21655147,6.273613,0.052454785};
+						position[]={5567.0381,131.96121,4242.1592};
+						angles[]={0.20459719,6.273613,0.064911485};
 					};
 					side="Independent";
 					flags=4;
@@ -5364,7 +5325,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -5390,13 +5351,13 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6265,95.238937,4763.0498};
+						position[]={6265,95.240059,4763.0996};
 						angles[]={6.2606897,4.6779342,6.1245303};
 					};
 					side="Independent";
@@ -5413,25 +5374,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6267.4126,94.794861,4765.6841};
-						angles[]={0.047464538,4.6779342,6.1294084};
-					};
-					side="Independent";
-					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-					};
-					id=431;
-					type="I_G_Soldier_AR_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6267.5845,94.772263,4760.687};
+						position[]={6266.5508,94.960495,4761.7021};
 						angles[]={6.2606897,4.6779342,6.1245303};
 					};
 					side="Independent";
@@ -5443,13 +5386,13 @@ class Mission
 					id=432;
 					type="I_G_Soldier_F";
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6269.9971,94.436378,4763.272};
-						angles[]={6.2631865,4.6779342,6.1196594};
+						position[]={6268.9629,94.61132,4764.2866};
+						angles[]={0.047465794,4.6779342,6.1196599};
 					};
 					side="Independent";
 					flags=4;
@@ -5459,7 +5402,6 @@ class Mission
 					};
 					id=488;
 					type="I_G_medic_F";
-					atlOffset=7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5491,7 +5433,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -5533,14 +5475,14 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4323,177.26642,4369.0498};
-						angles[]={0,0,6.278182};
+						position[]={4323,177.26643,4369.2988};
+						angles[]={-0,0,6.278182};
 					};
 					side="Independent";
 					flags=7;
@@ -5556,26 +5498,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4325.5,177.28719,4366.5996};
-						angles[]={0.010000871,0,0.0074931863};
-					};
-					side="Independent";
-					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-					};
-					id=453;
-					type="I_G_Soldier_AR_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4320.5,177.21294,4366.5996};
-						angles[]={0.019996034,0,0.024996169};
+						position[]={4321.5,177.20972,4367.8486};
+						angles[]={0.022498533,0,0.022493234};
 					};
 					side="Independent";
 					flags=5;
@@ -5586,13 +5510,13 @@ class Mission
 					id=454;
 					type="I_G_Soldier_F";
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4323,177.32544,4364.0996};
-						angles[]={0.019996032,0,0.024996169};
+						position[]={4324,177.32222,4365.3486};
+						angles[]={0.022498533,0,0.022493234};
 					};
 					side="Independent";
 					flags=4;
@@ -5633,7 +5557,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -5659,13 +5583,13 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5312,95.79644,4205.0498};
+						position[]={5312,95.800179,4205.0996};
 						angles[]={6.2083263,1.5429814,6.278182};
 					};
 					side="Independent";
@@ -5682,26 +5606,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5309.5703,95.454185,4202.5313};
-						angles[]={6.1637559,1.5429814,0.034984674};
-					};
-					side="Independent";
-					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-					};
-					id=461;
-					type="I_G_Soldier_AR_F";
-					atlOffset=7.6293945e-06;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5309.4316,95.898926,4207.5293};
+						position[]={5310.459,95.863182,4206.6074};
 						angles[]={6.2083263,1.5429814,0.032487731};
 					};
 					side="Independent";
@@ -5713,13 +5618,13 @@ class Mission
 					id=462;
 					type="I_G_Soldier_F";
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5307.002,95.590981,4204.9609};
-						angles[]={6.2207661,1.5429758,0.047465794};
+						position[]={5308.0293,95.581116,4204.0386};
+						angles[]={6.1637559,1.5429814,0.034984674};
 					};
 					side="Independent";
 					flags=4;
@@ -5760,7 +5665,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -5786,13 +5691,13 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5064,173.95143,4324.0498};
+						position[]={5064,173.95206,4324.0996};
 						angles[]={6.2706842,6.2549953,6.2033577};
 					};
 					side="Independent";
@@ -5809,27 +5714,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5066.5693,173.71024,4321.6709};
-						angles[]={6.268187,6.2549953,6.2033577};
-					};
-					side="Independent";
-					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-					};
-					id=467;
-					type="I_G_Soldier_AR_F";
-					atlOffset=1.5258789e-05;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5061.5713,174.00856,4321.5303};
-						angles[]={6.2631865,6.2549953,6.2307353};
+						position[]={5062.543,173.98459,4322.6074};
+						angles[]={6.2581916,6.2549953,6.2357197};
 					};
 					side="Independent";
 					flags=5;
@@ -5840,13 +5726,13 @@ class Mission
 					id=468;
 					type="I_G_Soldier_F";
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5064.1411,173.78233,4319.1021};
-						angles[]={6.220767,6.2549982,6.2133002};
+						position[]={5065.1123,173.77681,4320.1792};
+						angles[]={6.2581916,6.2549953,6.2132993};
 					};
 					side="Independent";
 					flags=4;
@@ -5887,7 +5773,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -5913,13 +5799,13 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6026,22.030798,4654.0996};
+						position[]={6026,22.035156,4654.1494};
 						angles[]={6.1959085,4.6779337,0.049958061};
 					};
 					side="Independent";
@@ -5936,26 +5822,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6028.4126,22.389498,4656.7339};
-						angles[]={6.1983895,4.6779337,0.07237374};
-					};
-					side="Independent";
-					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-					};
-					id=473;
-					type="I_G_Soldier_AR_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6028.5845,21.941067,4651.7368};
-						angles[]={6.1711559,4.6779337,0.042475242};
+						position[]={6027.5508,21.990416,4652.752};
+						angles[]={6.1959085,4.6779337,0.049958061};
 					};
 					side="Independent";
 					flags=5;
@@ -5966,13 +5834,13 @@ class Mission
 					id=474;
 					type="I_G_Soldier_F";
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6030.9971,22.315681,4654.3218};
-						angles[]={6.1662135,4.6779361,0.072378799};
+						position[]={6029.9629,22.359924,4655.3364};
+						angles[]={6.1662216,4.6779337,0.07237374};
 					};
 					side="Independent";
 					flags=4;
@@ -5982,7 +5850,6 @@ class Mission
 					};
 					id=484;
 					type="I_G_medic_F";
-					atlOffset=-1.9073486e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6014,7 +5881,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -6040,13 +5907,13 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5562,62.466438,4455.0498};
+						position[]={5562,62.463699,4455.0996};
 						angles[]={0.054944519,6.273613,6.183517};
 					};
 					side="Independent";
@@ -6063,26 +5930,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5564.5239,62.365829,4452.6235};
-						angles[]={0.054944519,6.273613,6.218276};
-					};
-					side="Independent";
-					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-					};
-					id=479;
-					type="I_G_Soldier_AR_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5559.5239,62.738144,4452.5757};
-						angles[]={0.03748076,6.273613,0.0074931863};
+						position[]={5560.5142,62.659565,4453.6353};
+						angles[]={0.037482351,6.273613,6.2008729};
 					};
 					side="Independent";
 					flags=5;
@@ -6093,13 +5942,13 @@ class Mission
 					id=480;
 					type="I_G_Soldier_F";
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5562.0479,62.768013,4450.0996};
-						angles[]={0.089762285,6.2736206,6.2008753};
+						position[]={5563.0381,62.590954,4451.1592};
+						angles[]={0.089758366,6.273613,6.2008729};
 					};
 					side="Independent";
 					flags=4;
@@ -6109,7 +5958,6 @@ class Mission
 					};
 					id=483;
 					type="I_G_medic_F";
-					atlOffset=3.8146973e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6141,7 +5989,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -6167,14 +6015,14 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5813,21.506439,4512.0498};
-						angles[]={0.11202893,0.00032455919,6.0857902};
+						position[]={5813,21.501831,4512.0996};
+						angles[]={0.092237726,0.00032455919,6.1294098};
 					};
 					side="Independent";
 					flags=7;
@@ -6190,26 +6038,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5815.499,21.38872,4509.5986};
-						angles[]={0.11942852,0.00032455919,6.1196594};
-					};
-					side="Independent";
-					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-					};
-					id=494;
-					type="I_G_Soldier_AR_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5810.499,22.255539,4509.6006};
-						angles[]={0.13909611,0.00032455919,6.0666351};
+						position[]={5811.4995,21.929523,4510.6499};
+						angles[]={0.11942901,0.00032455919,6.0857902};
 					};
 					side="Independent";
 					flags=5;
@@ -6220,13 +6050,13 @@ class Mission
 					id=495;
 					type="I_G_Soldier_F";
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5812.9985,22.142965,4507.0996};
-						angles[]={0.17324598,0.00032455919,6.1196589};
+						position[]={5813.9985,21.799786,4508.1489};
+						angles[]={0.11942852,0.00032455919,6.1196594};
 					};
 					side="Independent";
 					flags=4;
@@ -6236,7 +6066,6 @@ class Mission
 					};
 					id=496;
 					type="I_G_medic_F";
-					atlOffset=1.9073486e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6268,7 +6097,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -6294,14 +6123,14 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5792,22.021439,4534.0498};
-						angles[]={6.2182784,1.5707961,0.0049913442};
+						position[]={5792,22.016956,4534.0996};
+						angles[]={0.089758366,1.5707961,6.2332273};
 					};
 					side="Independent";
 					flags=7;
@@ -6317,44 +6146,24 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5789.5,22.385555,4531.5};
-						angles[]={6.2382135,1.5707961,0.01000052};
+						position[]={5790.5,21.974974,4535.6494};
+						angles[]={0.089758366,1.5707961,6.218276};
 					};
 					side="Independent";
 					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-					};
-					id=500;
-					type="I_G_Soldier_AR_F";
-					atlOffset=1.335144e-05;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5789.5,22.305502,4536.5};
-						angles[]={5.9261479,1.5707961,6.0915289};
-					};
-					side="Independent";
-					flags=1;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=501;
 					type="I_G_Soldier_F";
-					atlOffset=0.32632446;
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5787,22.335173,4534};
+						position[]={5788,22.318968,4533.1494};
 						angles[]={0.074860021,1.5707961,6.2033553};
 					};
 					side="Independent";
@@ -6396,7 +6205,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -6422,13 +6231,13 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5830,19.041439,4534.0498};
+						position[]={5830,19.054388,4534.0996};
 						angles[]={6.0288172,4.7347732,6.1440897};
 					};
 					side="Independent";
@@ -6445,26 +6254,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5832.5557,19.246174,4536.543};
-						angles[]={6.1859927,4.7347732,6.1342955};
-					};
-					side="Independent";
-					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-					};
-					id=506;
-					type="I_G_Soldier_AR_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5832.4434,18.166466,4531.5439};
-						angles[]={6.183517,4.7347732,6.228241};
+						position[]={5831.4658,18.46349,4532.6162};
+						angles[]={6.0288172,4.7347732,6.1440897};
 					};
 					side="Independent";
 					flags=5;
@@ -6475,12 +6266,12 @@ class Mission
 					id=507;
 					type="I_G_Soldier_F";
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5834.9985,18.491428,4533.9878};
+						position[]={5834.0215,18.814827,4535.0596};
 						angles[]={6.1196589,4.7347732,6.1342955};
 					};
 					side="Independent";
@@ -6491,7 +6282,6 @@ class Mission
 					};
 					id=508;
 					type="I_G_medic_F";
-					atlOffset=1.9073486e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6523,7 +6313,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -7120,7 +6910,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4683,183.215,4391};
-						angles[]={-0,0,0.024996169};
+						angles[]={0,0,0.024996169};
 					};
 					side="Empty";
 					class Attributes
