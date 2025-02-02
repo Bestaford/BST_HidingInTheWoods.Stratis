@@ -24,6 +24,9 @@
 			<Key ID="STR_BST_task_3_description">
 				<Original>Search intel description</Original>
 			</Key>
+			<Key ID="STR_BST_task_3_holdaction_title">
+				<Original>Search intel hold action title</Original>
+			</Key>
 		</Container>
 	</Package>
 	<Package name="briefing">

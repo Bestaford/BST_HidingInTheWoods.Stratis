@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=101;
+	toggles=229;
 	class ItemIDProvider
 	{
-		nextID=523;
+		nextID=525;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=897;
+		nextID=911;
 	};
 	class Camera
 	{
 		pos[]={6577.8467,91.911499,5178.6953};
-		dir[]={-0.042837922,-0.61803877,0.78501761};
-		up[]={-0.033675194,0.78614306,0.61712128};
-		aside[]={0.99854594,-4.4092303e-07,0.054490086};
+		dir[]={-0.042836759,-0.61802006,0.78499442};
+		up[]={-0.033674952,0.78616232,0.61710197};
+		aside[]={0.99851441,0,0.054488443};
 	};
 };
 binarizationWanted=0;
@@ -255,7 +255,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=46;
+		items=48;
 		class Item0
 		{
 			dataType="Group";
@@ -2368,12 +2368,11 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4831,124.59749,4719};
-								angles[]={6.2307339,0,0.15865518};
+								position[]={4831,124.64999,4720};
+								angles[]={6.2656889,0,0.15865479};
 							};
 							id=437;
 							type="ModuleTaskSetState_F";
-							atlOffset=-1.5258789e-05;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -2565,7 +2564,7 @@ class Mission
 						};
 					};
 					id=74;
-					atlOffset=20.640625;
+					atlOffset=20.683121;
 				};
 				class Item4
 				{
@@ -2633,7 +2632,7 @@ class Mission
 				};
 			};
 			id=60;
-			atlOffset=67.366791;
+			atlOffset=67.345543;
 		};
 		class Item10
 		{
@@ -4470,10 +4469,10 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="[ " \n " this, " \n " localize ""STR_BST_task_3_holdaction_title"", " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"", " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"", " \n " ""_this distance _target < 3 && !(missionNamespace getVariable ['BST_intelFound', false])"", " \n " ""_caller distance _target < 3 && !(missionNamespace getVariable ['BST_intelFound', false])"", " \n " {}, " \n " {}, " \n " { " \n "  BST_intelFound = true; " \n "  publicVariable ""BST_intelFound""; " \n " }, " \n " {}, " \n " [], " \n " 3 " \n "] call BIS_fnc_holdActionAdd";
 					};
 					id=381;
 					type="I_G_Soldier_TL_F";
-					atlOffset=7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4714,14 +4713,14 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
-					position[]={4829,124.84925,4721.1001};
+					position[]={4829,124.84924,4721.1001};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=395;
 					type="Cycle";
-					atlOffset=0.50000763;
+					atlOffset=0.5;
 					class AttachedTo
 					{
 						id=381;
@@ -4736,7 +4735,6 @@ class Mission
 				formation="COLUMN";
 			};
 			id=380;
-			atlOffset=7.6293945e-06;
 		};
 		class Item25
 		{
@@ -5153,7 +5151,7 @@ class Mission
 		class Item30
 		{
 			dataType="Trigger";
-			position[]={4831,124.64999,4720};
+			position[]={4831,124.6675,4721};
 			class Attributes
 			{
 				text="FIA patrol is killed";
@@ -5164,7 +5162,6 @@ class Mission
 			};
 			id=436;
 			type="EmptyDetector";
-			atlOffset=-7.6293945e-06;
 		};
 		class Item31
 		{
@@ -6500,6 +6497,7 @@ class Mission
 					};
 					id=520;
 					type="I_G_Soldier_F";
+					atlOffset=5.3405762e-05;
 				};
 				class Item1
 				{
@@ -6510,12 +6508,13 @@ class Mission
 						angles[]={0.012496647,4.7156734,0.037482351};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=521;
 					type="I_G_Soldier_F";
+					atlOffset=2.2423019;
 				};
 				class Item2
 				{
@@ -6567,6 +6566,7 @@ class Mission
 				};
 			};
 			id=518;
+			atlOffset=0.00058746338;
 		};
 		class Item45
 		{
@@ -6583,17 +6583,74 @@ class Mission
 			};
 			id=519;
 			type="I_G_Offroad_01_armed_F";
+			atlOffset=0.00058746338;
+		};
+		class Item46
+		{
+			dataType="Trigger";
+			position[]={4833,124.99999,4721};
+			class Attributes
+			{
+				text="Intel is found";
+				condition="BST_intelFound";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=523;
+			type="EmptyDetector";
+		};
+		class Item47
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4833,124.9725,4720};
+				angles[]={6.2556963,0,0.16109388};
+			};
+			id=524;
+			type="ModuleTaskSetState_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="SUCCEEDED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=18;
+			nextID=20;
 		};
 		class Links
 		{
-			items=18;
+			items=20;
 			class Item0
 			{
 				linkID=0;
@@ -6769,6 +6826,26 @@ class Mission
 				linkID=17;
 				item0=438;
 				item1=381;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item18
+			{
+				linkID=18;
+				item0=523;
+				item1=524;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item19
+			{
+				linkID=19;
+				item0=524;
+				item1=438;
 				class CustomData
 				{
 					type="Sync";
