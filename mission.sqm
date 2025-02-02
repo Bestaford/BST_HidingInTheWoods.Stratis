@@ -5,18 +5,18 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=229;
+	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=580;
+		nextID=586;
 	};
 	class MarkerIDProvider
 	{
-		nextID=18;
+		nextID=22;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1156;
+		nextID=1171;
 	};
 	class Camera
 	{
@@ -265,7 +265,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=58;
+		items=64;
 		class Item0
 		{
 			dataType="Group";
@@ -7159,7 +7159,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4088.6831,221.23143,4604.9849};
-						angles[]={-0,3.1415925,0};
+						angles[]={0,3.1415925,0};
 					};
 					side="Independent";
 					flags=4;
@@ -7175,15 +7175,16 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4088.6831,222.84128,4605.0156};
-						angles[]={-0,3.1415925,0};
+						angles[]={0,3.1415925,0};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=571;
 					type="I_G_Soldier_F";
+					atlOffset=1.609848;
 				};
 				class Item2
 				{
@@ -7243,7 +7244,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4089,222.83984,4605.0308};
-				angles[]={-0,3.1415925,0};
+				angles[]={0,3.1415925,0};
 			};
 			side="Independent";
 			flags=6;
@@ -7266,7 +7267,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5526.335,77.494812,4698.208};
-						angles[]={0,0.2617994,-0};
+						angles[]={0,0.2617994,0};
 					};
 					side="Independent";
 					flags=5;
@@ -7297,7 +7298,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5522.1631,77.498337,4698.3843};
-						angles[]={0,5.2359881,-0};
+						angles[]={0,5.2359881,0};
 					};
 					side="Independent";
 					flags=5;
@@ -7328,6 +7329,61 @@ class Mission
 				formation="DIAMOND";
 			};
 			id=573;
+		};
+		class Item58
+		{
+			dataType="Marker";
+			position[]={5874,76.964996,5118};
+			name="marker_18";
+			type="hd_ambush";
+			colorName="ColorWEST";
+			angle=45.000004;
+			id=580;
+		};
+		class Item59
+		{
+			dataType="Marker";
+			position[]={5212,201.28749,4903};
+			name="marker_19";
+			type="hd_ambush";
+			colorName="ColorWEST";
+			angle=74.999992;
+			id=581;
+		};
+		class Item60
+		{
+			dataType="Marker";
+			position[]={4448.896,139.994,4843.7021};
+			name="marker_20";
+			type="hd_ambush";
+			colorName="ColorWEST";
+			angle=120;
+			id=582;
+			atlOffset=-0.00016784668;
+		};
+		class Item61
+		{
+			dataType="Marker";
+			position[]={5316,128.01001,4362};
+			name="marker_21";
+			type="n_unknown";
+			id=583;
+		};
+		class Item62
+		{
+			dataType="Marker";
+			position[]={6127,76.122498,4747};
+			name="marker_22";
+			type="n_unknown";
+			id=584;
+		};
+		class Item63
+		{
+			dataType="Marker";
+			position[]={4232,201.85249,4475};
+			name="marker_23";
+			type="n_unknown";
+			id=585;
 		};
 	};
 	class Connections
