@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=229;
+	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=537;
+		nextID=547;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1051;
+		nextID=1066;
 	};
 	class Camera
 	{
-		pos[]={4805.9736,166.23283,4551.5146};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={6300.3296,49.908871,5121.9619};
+		dir[]={0.65988272,-0.31157276,0.68372929};
+		up[]={0.21637635,0.95022088,0.22419506};
+		aside[]={0.7195465,-2.7084025e-07,-0.69445139};
 	};
 };
 binarizationWanted=0;
@@ -63,7 +63,8 @@ addons[]=
 	"A3_Weapons_F_Explosives",
 	"A3_Modules_F_Curator_Mines",
 	"A3_Soft_F_Offroad_01",
-	"A3_Static_F_HMG_02"
+	"A3_Static_F_HMG_02",
+	"A3_Structures_F_Mil_Helipads"
 };
 class AddonsMetaData
 {
@@ -255,7 +256,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=53;
+		items=54;
 		class Item0
 		{
 			dataType="Group";
@@ -4805,7 +4806,7 @@ class Mission
 			fillName="FDiagonal";
 			a=150;
 			b=150;
-			angle=329.99994;
+			angle=329.99991;
 			id=379;
 			atlOffset=61.685005;
 		};
@@ -7041,6 +7042,126 @@ class Mission
 			type="group_2";
 			alpha=0;
 			id=536;
+		};
+		class Item53
+		{
+			dataType="Layer";
+			name="Helipads";
+			class Entities
+			{
+				items=7;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5531.3311,77.868248,4719.4053};
+						angles[]={6.2606921,0,0.012496647};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=539;
+					type="Land_HelipadEmpty_F";
+					atlOffset=-7.6293945e-06;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6006,87.385002,4958};
+						angles[]={0.012496647,0,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=540;
+					type="Land_HelipadEmpty_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5162.0752,213.91801,4929.519};
+						angles[]={6.190949,0,0.099666774};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=541;
+					type="Land_HelipadEmpty_F";
+					atlOffset=-1.5258789e-05;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5083,174.01749,4345};
+						angles[]={6.225749,0,6.2232571};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=542;
+					type="Land_HelipadEmpty_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4683,183.215,4391};
+						angles[]={-0,0,0.024996169};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=543;
+					type="Land_HelipadEmpty_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5018,178.01999,4528};
+						angles[]={0.012496647,0,0.0099949092};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=544;
+					type="Land_HelipadEmpty_F";
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6313,36,5135};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=546;
+					type="Land_HelipadEmpty_F";
+					atlOffset=0.125;
+				};
+			};
+			id=545;
+			atlOffset=43.382442;
 		};
 	};
 	class Connections
