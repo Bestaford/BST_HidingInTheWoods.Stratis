@@ -290,7 +290,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="this setIdentity ""Armstrong"";";
 						name="armstrong";
 						description="Sgt. Armstrong - Squad Leader";
 						isPlayer=1;
@@ -343,7 +342,6 @@ class Mission
 					{
 						skill=0.40000001;
 						rank="CORPORAL";
-						init="this setIdentity ""Frost"";";
 						name="frost";
 						description="Cpl. Frost - Autorifleman";
 						isPlayable=1;
@@ -395,7 +393,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="this setIdentity ""Larkin"";";
 						name="larkin";
 						description="Cpl. Larkin - Grenadier";
 						isPlayable=1;
@@ -446,7 +443,6 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="this setIdentity ""Kerry"";";
 						name="kerry";
 						description="Cpl. Kerry - Marksman";
 						isPlayable=1;
@@ -497,7 +493,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.44999999;
-						init="this setIdentity ""Jackson"";";
 						name="jackson";
 						description="Pvt. Jackson - Missile Specialist (AT)";
 						isPlayable=1;
@@ -548,7 +543,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="this setIdentity ""Tanny"";";
 						name="tanny";
 						description="Pvt. Tanny - Asst. Missile Specialist (AT)";
 						isPlayable=1;
@@ -599,7 +593,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="this setIdentity ""Nichols"";";
 						name="nichols";
 						description="Pvt. Nichols - Ammo Bearer";
 						isPlayable=1;
@@ -650,7 +643,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="this setIdentity ""Lacey"";";
 						name="lacey";
 						description="Pvt. Lacey - Combat Life Saver";
 						isPlayable=1;
@@ -1270,7 +1262,6 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="this setIdentity ""Reynolds"";" \n "if (!isPlayer this) then { [this, ""STAND"", ""ASIS""] call BIS_fnc_ambientAnimCombat; };" \n "removeSwitchableUnit this;";
 						name="reynolds";
 						description="Lt. Reynolds - Zeus";
 						isPlayable=1;
@@ -1607,7 +1598,6 @@ class Mission
 			};
 			class Attributes
 			{
-				init="if (isServer) then { doStop (units this) };";
 				behaviour="SAFE";
 				formation="DIAMOND";
 			};
@@ -3137,7 +3127,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="[this, ""STAND_IA"", ""ASIS""] call BIS_fnc_ambientAnimCombat;";
 					};
 					id=82;
 					type="B_Soldier_SL_F";
@@ -4910,7 +4899,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[ " \n " this, " \n " localize ""STR_BST_task_3_holdaction_title"", " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"", " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"", " \n " ""_this distance _target < 3 && !(missionNamespace getVariable ['BST_intelFound', false])"", " \n " ""_caller distance _target < 3 && !(missionNamespace getVariable ['BST_intelFound', false])"", " \n " {}, " \n " {}, " \n " { " \n "  BST_intelFound = true; " \n "  publicVariable ""BST_intelFound""; " \n " }, " \n " {}, " \n " [], " \n " 3 " \n "] call BIS_fnc_holdActionAdd";
 					};
 					id=381;
 					type="I_G_Soldier_TL_F";
@@ -7328,7 +7316,6 @@ class Mission
 			};
 			class Attributes
 			{
-				init="if (isServer) then { doStop (units this) };";
 				behaviour="SAFE";
 				formation="DIAMOND";
 			};
