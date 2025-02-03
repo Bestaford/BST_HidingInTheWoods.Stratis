@@ -11,14 +11,6 @@ class Header
 	maxPlayers = 9;
 };
 
-class CfgDebriefing
-{
-	class END1
-	{
-		subtitle = "Lt. Reynolds is killed";
-	};
-};
-
 class CfgIdentities
 {
 	class Reynolds // Officer
