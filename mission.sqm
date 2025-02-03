@@ -6,6 +6,10 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=101;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
 	class ItemIDProvider
 	{
 		nextID=586;
@@ -16,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1171;
+		nextID=1186;
 	};
 	class Camera
 	{
-		pos[]={5527.1553,79.158554,4696.0449};
-		dir[]={-0.71462572,-0.10369745,0.69178623};
-		up[]={-0.074508503,0.994609,0.072127059};
-		aside[]={0.69553822,-2.5669578e-07,0.71850044};
+		pos[]={5271.625,326.69479,4694.6577};
+		dir[]={-0.45599136,-0.3658419,-0.81132746};
+		up[]={-0.17924552,0.93067622,-0.31892517};
+		aside[]={-0.87176144,2.6004273e-08,0.48995847};
 	};
 };
 binarizationWanted=0;
@@ -7347,7 +7351,7 @@ class Mission
 			name="marker_19";
 			type="hd_ambush";
 			colorName="ColorWEST";
-			angle=74.999992;
+			angle=74.999985;
 			id=581;
 		};
 		class Item60
