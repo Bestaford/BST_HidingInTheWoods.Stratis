@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5000.2236,215.11635,5924.7666};
-		dir[]={-0.70319104,-0.32308912,0.6333856};
-		up[]={-0.24007671,0.94635761,0.21624543};
-		aside[]={0.66927713,-1.9473373e-07,0.74303895};
+		pos[]={5018.8623,216.60497,5888.7642};
+		dir[]={-0.59964049,-0.24760212,0.76105225};
+		up[]={-0.15325554,0.96884423,0.19451146};
+		aside[]={0.78550702,-4.8254151e-07,0.61890948};
 	};
 };
 binarizationWanted=0;
@@ -6297,6 +6297,7 @@ class Mission
 				onActivation="[""END1"", false] remoteExec [""BIS_fnc_endMission"", 0, true];";
 				sizeA=0;
 				sizeB=0;
+				isServerOnly=1;
 			};
 			id=586;
 			type="EmptyDetector";
