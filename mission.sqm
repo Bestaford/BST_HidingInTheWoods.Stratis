@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1305;
+		nextID=1318;
 	};
 	class Camera
 	{
-		pos[]={5008.1738,217.77974,5909.2358};
-		dir[]={-0.34227759,-0.53432089,0.7728942};
-		up[]={-0.21636148,0.84527445,0.48856559};
-		aside[]={0.91435969,-1.1808152e-07,0.40492573};
+		pos[]={4895.9561,200.2574,5879.2241};
+		dir[]={-0.20608948,-0.60382777,0.7700305};
+		up[]={-0.15611455,0.79710615,0.58330679};
+		aside[]={0.96601373,-2.3073517e-07,0.25854203};
 	};
 };
 binarizationWanted=0;
@@ -1550,6 +1550,23 @@ class Mission
 					};
 					id=47;
 					type="B_Soldier_TL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
@@ -1568,6 +1585,23 @@ class Mission
 					};
 					id=48;
 					type="B_support_Mort_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item2
 				{
@@ -1585,6 +1619,23 @@ class Mission
 					};
 					id=49;
 					type="B_support_AMort_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
