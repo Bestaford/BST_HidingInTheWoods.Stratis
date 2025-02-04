@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1331;
+		nextID=1344;
 	};
 	class Camera
 	{
-		pos[]={4997.4194,211.08844,5927.313};
-		dir[]={-0.51826137,-0.3074587,0.79806852};
-		up[]={-0.16746168,0.95155078,0.2578747};
-		aside[]={0.8386907,-2.5535701e-07,0.54464167};
+		pos[]={5000.2236,215.11635,5924.7666};
+		dir[]={-0.70319104,-0.32308912,0.6333856};
+		up[]={-0.24007671,0.94635761,0.21624543};
+		aside[]={0.66927713,-1.9473373e-07,0.74303895};
 	};
 };
 binarizationWanted=0;
@@ -1270,7 +1270,7 @@ class Mission
 						rank="LIEUTENANT";
 						init="this setIdentity ""Reynolds"";";
 						name="reynolds";
-						description="Lt. Reynolds - Zeus";
+						description="Lt. Reynolds - HQ (Zeus)";
 						isPlayable=1;
 					};
 					id=24;
