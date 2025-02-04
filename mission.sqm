@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=101;
+	toggles=229;
 	mods[]=
 	{
 		"3denEnhanced"
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1520;
+		nextID=1534;
 	};
 	class Camera
 	{
@@ -4863,7 +4863,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5811,82.980003,4534};
-			name="marker_4";
+			name="marker_camp_area";
 			markerType="ELLIPSE";
 			type="";
 			colorName="ColorRed";
@@ -4871,7 +4871,7 @@ class Mission
 			fillName="FDiagonal";
 			a=150;
 			b=150;
-			angle=329.99985;
+			angle=329.99997;
 			id=379;
 			atlOffset=61.685005;
 		};
@@ -6886,7 +6886,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5811,21.295,4534};
-			name="marker_9";
+			name="marker_camp_unit";
 			type="n_hq";
 			alpha=0;
 			id=535;
@@ -6895,7 +6895,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5811,21.295,4534};
-			name="marker_14";
+			name="marker_camp_unit_size";
 			type="group_2";
 			alpha=0;
 			id=536;
@@ -7714,6 +7714,7 @@ class Mission
 			{
 				text="Camp location is revealed";
 				condition="BST_intelFound || BST_campFound";
+				onActivation="""marker_camp_area"" setMarkerAlpha 1;" \n """marker_camp_unit"" setMarkerAlpha 1;" \n """marker_camp_unit_size"" setMarkerAlpha 1;";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={5,5,5};
