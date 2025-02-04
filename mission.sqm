@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=101;
+	toggles=229;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=586;
+		nextID=587;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1318;
+		nextID=1331;
 	};
 	class Camera
 	{
-		pos[]={4895.9561,200.2574,5879.2241};
-		dir[]={-0.20608948,-0.60382777,0.7700305};
-		up[]={-0.15611455,0.79710615,0.58330679};
-		aside[]={0.96601373,-2.3073517e-07,0.25854203};
+		pos[]={4997.4194,211.08844,5927.313};
+		dir[]={-0.51826137,-0.3074587,0.79806852};
+		up[]={-0.16746168,0.95155078,0.2578747};
+		aside[]={0.8386907,-2.5535701e-07,0.54464167};
 	};
 };
 binarizationWanted=0;
@@ -267,7 +267,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=57;
+		items=58;
 		class Item0
 		{
 			dataType="Group";
@@ -6285,6 +6285,21 @@ class Mission
 			name="marker_18";
 			type="n_unknown";
 			id=585;
+		};
+		class Item57
+		{
+			dataType="Trigger";
+			position[]={4993,208.61,5933};
+			class Attributes
+			{
+				text="NATO HQ is killed";
+				condition="!alive reynolds";
+				onActivation="[""END1"", false] remoteExec [""BIS_fnc_endMission"", 0, true];";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=586;
+			type="EmptyDetector";
 		};
 	};
 	class Connections
