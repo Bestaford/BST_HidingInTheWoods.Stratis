@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=229;
+	toggles=101;
 	mods[]=
 	{
 		"3denEnhanced"
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1534;
+		nextID=1548;
 	};
 	class Camera
 	{
-		pos[]={5814.1323,22.824173,4531.9365};
-		dir[]={-0.32798088,-0.21086492,0.9208557};
-		up[]={-0.070751511,0.97751355,0.19864507};
-		aside[]={0.94203717,5.8134901e-09,0.33552507};
+		pos[]={5815.4297,25.904797,4526.0786};
+		dir[]={-0.55685592,-0.26641926,0.7867555};
+		up[]={-0.15392613,0.96384859,0.21747307};
+		aside[]={0.81625545,-2.3064786e-07,0.57773852};
 	};
 };
 binarizationWanted=0;
@@ -4871,7 +4871,7 @@ class Mission
 			fillName="FDiagonal";
 			a=150;
 			b=150;
-			angle=329.99997;
+			angle=329.99994;
 			id=379;
 			atlOffset=61.685005;
 		};
@@ -7610,11 +7610,11 @@ class Mission
 			position[]={4806,138.57501,4582};
 			class Attributes
 			{
-				text="Mission start (15s)";
+				text="Mission start (10s)";
 				condition="BIS_fnc_init";
 				sizeA=0;
 				sizeB=0;
-				timeout[]={15,15,15};
+				timeout[]={10,10,10};
 				isServerOnly=1;
 			};
 			id=597;
@@ -7717,7 +7717,7 @@ class Mission
 				onActivation="""marker_camp_area"" setMarkerAlpha 1;" \n """marker_camp_unit"" setMarkerAlpha 1;" \n """marker_camp_unit_size"" setMarkerAlpha 1;";
 				sizeA=0;
 				sizeB=0;
-				timeout[]={5,5,5};
+				timeout[]={10,10,10};
 				isServerOnly=1;
 			};
 			id=606;
