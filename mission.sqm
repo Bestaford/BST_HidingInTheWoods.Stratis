@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1646;
+		nextID=1660;
 	};
 	class Camera
 	{
 		pos[]={5007.5718,212.14865,5909.9849};
-		dir[]={-0.9103713,-0.20658897,-0.35855883};
-		up[]={-0.19222036,0.97842532,-0.075708039};
-		aside[]={-0.36646637,4.7002686e-08,0.93044317};
+		dir[]={-0.91036248,-0.20658694,-0.35855541};
+		up[]={-0.19221543,0.9784283,-0.075705983};
+		aside[]={-0.36646062,7.4505806e-09,0.93043363};
 	};
 };
 binarizationWanted=0;
@@ -206,6 +206,8 @@ randomSeed=6670733;
 class ScenarioData
 {
 	author="Bestaford";
+	overviewText="Disrupt FIA operations by eliminating the patrol, gathering intelligence on their main camp, raiding the location, and destroying their weapons cache.";
+	overViewPicture="intro.paa";
 	class Header
 	{
 		gameType="Coop";
@@ -8053,7 +8055,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5003,208.47501,5918};
-			angle=5.7595863;
+			angle=5.7595849;
 			class Attributes
 			{
 				text="All players returned to base";
