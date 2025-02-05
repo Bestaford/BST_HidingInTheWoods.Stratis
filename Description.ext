@@ -1,7 +1,7 @@
 author        = "Bestaford";
-briefingName  = "Hiding in the woods";
-onLoadName    = "Hiding in the woods";
-onLoadMission = "Disrupt FIA operations by eliminating the patrol, gathering intelligence on their main camp, raiding the location, and destroying their weapons cache.";
+briefingName  = "@STR_BST_mission_title";
+onLoadName    = "@STR_BST_mission_title";
+onLoadMission = "@STR_BST_briefing_mission";
 loadScreen    = "intro.paa";
 
 class Header

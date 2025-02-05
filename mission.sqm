@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1674;
+		nextID=1716;
 	};
 	class Camera
 	{
 		pos[]={5007.5718,212.14865,5909.9849};
-		dir[]={-0.91036248,-0.20658693,-0.35855541};
-		up[]={-0.19221541,0.9784283,-0.075705975};
-		aside[]={-0.36646062,7.4505806e-09,0.93043363};
+		dir[]={-0.91036248,-0.2065869,-0.35855541};
+		up[]={-0.19221538,0.97842836,-0.07570596};
+		aside[]={-0.36646065,0,0.93043363};
 	};
 };
 binarizationWanted=0;
@@ -206,7 +206,7 @@ randomSeed=6670733;
 class ScenarioData
 {
 	author="Bestaford";
-	overviewText="Disrupt FIA operations by eliminating the patrol, gathering intelligence on their main camp, raiding the location, and destroying their weapons cache.";
+	overviewText="@STR_BST_briefing_mission";
 	overViewPicture="intro.paa";
 	class Header
 	{
@@ -258,7 +258,7 @@ class CustomAttributes
 				class data
 				{
 					singleType="STRING";
-					value="1. Destroy the FIA patrol at their last known location.<br/>2. Capture documents containing information on the location of the FIA camp.<br/>3. Clear the camp.<br/>4. Destroy the weapons cache.<br/>5. Return to base.<br/>";
+					value="";
 				};
 			};
 		};
@@ -271,7 +271,7 @@ class CustomAttributes
 				class data
 				{
 					singleType="STRING";
-					value="Disrupt FIA operations by eliminating the patrol, gathering intelligence on their main camp, raiding the location, and destroying their weapons cache.";
+					value="";
 				};
 			};
 		};
@@ -284,7 +284,7 @@ class CustomAttributes
 				class data
 				{
 					singleType="STRING";
-					value="An operation is underway on Stratis to neutralize the remnants of the rebel forces that have retreated from Altis. During reconnaissance, a NATO patrol has detected the presence of an FIA patrol in the area. This may indicate the likely location of an FIA camp nearby.";
+					value="";
 				};
 			};
 		};
@@ -297,7 +297,7 @@ class CustomAttributes
 				class data
 				{
 					singleType="STRING";
-					value="Alpha: HQ<br/>Bravo: Your team<br/>Charlie: Helicopter transport team<br/>Delta: Mortar team<br/>";
+					value="";
 				};
 			};
 		};
@@ -308,7 +308,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Hiding in the woods";
+		briefingName="@STR_BST_mission_title";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
@@ -3363,16 +3363,17 @@ class Mission
 		class Item9
 		{
 			dataType="Marker";
-			position[]={4891,188.3275,5899};
-			name="marker_12";
+			position[]={4891,188.327,5899};
+			name="marker_nato_mortar";
 			type="b_mortar";
 			id=63;
+			atlOffset=-0.00050354004;
 		};
 		class Item10
 		{
 			dataType="Marker";
 			position[]={4994,208.61501,5933};
-			name="marker_10";
+			name="marker_nato_hq";
 			type="b_hq";
 			id=64;
 			atlOffset=1.5258789e-05;
@@ -3381,7 +3382,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5027,208.63499,5905};
-			name="marker_8";
+			name="marker_nato_helicopter";
 			type="b_air";
 			id=65;
 		};
@@ -5588,7 +5589,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={4805,201,4582};
-			name="marker_5";
+			name="marker_patrol_area";
 			markerType="ELLIPSE";
 			type="";
 			colorName="ColorRed";
@@ -7172,7 +7173,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={4805,138.53,4582};
-			name="marker_11";
+			name="marker_patrol_unit";
 			type="n_inf";
 			id=533;
 		};
@@ -7180,7 +7181,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={4805,138.53,4582};
-			name="marker_15";
+			name="marker_patrol_unit_size";
 			type="group_1";
 			id=534;
 		};

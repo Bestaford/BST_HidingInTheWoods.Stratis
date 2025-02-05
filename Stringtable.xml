@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="BST_HidingInTheWoods">
+	<Key ID="STR_BST_mission_title">
+		<Original>Hiding in the woods</Original>
+	</Key>
+	<Key ID="STR_BST_briefing_situation">
+		<Original>An operation is underway on Stratis to neutralize the remnants of the rebel forces that have retreated from Altis. During reconnaissance, a NATO patrol has detected the presence of an FIA &lt;marker name='marker_patrol_unit'&gt;patrol&lt;/marker&gt; in the area. This may indicate the likely location of an FIA camp nearby.</Original>
+	</Key>
+	<Key ID="STR_BST_briefing_mission">
+		<Original>Disrupt FIA operations by eliminating the &lt;marker name='marker_patrol_unit'&gt;patrol&lt;/marker&gt;, gathering intelligence on their main camp, raiding the location, and destroying their weapons cache.</Original>
+	</Key>
+	<Key ID="STR_BST_briefing_execution">
+		<Original>1. Destroy the FIA &lt;marker name='marker_patrol_unit'&gt;patrol&lt;/marker&gt; at their last known location.&lt;br/&gt;2. Capture documents containing information on the location of the FIA camp.&lt;br/&gt;3. Clear the camp.&lt;br/&gt;4. Destroy the weapons cache.&lt;br/&gt;5. Return to base.&lt;br/&gt;</Original>
+	</Key>
+	<Key ID="STR_BST_briefing_signal">
+		<Original>&lt;marker name='marker_nato_hq'&gt;Alpha&lt;/marker&gt;: HQ&lt;br/&gt;Bravo: Your team&lt;br/&gt;&lt;marker name='marker_nato_helicopter'&gt;Charlie&lt;/marker&gt;: Helicopter transport team&lt;br/&gt;&lt;marker name='marker_nato_mortar'&gt;Delta&lt;/marker&gt;: Mortar team&lt;br/&gt;</Original>
+	</Key>
+</Project>
