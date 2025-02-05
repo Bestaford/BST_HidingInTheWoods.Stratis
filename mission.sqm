@@ -20,13 +20,13 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1660;
+		nextID=1674;
 	};
 	class Camera
 	{
 		pos[]={5007.5718,212.14865,5909.9849};
-		dir[]={-0.91036248,-0.20658694,-0.35855541};
-		up[]={-0.19221543,0.9784283,-0.075705983};
+		dir[]={-0.91036248,-0.20658693,-0.35855541};
+		up[]={-0.19221541,0.9784283,-0.075705975};
 		aside[]={-0.36646062,7.4505806e-09,0.93043363};
 	};
 };
@@ -245,6 +245,63 @@ class CustomAttributes
 			};
 		};
 		nAttributes=1;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="ENH_Briefing_BLUFOR_Execution";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Execution'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.3; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_EXECUTION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="1. Destroy the FIA patrol at their last known location.<br/>2. Capture documents containing information on the location of the FIA camp.<br/>3. Clear the camp.<br/>4. Destroy the weapons cache.<br/>5. Return to base.<br/>";
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="ENH_Briefing_BLUFOR_Mission";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Mission'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.2; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_MISSION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="Disrupt FIA operations by eliminating the patrol, gathering intelligence on their main camp, raiding the location, and destroying their weapons cache.";
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="ENH_Briefing_BLUFOR_Situation";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Situation'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.1; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SITUATION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="An operation is underway on Stratis to neutralize the remnants of the rebel forces that have retreated from Altis. During reconnaissance, a NATO patrol has detected the presence of an FIA patrol in the area. This may indicate the likely location of an FIA camp nearby.";
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="ENH_Briefing_BLUFOR_Signal";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Signal'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.4; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SIGNAL_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="Alpha: HQ<br/>Bravo: Your team<br/>Charlie: Helicopter transport team<br/>Delta: Mortar team<br/>";
+				};
+			};
+		};
+		nAttributes=4;
 	};
 };
 class Mission
@@ -8055,7 +8112,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5003,208.47501,5918};
-			angle=5.7595849;
+			angle=5.759584;
 			class Attributes
 			{
 				text="All players returned to base";
