@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=229;
+	toggles=101;
 	mods[]=
 	{
 		"3denEnhanced"
@@ -25,9 +25,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={5009.3633,216.90881,5909.1289};
-		dir[]={-0.41346344,-0.4053449,0.81535822};
-		up[]={-0.18332985,0.91415751,0.36153176};
-		aside[]={0.89191377,1.3737008e-07,0.45228639};
+		dir[]={-0.78174871,-0.10340597,0.61496246};
+		up[]={-0.081273124,0.99463946,0.063933372};
+		aside[]={0.61827636,3.0559022e-08,0.78596151};
 	};
 };
 binarizationWanted=0;
@@ -279,6 +279,62 @@ class CustomAttributes
 		};
 		class Attribute2
 		{
+			property="ENH_introText";
+			expression="                if (!is3DEN && (_value # 0) > 0 && hasInterface) then                {                    _value spawn                    {                        scriptName 'ENH_Attribute_IntroText';                        params ['_delay', '_l1', '_l2', '_l3', '_type'];                        _l1 = _l1 call BIS_fnc_localize;                        _l2 = _l2 call BIS_fnc_localize;                        _l3 = _l3 call BIS_fnc_localize;                        uiSleep _delay;                        switch _type do                        {                            case 0:                            {                                private _text = parseText format                                [                                    ""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",                                    _l1,                                    _l2,                                    _l3                                ];                                [_text, true] spawn BIS_fnc_textTiles;                            };                            case 1:                            {                                [_l1, _l2, _l3] spawn BIS_fnc_infoText;                            };                            case 2:                            {                                [_l1, _l2, _l3] spawn BIS_fnc_EXP_camp_SITREP;                            };                        };                    };                }";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=5;
+						class Item0
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=5;
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Stratis";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="STRING";
+								value="FOB Camp Rogain";
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								singleType="STRING";
+								value="June 7, 2036, 18:30";
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute3
+		{
 			property="ENH_Briefing_BLUFOR_Mission";
 			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Mission'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.2; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_MISSION_TITLE', _this call BIS_fnc_localize]]}}};";
 			class Value
@@ -290,7 +346,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute3
+		class Attribute4
 		{
 			property="ENH_Briefing_BLUFOR_Situation";
 			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Situation'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.1; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SITUATION_TITLE', _this call BIS_fnc_localize]]}}};";
@@ -303,7 +359,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute4
+		class Attribute5
 		{
 			property="ENH_Briefing_BLUFOR_Signal";
 			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Signal'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.4; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SIGNAL_TITLE', _this call BIS_fnc_localize]]}}};";
@@ -316,7 +372,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=5;
+		nAttributes=6;
 	};
 };
 class Mission
@@ -333,9 +389,9 @@ class Mission
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2035;
-		month=7;
-		day=6;
+		year=2036;
+		month=6;
+		day=7;
 		hour=18;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
