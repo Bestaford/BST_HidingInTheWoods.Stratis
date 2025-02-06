@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1800;
+		nextID=1814;
 	};
 	class Camera
 	{
@@ -251,6 +251,19 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
+			property="ENH_AddObjectsToZeus";
+			expression="        if (!is3DEN && isServer && _value) then        {            private _objects = allMissionObjects '';            allCurators apply {_x addCuratorEditableObjects [_objects, true]};            addMissionEventHandler ['EntityCreated',            {                params ['_entity'];                allCurators apply {_x addCuratorEditableObjects [[_entity], true]};            }];        }";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="ENH_Briefing_BLUFOR_Execution";
 			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Execution'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.3; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_EXECUTION_TITLE', _this call BIS_fnc_localize]]}}};";
 			class Value
@@ -262,7 +275,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
+		class Attribute2
 		{
 			property="ENH_Briefing_BLUFOR_Mission";
 			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Mission'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.2; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_MISSION_TITLE', _this call BIS_fnc_localize]]}}};";
@@ -275,7 +288,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute2
+		class Attribute3
 		{
 			property="ENH_Briefing_BLUFOR_Situation";
 			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Situation'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.1; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SITUATION_TITLE', _this call BIS_fnc_localize]]}}};";
@@ -288,7 +301,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute3
+		class Attribute4
 		{
 			property="ENH_Briefing_BLUFOR_Signal";
 			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Signal'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.4; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SIGNAL_TITLE', _this call BIS_fnc_localize]]}}};";
@@ -301,7 +314,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=4;
+		nAttributes=5;
 	};
 };
 class Mission
