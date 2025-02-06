@@ -5,22 +5,22 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=101;
+	toggles=225;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=617;
+		nextID=618;
 	};
 	class MarkerIDProvider
 	{
-		nextID=22;
+		nextID=23;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1744;
+		nextID=1758;
 	};
 	class Camera
 	{
@@ -327,7 +327,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=70;
+		items=71;
 		class Item0
 		{
 			dataType="Group";
@@ -7910,6 +7910,15 @@ class Mission
 			};
 			id=616;
 			type="EmptyDetectorAreaR50";
+		};
+		class Item70
+		{
+			dataType="Marker";
+			position[]={5002,208.347,5908.0498};
+			name="marker_player";
+			type="Empty";
+			id=617;
+			atlOffset=0.00062561035;
 		};
 	};
 	class Connections
