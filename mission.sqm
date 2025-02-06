@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=225;
+	toggles=229;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=618;
+		nextID=619;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1758;
+		nextID=1800;
 	};
 	class Camera
 	{
-		pos[]={5006.853,216.90881,5919.0137};
-		dir[]={-0.54847199,-0.60884386,0.57315433};
-		up[]={-0.42094439,0.79328585,0.43988818};
-		aside[]={0.722498,2.6798807e-07,0.69138521};
+		pos[]={5009.3633,216.90881,5909.1289};
+		dir[]={-0.41346344,-0.4053449,0.81535822};
+		up[]={-0.18332985,0.91415751,0.36153176};
+		aside[]={0.89191377,1.3737008e-07,0.45228639};
 	};
 };
 binarizationWanted=0;
@@ -2238,7 +2238,7 @@ class Mission
 					name="Intel";
 					class Entities
 					{
-						items=9;
+						items=10;
 						class Item0
 						{
 							dataType="Logic";
@@ -3193,13 +3193,54 @@ class Mission
 								nAttributes=11;
 							};
 						};
+						class Item9
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={4999,208.54248,5925};
+								angles[]={6.2756805,0,0.0049916417};
+							};
+							id=618;
+							type="ModuleTaskSetState_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ModuleTaskSetState_F_ShowNotification";
+									expression="_this setVariable ['ShowNotification',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ModuleTaskSetState_F_State";
+									expression="_this setVariable ['State',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="SUCCEEDED";
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
 					};
 					id=594;
-					atlOffset=-103.08954;
+					atlOffset=14.217117;
 				};
 			};
 			id=60;
-			atlOffset=8.6250458;
+			atlOffset=33.520432;
 		};
 		class Item9
 		{
@@ -7880,7 +7921,7 @@ class Mission
 		class Item68
 		{
 			dataType="Trigger";
-			position[]={5001,208.56,5926};
+			position[]={4999,208.5575,5927};
 			class Attributes
 			{
 				text="Mission finished";
@@ -7925,11 +7966,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=22;
+			nextID=24;
 		};
 		class Links
 		{
-			items=22;
+			items=24;
 			class Item0
 			{
 				linkID=0;
@@ -8148,6 +8189,26 @@ class Mission
 				class CustomData
 				{
 					type="TriggerOwner";
+				};
+			};
+			class Item22
+			{
+				linkID=22;
+				item0=618;
+				item1=613;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item23
+			{
+				linkID=23;
+				item0=616;
+				item1=618;
+				class CustomData
+				{
+					type="Sync";
 				};
 			};
 		};
