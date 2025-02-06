@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1814;
+		nextID=1828;
 	};
 	class Camera
 	{
@@ -208,6 +208,8 @@ class ScenarioData
 	author="Bestaford";
 	overviewText="@STR_BST_briefing_mission";
 	overViewPicture="intro.paa";
+	onLoadMission="@STR_BST_briefing_mission";
+	loadScreen="intro.paa";
 	class Header
 	{
 		gameType="Coop";
