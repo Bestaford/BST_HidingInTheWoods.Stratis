@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1828;
+		nextID=1842;
 	};
 	class Camera
 	{
@@ -2383,7 +2383,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Attack patrol";
+											value="@STR_BST_task_1_title";
 										};
 									};
 								};
@@ -2396,7 +2396,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Attack patrol";
+											value="";
 										};
 									};
 								};
@@ -2409,7 +2409,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="";
+											value="task_1";
 										};
 									};
 								};
@@ -2515,7 +2515,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={4830,124.5075,4721};
-								angles[]={6.2656889,0,0.15865479};
+								angles[]={6.2656798,0,0.15865043};
 							};
 							id=600;
 							type="ModuleTaskCreate_F";
@@ -2582,7 +2582,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Search";
+											value="@STR_BST_task_2_title";
 										};
 									};
 								};
@@ -2595,7 +2595,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Search";
+											value="";
 										};
 									};
 								};
@@ -2608,7 +2608,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="";
+											value="task_2";
 										};
 									};
 								};
@@ -2781,7 +2781,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Destroy";
+											value="@STR_BST_task_4_title";
 										};
 									};
 								};
@@ -2794,7 +2794,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Destroy";
+											value="";
 										};
 									};
 								};
@@ -2807,7 +2807,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="";
+											value="task_4";
 										};
 									};
 								};
@@ -2872,7 +2872,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5809,21.4125,4535};
-								angles[]={6.2606897,0,6.218277};
+								angles[]={6.2606878,0,6.2182765};
 							};
 							id=608;
 							type="ModuleTaskCreate_F";
@@ -2939,7 +2939,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Attack camp";
+											value="@STR_BST_task_3_title";
 										};
 									};
 								};
@@ -2952,7 +2952,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Attack camp";
+											value="";
 										};
 									};
 								};
@@ -2965,7 +2965,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="";
+											value="task_3";
 										};
 									};
 								};
@@ -3111,11 +3111,11 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4999,210,5926};
+								position[]={4999,209.99998,5926};
 							};
 							id=613;
 							type="ModuleTaskCreate_F";
-							atlOffset=1.4500122;
+							atlOffset=1.4499969;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -3179,7 +3179,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Return";
+											value="@STR_BST_task_5_title";
 										};
 									};
 								};
@@ -3192,7 +3192,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Return";
+											value="";
 										};
 									};
 								};
@@ -3205,7 +3205,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="";
+											value="task_5";
 										};
 									};
 								};

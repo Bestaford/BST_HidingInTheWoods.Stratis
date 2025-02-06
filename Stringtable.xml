@@ -10,9 +10,24 @@
 		<Original>Disrupt FIA operations by eliminating the patrol, gathering intelligence on their main camp, raiding the location, and destroying their weapons cache.</Original>
 	</Key>
 	<Key ID="STR_BST_briefing_execution">
-		<Original>1. Destroy the FIA &lt;marker name='marker_patrol_unit'&gt;patrol&lt;/marker&gt; at their last known location.&lt;br/&gt;2. Capture documents containing information on the location of the FIA camp.&lt;br/&gt;3. Clear the camp.&lt;br/&gt;4. Destroy the weapons cache.&lt;br/&gt;5. Return to base.&lt;br/&gt;</Original>
+		<Original>1. Eliminate the FIA &lt;marker name='marker_patrol_unit'&gt;patrol&lt;/marker&gt; at their last known location.&lt;br/&gt;2. Capture intel containing information on the location of the FIA camp.&lt;br/&gt;3. Clear the camp.&lt;br/&gt;4. Destroy the weapons cache.&lt;br/&gt;5. Return to base.&lt;br/&gt;</Original>
 	</Key>
 	<Key ID="STR_BST_briefing_signal">
 		<Original>&lt;marker name='marker_nato_hq'&gt;Alpha&lt;/marker&gt;: HQ&lt;br/&gt;&lt;marker name='marker_player'&gt;Bravo&lt;/marker&gt;: Your team&lt;br/&gt;&lt;marker name='marker_nato_helicopter'&gt;Charlie&lt;/marker&gt;: Helicopter transport team&lt;br/&gt;&lt;marker name='marker_nato_mortar'&gt;Delta&lt;/marker&gt;: Mortar team&lt;br/&gt;</Original>
+	</Key>
+	<Key ID="STR_BST_task_1_title">
+		<Original>Eliminate the patrol</Original>
+	</Key>
+	<Key ID="STR_BST_task_2_title">
+		<Original>Search for the intel</Original>
+	</Key>
+	<Key ID="STR_BST_task_3_title">
+		<Original>Attack the camp</Original>
+	</Key>
+	<Key ID="STR_BST_task_4_title">
+		<Original>Destroy the weapons cache</Original>
+	</Key>
+	<Key ID="STR_BST_task_5_title">
+		<Original>Return to base</Original>
 	</Key>
 </Project>
