@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5006.8447,221.29128,5906.7813};
-		dir[]={0.45566419,-0.32512099,-0.8287062};
-		up[]={0.15666315,0.94565594,-0.28492022};
-		aside[]={-0.87630635,-9.839423e-07,-0.48183668};
+		pos[]={4996.9849,215.6973,5929.7339};
+		dir[]={-0.36626011,-0.59245533,0.71762276};
+		up[]={-0.26933184,0.80558348,0.52770996};
+		aside[]={0.89075452,-2.6309863e-08,0.45462155};
 	};
 };
 binarizationWanted=0;
@@ -1471,7 +1471,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="this setIdentity ""Reynolds"";";
+						init="this setIdentity ""Reynolds"";" \n "removeSwitchableUnit this;";
 						name="reynolds";
 						description="Lt. Reynolds - HQ (Zeus)";
 						isPlayable=1;
