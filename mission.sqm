@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1856;
+		nextID=1870;
 	};
 	class Camera
 	{
@@ -294,7 +294,7 @@ class CustomAttributes
 							class data
 							{
 								singleType="SCALAR";
-								value=5;
+								value=0;
 							};
 						};
 						class Item1
@@ -302,7 +302,7 @@ class CustomAttributes
 							class data
 							{
 								singleType="STRING";
-								value="Stratis";
+								value="Hiding in the woods";
 							};
 						};
 						class Item2
@@ -310,7 +310,7 @@ class CustomAttributes
 							class data
 							{
 								singleType="STRING";
-								value="FOB Camp Rogain";
+								value="by Bestaford";
 							};
 						};
 						class Item3
@@ -318,7 +318,7 @@ class CustomAttributes
 							class data
 							{
 								singleType="STRING";
-								value="June 7, 2036, 18:30";
+								value="18:30";
 							};
 						};
 						class Item4
@@ -5719,6 +5719,7 @@ class Mission
 					};
 					id=430;
 					type="I_G_Soldier_TL_F";
+					atlOffset=3.8146973e-06;
 				};
 				class Item1
 				{
@@ -5736,7 +5737,7 @@ class Mission
 					};
 					id=432;
 					type="I_G_Soldier_F";
-					atlOffset=3.8146973e-06;
+					atlOffset=7.6293945e-06;
 				};
 				class Item2
 				{
@@ -5754,7 +5755,7 @@ class Mission
 					};
 					id=557;
 					type="I_G_Soldier_LAT_F";
-					atlOffset=3.8146973e-06;
+					atlOffset=7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5805,6 +5806,7 @@ class Mission
 				formation="DIAMOND";
 			};
 			id=429;
+			atlOffset=3.8146973e-06;
 		};
 		class Item27
 		{
