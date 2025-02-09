@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project name="BST_HidingInTheWoods">
-	<Key ID="STR_BST_mission_title">
-		<Original>Hiding in the woods</Original>
-	</Key>
 	<Key ID="STR_BST_briefing_situation">
 		<Original>An operation is underway on Stratis to neutralize the remnants of the rebel forces that have retreated from Altis. During reconnaissance, a NATO patrol has detected the presence of an FIA &lt;marker name='marker_patrol_unit'&gt;patrol&lt;/marker&gt; in the area. This may indicate the likely location of an FIA camp nearby.</Original>
 	</Key>

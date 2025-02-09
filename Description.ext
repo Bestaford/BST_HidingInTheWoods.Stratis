@@ -1,6 +1,6 @@
 author        = "Bestaford";
-briefingName  = "@STR_BST_mission_title";
-onLoadName    = "@STR_BST_mission_title";
+briefingName  = "Hiding in the woods";
+onLoadName    = "Hiding in the woods";
 onLoadMission = "@STR_BST_briefing_mission";
 loadScreen    = "intro.paa";
 

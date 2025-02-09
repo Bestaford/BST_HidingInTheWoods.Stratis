@@ -379,7 +379,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="@STR_BST_mission_title";
+		briefingName="Hiding in the woods";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
