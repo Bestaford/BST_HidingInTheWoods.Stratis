@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1884;
+		nextID=1898;
 	};
 	class Camera
 	{
@@ -210,6 +210,8 @@ class ScenarioData
 	overViewPicture="intro.paa";
 	onLoadMission="@STR_BST_briefing_mission";
 	loadScreen="intro.paa";
+	respawn=3;
+	respawnDelay=10;
 	class Header
 	{
 		gameType="Coop";
@@ -246,13 +248,21 @@ class CustomAttributes
 					singleType="ARRAY";
 					class value
 					{
-						items=1;
+						items=2;
 						class Item0
 						{
 							class data
 							{
 								singleType="STRING";
-								value="None";
+								value="EndMission";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Counter";
 							};
 						};
 					};
@@ -7807,7 +7817,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5002,208.347,5908.0498};
-			name="marker_player";
+			name="respawn_west";
 			type="Empty";
 			id=617;
 			atlOffset=0.00062561035;
