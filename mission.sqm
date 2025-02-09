@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=229;
+	toggles=101;
 	mods[]=
 	{
 		"3denEnhanced"
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1870;
+		nextID=1884;
 	};
 	class Camera
 	{
-		pos[]={5846.0366,60.237785,4172.3765};
-		dir[]={-0.7396065,-0.66176057,-0.1231959};
-		up[]={-0.65278184,0.7496888,-0.10873458};
-		aside[]={-0.16431963,-1.2768432e-06,0.98646688};
+		pos[]={5016.2729,228.8784,5877.8892};
+		dir[]={-0.11218936,-0.60897928,0.78521377};
+		up[]={-0.086134672,0.79318559,0.60285825};
+		aside[]={0.98994869,5.2532414e-08,0.14144106};
 	};
 };
 binarizationWanted=0;
@@ -224,6 +224,19 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="ReviveMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -246,7 +259,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		nAttributes=2;
 	};
 	class Category1
 	{
